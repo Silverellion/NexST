@@ -1,0 +1,97 @@
+.white-panel {
+    background-color: white;
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.white-panel.dark-mode {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.default-link {
+    color: rgb(191,0,0);
+}
+
+.default-link:visited {
+    color: rgb(191,0,0);
+}
+
+.white-panel-resizer {
+    padding-top: 20px; 
+    padding-left: 30px;
+}
+
+.separator {
+    display: grid;
+    grid-template-columns: 5fr 0.2fr 3fr;
+}
+
+.form-list {
+    list-style: none;
+}
+
+.form-list li input, select, textarea{
+    width: 800px;
+    height: 35px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.white-panel.dark-mode .form-list li input,
+.white-panel.dark-mode select,
+.white-panel.dark-mode textarea {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border-color: white;
+}
+
+.default-red-button {
+    width: 150px;
+    height: 40px;
+
+    background: rgb(191,0,0);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.default-red-button:hover {
+    background: rgb(90,0,0);
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: aliceblue;
+    margin-right: 20px;
+    padding: 30px;
+    border-radius: 10px;
+
+    transition: background-color 3s color 3s;
+}
+
+.sidebar.dark-mode {
+    background-color: rgb(53, 53, 53);
+    margin-right: 20px;
+    padding: 30px;
+    border-radius: 10px;
+
+    color: white;
+}
+
+.frame iframe, img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 10px;
+}
