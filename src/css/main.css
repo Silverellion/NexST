@@ -34,31 +34,37 @@ body, html {
 /* END OF DEAFAULT TEMPLATE */
 /* HEADER */
 .pre-nav {
+    background-color: #BF0100;
+    width: 100%;
+}
+
+.nav-row {
     display: flex;
     justify-content: space-between;
-    background-color: #BF0100;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-social {
     display: flex;
-    padding-left: 5%;
-    background-color: #BF0100;
-    z-index: 2; 
+    align-items: center;
+    padding-left: 3%;
+    color: white;
+}
+
+.nav-social span {
+    white-space: nowrap;
 }
 
 .nav-social a {
     display: flex;
     align-items: center;
-    align-content: center;
-
+    justify-content: center;
     background-color: white;
-    
-    margin: 10px;
-    margin-right: 0px;
+    margin: 10px 5px;
+    padding-right: 5px;
     width: 30px;
     height: 30px;
-
-    border: none;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
@@ -75,20 +81,29 @@ body, html {
     height: 20px;
 }
 
+.scrolling-container {
+    margin-bottom: 0.8%;
+    overflow: hidden;
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
 .scrolling-text {
     display: flex;
     gap: 100px;
+    white-space: nowrap;
     animation: scrollText 8s linear infinite;
-}
-
-@keyframes scrollText {
-    from { transform: translateX(200%); }
-    to { transform: translateX(-200%); }
 }
 
 .scrolling-text span {
     color: white;
     margin-top: 10px;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(200%); }
+    to { transform: translateX(-200%); }
 }
 
 .address {
@@ -97,7 +112,6 @@ body, html {
     padding-right: 60px;
     color: white;
     gap: 40px;
-
     z-index: 2;
 }
 
@@ -134,12 +148,21 @@ body, html {
     justify-content: space-between;
 }   
 
+.navbar-collapse {
+    flex-grow: 0;
+    flex-basis: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .nav-subcontainer {
     margin-left: 5%;
 }
 
 .logo {
     color: white;
+    padding-left: 60px;
+    margin-right: 10px;
     font-size: 2.2rem;
     font-weight: 600;
 }
@@ -153,10 +176,6 @@ body, html {
     border: none;
     padding: 10px;
     border-radius: 3px;
-}
-
-.navbar-toggler {
-    background-color: white;
     transition: transform 0.3s ease;
 }
 
@@ -205,20 +224,22 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px;
     gap: 3px;
-
     background-color: white;
     color: black;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-
     transition: 0.3s ease;
+}
+
+.nav-button button:first-child {
+    gap: 3px;
+    padding: 8px;
 }
 
 .nav-button button:hover {
@@ -322,46 +343,90 @@ body, html {
 }
 /* END OF FOOTER */
 /* MOBILE COMPATIBILITY */
-@media (max-width: 800px) {
-    .pre-nav .row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-social, .address {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        gap: 15px;
-        width: 100%;
-    }
-
+@media (max-width: 1000px) {
     .scrolling-container {
         width: 100%;
         order: 1;
         margin-top: 10px;
     }
 
+    .pre-nav {
+        flex-direction: column;
+    }
+        
+    .scrolling-container {
+        width: 100%;
+    }
+    
     .scrolling-text {
-        animation: scrollText 8s linear infinite;
-        white-space: nowrap;
+        font-size: 14px;
+    }
+    
+    .address {
+        justify-content: right;
+        width: 100%;
+    }
+    
+    .contact-item {
+        font-size: 12px;
+    }
+    
+    .contact-item img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #212529;
+        z-index: 1000;
+        padding: 10px;
+    }
+    
+    .navbar-collapse ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-button button {
+        margin: 5px;
+        padding: 8px;
     }
 
     .navbar-nav:first-child {
-        margin-top: 10%;
+        margin-top: 5%;
+    }
+    .navbar-nav:last-child {
+        margin-bottom: 5%;
     }
     .nav-subcontainer {
         margin: 0%;
     }
     .navbar-toggler {
-        margin-left: 4%;
-        transform: scale(0.9);
+        margin-left: 3%;
+        transform: scale(0.6);
+    }
+    .navbar-toggler:hover {
+        transform: scale(0.8);
     }
     .logo {
-        margin-left: 20%;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    .nav-button button {
+        align-items: right;
+        justify-content: right;
+    
+        margin: 5px;
+        padding: 5px;
+    }
+    .nav-button button:first-child {
+        gap: 3px;
+        padding: 3px;
+        padding-right: 5px;
     }
     .feature {
         margin-bottom: 5%;
@@ -372,3 +437,91 @@ body, html {
     }
 }
 
+@media (max-width: 600px) {
+    .address {
+        display: flex;
+        margin-left: 10%;
+        padding: 0;
+    }
+
+    .address div a {
+        font-size: 7px;
+    }
+    
+    .navbar-toggler {
+        margin-left: 3%;
+        transform: scale(0.5);
+    }
+    .navbar-toggler:hover {
+        transform: scale(0.7);
+    }
+    .nav-button button {
+        align-items: right;
+        justify-content: right;
+    
+        margin: 2px;
+        padding: 3px;
+    }
+    .nav-button button:first-child {
+        padding: 3px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-social span {
+        display: none;
+    }
+
+    .contact-item {
+        gap: 5px;
+        justify-content: flex-end;
+    }
+
+    .contact-item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact-item a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    .logo {
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nav-social a {
+        margin: 2px 2px;
+        padding-right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav-social a img {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .navbar-toggler {
+        margin-left: 0%;
+        transform: scale(0.4);
+    }
+    .navbar-toggler:hover {
+        transform: scale(0.6);
+    }
+    .nav-button button {
+        align-items: right;
+        justify-content: right;
+    
+        margin: 1px;
+        padding: 1px;
+    }
+    .nav-button button:first-child {
+        padding: 1px;
+    }
+}
