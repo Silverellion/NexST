@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let minValue = parseInt(minSlider.value);
         let maxValue = parseInt(maxSlider.value);
         
-        //MIN VALUE RANGE OF 200
+        // MIN VALUE RANGE OF 200
 
         if (maxValue - minValue < 200) {
             minSlider.value = maxValue - 200;
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let minValue = parseInt(minSlider.value);
         let maxValue = parseInt(maxSlider.value);
         
-        //MIN VALUE RANGE OF 200
+        // MIN VALUE RANGE OF 200
 
         if (maxValue - minValue < 200) {
             maxSlider.value = minValue + 200;
@@ -197,6 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
+        // Sort price by ascending / descending
         allProductCards.sort((a, b) => {
             const priceA = extractPrice(a);
             const priceB = extractPrice(b);
