@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../lib/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/filter.css">
     <title>PC Components</title>
 </head>
 <body>
@@ -70,16 +71,88 @@
         </header>
         <!-- END OF MAIN.CSS HEADER -->
         <body>
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
-            <!-- WRITE YOUR BODY HERE -->
+            <div class="container-fluid">
+                <div class="row">
+                    <aside class="col-md-3 p-3">
+                        <h5>🔍 Search Filter</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Price</label>
+                            <input type="range" class="form-range">
+                            <div class="d-flex justify-content-between">
+                                <span>$0</span>
+                                <span>$1,000,000</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">PC segment</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">PC All</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">PC Gaming</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">Mini PC</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">Office PC</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">CPU Series</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">Intel Core i7</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">Intel Core i5</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">AMD Ryzen 5</label>
+                            </div>
+                        </div>
+                    </aside>
+                    <main class="col-md-9">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5>Sort by:</h5>
+                            <div class="btn-group">
+                                <button class="btn btn-danger">Best promotions</button>
+                                <button class="btn btn-outline-danger">Price ascending</button>
+                                <button class="btn btn-outline-danger">Price descending</button>
+                                <button class="btn btn-outline-danger">Newest products</button>
+                                <button class="btn btn-outline-danger">Best-selling products</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-4" id="product-container">
+                                <div class="card">
+                                    <img src="../images/filter/auros-case.png" class="card-img-top" alt="PC Image">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">PC GVN AORUS XTREME ICE i5-14600K</p>
+                                        <p><strong>99995</strong></p>
+                                        <button class="btn btn-danger w-100">🛒 Add to Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            </ul>
+                        </nav>
+                    </main>
+                </div>
+            </div>
         </body>
         <!-- MAIN.CSS FOOTER -->
         <footer>

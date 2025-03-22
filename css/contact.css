@@ -10,8 +10,12 @@
 }
 
 .optional {
-    color: gray;
+    color: rgb(70, 70, 70);
     font-weight: 300;
+}
+
+.optional.dark-mode {
+    color: rgb(220, 220, 220);
 }
 
 .default-link {
@@ -43,7 +47,7 @@
 }
 
 .sidepanel.dark-mode {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(75, 75, 75);
     color: white;
 }
 

@@ -1,0 +1,16 @@
+body {
+    background: white;
+}
+aside {
+    background: #f8f9fa;
+    height: 100vh;
+}
+.card {
+    border: 1px solid #dee2e6;
+}
+.card-body {
+    padding: 15px;
+}
+.pagination .page-link {
+    color: #dc3545;
+}
