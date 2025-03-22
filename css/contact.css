@@ -31,7 +31,8 @@
 }
 
 .default-red-button:hover {
-    background: rgb(90,0,0);
+    background: rgb(136, 0, 0);
+    color: white;
     cursor: pointer;
 }
 
