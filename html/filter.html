@@ -77,18 +77,20 @@
             
             <div class="sidebar" id="filterSidebar">
                 <!-- Price Filter -->
-                <div class="filter-section">
-                    <div class="filter-title" onclick="toggleSection('priceFilter')">
-                        <span>Price</span>
-                        <span class="dropdown-icon">&#9660;</span>
-                    </div>
-                    <div class="filter-content filter-expanded" id="priceFilter">
-                        <div class="price-range">
-                            <div class="d-flex justify-content-between small text-muted mb-2">
-                                <span>0$</span>
-                                <span>10000$</span>
-                            </div>
-                            <input type="range" class="form-range" min="0" max="1000000" step="1000">
+                <div class="filter-title" onclick="toggleSection('priceFilter')">
+                    <span>Price</span>
+                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+                </div>
+                <div class="filter-content filter-expanded" id="priceFilter">
+                    <div class="price-range">
+                        <div class="d-flex justify-content-between small text-muted mb-2">
+                            <span id="minPriceLabel">$0</span>
+                            <span id="maxPriceLabel">$10,000</span>
+                        </div>
+                        <div class="position-relative">
+                            <input type="range" class="form-range range-slider" min="0" max="10000" step="100" id="minPrice">
+                            <input type="range" class="form-range range-slider" min="0" max="10000" step="100" id="maxPrice">
+                            <div class="range-highlight"></div>
                         </div>
                     </div>
                 </div>
@@ -97,7 +99,7 @@
                 <div class="filter-section">
                     <div class="filter-title" onclick="toggleSection('pcSegmentFilter')">
                         <span>PC segment</span>
-                        <span class="dropdown-icon">&#9660;</span>
+                        <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                     </div>
                     <div class="filter-content filter-expanded" id="pcSegmentFilter">
                         <div class="checkbox-item">
@@ -123,7 +125,7 @@
                 <div class="filter-section">
                     <div class="filter-title" onclick="toggleSection('cpuSeriesFilter')">
                         <span>CPU Series</span>
-                        <span class="dropdown-icon">&#9660;</span>
+                        <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                     </div>
                     <div class="filter-content filter-expanded" id="cpuSeriesFilter">
                         <div class="checkbox-item">
@@ -145,7 +147,7 @@
                 <div class="filter-section">
                     <div class="filter-title" onclick="toggleSection('graphicsFilter')">
                         <span>Discrete Graphics</span>
-                        <span class="dropdown-icon">&#9660;</span>
+                        <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                     </div>
                     <div class="filter-content filter-expanded" id="graphicsFilter">
                         <div class="checkbox-item">
@@ -167,7 +169,7 @@
                 <div class="filter-section">
                     <div class="filter-title" onclick="toggleSection('ramFilter')">
                         <span>Ram Capacity</span>
-                        <span class="dropdown-icon">&#9660;</span>
+                        <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                     </div>
                     <div class="filter-content filter-expanded" id="ramFilter">
                         <div class="checkbox-item">
@@ -193,7 +195,7 @@
                 <div class="filter-section">
                     <div class="filter-title" onclick="toggleSection('ssdFilter')">
                         <span>SSD Capacity</span>
-                        <span class="dropdown-icon">&#9660;</span>
+                        <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                     </div>
                     <div class="filter-content filter-expanded" id="ssdFilter">
                         <!-- SSD options would go here -->
@@ -204,7 +206,7 @@
                 <div class="filter-section">
                     <div class="filter-title" onclick="toggleSection('hddFilter')">
                         <span>HDD Capacity</span>
-                        <span class="dropdown-icon">&#9660;</span>
+                        <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                     </div>
                     <div class="filter-content filter-expanded" id="hddFilter">
                         <!-- HDD options would go here -->

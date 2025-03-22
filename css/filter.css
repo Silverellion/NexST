@@ -11,7 +11,7 @@
     transition: all 0.3s;
     overflow-y: auto;
     padding: 20px 15px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
@@ -99,6 +99,97 @@ main {
     margin-top: 10px;
 }
 
+#priceFilter .price-range .range-slider {
+    pointer-events: all;
+    position: absolute;
+    height: 0;
+    outline: none;
+    width: 100%;
+    z-index: 3; 
+    top: 50%;
+    margin-top: 0;
+  }
+  
+  #priceFilter .price-range .range-slider::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    margin-top: -10px;
+    z-index: 3;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  #priceFilter .price-range .range-slider::-moz-range-thumb {
+    position: relative;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    z-index: 3;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border: none;
+  }
+  
+  #priceFilter .price-range .range-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  #priceFilter .price-range .range-slider::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  #priceFilter .price-range .position-relative::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  #priceFilter .price-range .range-highlight {
+    position: absolute;
+    height: 4px;
+    background: red;
+    left: 0%;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-radius: 2px;
+    z-index: 2;
+  }
+  
+  #priceFilter .price-range .position-relative {
+    position: relative;
+    height: 24px;
+    margin: 10px 0;
+    overflow: visible;
+  }
+  
+  #priceFilter #minPriceLabel, 
+  #priceFilter #maxPriceLabel {
+    font-weight: 500;
+  }
+
 .main-content {
     margin-left: 250px;
     padding: 20px;
@@ -110,12 +201,15 @@ main {
 }
 
 .checkbox-item {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .modified-checbox {
     background-color: transparent;
     cursor: pointer;
+
+    margin-right: 12px;
+    margin-left: 6px;
 }
 
 .filter-content {

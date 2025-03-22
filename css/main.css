@@ -252,7 +252,9 @@ body, html {
 
 /* END OF HEADER */
 /* FOOTER */
-
+footer {
+    border-top: 10px solid rgb(191, 0, 0);
+}
 .info-container {
     background: rgb(216, 216, 216);
     padding-top: 1%;
