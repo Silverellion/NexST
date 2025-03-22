@@ -63,6 +63,18 @@ main {
     margin-left: 0;
 }
 
+.sortbar * {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.sortbar li button:hover, .sortbar li button:active {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 174, 174, 0.3);
+    color: white;
+}
+
 .filter-header {
     display: flex;
     align-items: center;
@@ -172,6 +184,34 @@ main {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.pagination li {
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.page-link {
+    color: black;
+    padding-right: 14px;
+    padding-left: 14px;
+    border-radius: 5px;
+    transition: 0.3 transform ease;
+}
+
+.page-link:hover {
+    background-color: rgb(150, 0, 0);
+    border-color: rgb(150, 0, 0);
+    color: white;
+
+    transform: scale(1.2);
+}
+
+.page-item.active .page-link{
+    background-color: rgb(150, 0, 0);
+    border-color: rgb(150, 0, 0);
+    color: white;
+}
+
 .product-grid {
     display: none;
 }
