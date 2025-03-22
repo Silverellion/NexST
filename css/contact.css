@@ -9,6 +9,11 @@
     color: white;
 }
 
+.optional {
+    color: gray;
+    font-weight: 300;
+}
+
 .default-link {
     color: rgb(191,0,0);
 }
