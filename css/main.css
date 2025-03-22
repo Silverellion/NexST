@@ -438,6 +438,24 @@ body, html {
 }
 
 @media (max-width: 600px) {
+    .nav-social span {
+        display: none;
+    }
+
+    .contact-item {
+        gap: 5px;
+        justify-content: flex-end;
+    }
+
+    .contact-item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact-item a {
+        font-size: 12px;
+    }
+    
     .address {
         display: flex;
         margin-left: 10%;
@@ -465,26 +483,6 @@ body, html {
     .nav-button button:first-child {
         padding: 3px;
         padding-right: 0px;
-    }
-}
-
-@media (max-width: 500px) {
-    .nav-social span {
-        display: none;
-    }
-
-    .contact-item {
-        gap: 5px;
-        justify-content: flex-end;
-    }
-
-    .contact-item img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .contact-item a {
-        font-size: 12px;
     }
 }
 
