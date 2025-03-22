@@ -151,7 +151,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const style = document.createElement('style');
     style.textContent = `
         .sortbar .btn.active {
-            background-color: #0d6efd;
+            backdrop-filter: blur(4px);
+            background-color: rgba(255, 174, 174, 0.3);
             color: white;
         }
     `;
