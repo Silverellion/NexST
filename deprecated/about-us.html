@@ -3,263 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="./about-us.css">
     <title>PC Components</title>
 </head>
 <body>
     <div class = "master-container-red">
         <!-- MAIN.CSS HEADER -->
-        <div class = "header">
-            <div class = "pre-nav">
-                <div class = "follow-us" style = "background-color: rgb(191,0,0); z-index: 2; padding-left: 70px;">
-                    <span style="color: white; margin-top: 12px">Follow us: </span>
-                    <Button><img src="../icons/social/facebook.svg" alt=""></Button>
-                    <Button><img src="../icons/social/instagram.svg" alt=""></Button>
-                    <Button><img src="../icons/social/twitter-bird.svg" alt=""></Button>
-                </div>
-                <div class = "scrolling-container">
-                    <div class = "scrolling-text">
-                        <span>Summer is coming! 50% off all components</span>
+        <header>
+            <div class="pre-nav"> 
+                <div class="nav-row"> 
+                    <div class="nav-social"> 
+                        <span>Follow us: </span> 
+                        <a><img src="../icons/social/facebook.svg" alt=""></a> 
+                        <a><img src="../icons/social/instagram.svg" alt=""></a> 
+                        <a><img src="../icons/social/twitter-bird.svg" alt=""></a> 
+                    </div> 
+                    <div class="scrolling-container"> 
+                        <div class="scrolling-text"> 
+                            <span>Summer is coming! 50% off all components</span> 
+                        </div> 
+                    </div> 
+                    <div class="address"> 
+                        <div class="contact-item"> 
+                            <img src="../icons/social/phone.svg" alt=""> 
+                            <a href="#">(+84) 910JQKA</a> 
+                        </div> 
+                        <div class="contact-item"> 
+                            <img src="../icons/social/email.svg" alt=""> 
+                            <a href="#">nexst@gmail.com</a> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+            
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center">
+                        <button class="navbar-toggler me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="logo">NexST</div>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="nav-links">
+                        <ul class="navbar-nav nav-link mx-auto">
+                            <li class=""><a href="#">Home</a></li>
+                            <li class=""><a href="#">Products</a></li>
+                            <li class=""><a href="#">Pages</a></li>
+                            <li class=""><a href="#">About us</a></li>
+                            <li class=""><a href="./contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-button">
+                        <button class="btn btn-light d-flex">
+                            <img src="../icons/nav/user.svg" alt="" class="me-1">
+                            <span class="d-none d-sm-inline">Login</span>
+                        </button>
+                        <button class="btn btn-light"><img src="../icons/nav/shopping-cart.svg" alt=""></button>
+                        <button class="btn btn-light" id="darkModeToggle"><img id="modeIcon" src="../icons/nav/dark-mode.svg" alt=""></button>
+                        <button class="btn btn-light"><img src="../icons/nav/language-globe.svg" alt=""></button>
                     </div>
                 </div>
-                <div class = "address">
-                    <img src="../icons/social/phone.svg" alt="">(+84) 910JQKA
-                    <img src="../icons/social/email.svg" alt="">pccomponent@gmail.com
-                </div>
-            </div>
-            <div class = "nav-bar">
-                <div class = "logo">PC Component</div>
-                <ul class="nav-link"> 
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="./about-us.html">About us</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
-                </ul>
-                <div class = "nav-button">
-                    <Button><img src="../icons/nav/user.svg" alt=""></Button>
-                    <Button><img src="../icons/nav/shopping-cart.svg" alt=""></Button>
-                    <Button id="darkModeToggle"><img id="modeIcon" src="../icons/nav/dark-mode.svg" alt=""></Button>
-                    <Button><img src="../icons/nav/language-globe.svg" alt=""></Button>
-                </div>
-            </div>
-        </div>
+            </nav>
+        </header>
         <!-- END OF MAIN.CSS HEADER -->
-        <div class = "body">
-            <div class = "title scroll-reveal" style = "margin-top: 30px; margin-bottom: 50px;">
-                About Us
-            </div>
-            <div class = "scroll-reveal" style = "margin-right: 20%; margin-left: 20%; margin-bottom: 180px;">
-                Our team of IUH students is dedicated to crafting 
-                a modern, intuitive frontend for a PC components e-commerce platform.
-                We focus on seamless design and user-friendly experience, 
-                making browsing and shopping effortless for tech enthusiasts.
-            </div>
-            <div class = "mission-container scroll-reveal">
-                <div  class="scroll-reveal">
-                    <img src="../images/about-us/weird-fucking-object.png" alt="" class = "object-handler">
-                    <div class = "motto">
-                        <p>Navigating</p>
-                        <p>Forward</p>
-                        <p>Together</p>
+        <body>
+            <div class = "presentation-panel">
+                <div class = "title scroll-reveal" style = "margin-top: 30px; margin-bottom: 50px;">
+                    About Us
+                </div>
+                <div class = "scroll-reveal" style = "margin-right: 20%; margin-left: 20%; margin-bottom: 180px;">
+                    Our team of IUH students is dedicated to crafting 
+                    a modern, intuitive frontend for a PC components e-commerce platform.
+                    We focus on seamless design and user-friendly experience, 
+                    making browsing and shopping effortless for tech enthusiasts.
+                </div>
+                <div class = "mission-container scroll-reveal">
+                    <div  class="scroll-reveal">
+                        <img src="../images/about-us/weird-fucking-object.png" alt="" class = "object-handler">
+                        <div class = "motto">
+                            <p>Navigating</p>
+                            <p>Forward</p>
+                            <p>Together</p>
+                        </div>
+                        <div class="scroll-reveal" style = "padding-right: 25%; color: rgb(220, 220, 220);">
+                            Join us on our journey of innovative collaboration, 
+                            sustainable growth, and inclusive empowerment.
+                        </div>
                     </div>
-                    <div class="scroll-reveal" style = "padding-right: 25%; color: rgb(220, 220, 220);">
-                        Join us on our journey of innovative collaboration, 
-                        sustainable growth, and inclusive empowerment.
+                    <div class = "side-motto">
+                        <div class="scroll-reveal">
+                             <p class = "sub-motto">Vision</p>
+                             <p class="scroll-reveal" style = "border-bottom: 1px solid rgb(219, 79, 79); padding-bottom: 40px;">
+                                To be a pioneer in designing modern e-commerce interfaces, 
+                                delivering seamless and intuitive experiences for the tech community.
+                             </p>
+                        </div>
+                        <div class="scroll-reveal">
+                            <p class = "sub-motto">Mission</p>
+                            <p class="scroll-reveal" style = "border-bottom: 1px solid rgb(219, 79, 79); padding-bottom: 40px;">
+                               To create a user-friendly and optimized interface, 
+                               making PC component shopping easier and more convenient.
+                            </p>
+                       </div>
+                       <div class="scroll-reveal">
+                            <p class = "sub-motto">Core Values</p>
+                            <p class="scroll-reveal">
+                            Continuously evolving to deliver the best designs.
+                            Prioritizing user experience above all.
+                            Growing and supporting the tech community together. 
+                            </p>
+                    </div>
                     </div>
                 </div>
-                <div class = "side-motto">
-                    <div class="scroll-reveal">
-                         <p style = "font-family: 'poppins-light-italic'; font-size: 25px">Vision</p>
-                         <p class="scroll-reveal" style = "border-bottom: 1px solid rgb(219, 79, 79); padding-bottom: 40px;">
-                            To be a pioneer in designing modern e-commerce interfaces, 
-                            delivering seamless and intuitive experiences for the tech community.
-                         </p>
+                <div class = "title scroll-reveal" style = "margin-top: 30px; margin-bottom: 50px;">
+                    Meet Our Team
+                </div>
+                <div>
+                    <div style = "margin-bottom: 100px;">
+                        <ul class = "profile-frame">
+                            <li>
+                                <div>
+                                    <div class = "image-container">
+                                        <img src="../images/about-us/nhan.jpg" alt="" class = "profile-image">
+                                        <div class="overlay">
+                                            <div class="profile-social-icons">
+                                                <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scroll-reveal" style = "font-size: 22px;">Nguyễn Hửu Nhân</p>
+                                    <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Designer, Programmer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class = "image-container">
+                                        <img src="../images/about-us/transparent.png" alt="" class = "profile-image">
+                                        <div class="overlay">
+                                            <div class="profile-social-icons">
+                                                <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scroll-reveal" style = "font-size: 22px;">Cao Quốc Trung</p>
+                                    <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Programmer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class = "image-container">
+                                        <img src="../images/about-us/transparent.png" alt="" class = "profile-image">
+                                        <div class="overlay">
+                                            <div class="profile-social-icons">
+                                                <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scroll-reveal" style = "font-size: 22px;">Nguyễn Hoàng Sơn</p>
+                                    <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Programmer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class = "image-container">
+                                        <img src="../images/about-us/rotating-amogus.gif" alt="" class = "profile-image">
+                                        <div class="overlay">
+                                            <div class="profile-social-icons">
+                                                <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
+                                                <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scroll-reveal" style = "font-size: 22px;">Hoàng Trí Minh Tâm</p>
+                                    <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Programmer</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="scroll-reveal">
-                        <p style = "font-family: 'poppins-light-italic'; font-size: 25px">Mission</p>
-                        <p  class="scroll-reveal" style = "border-bottom: 1px solid rgb(219, 79, 79); padding-bottom: 40px;">
-                           To create a user-friendly and optimized interface, 
-                           making PC component shopping easier and more convenient.
-                        </p>
-                   </div>
-                   <div class="scroll-reveal">
-                        <p style = "font-family: 'poppins-light-italic'; font-size: 25px">Core Values</p>
-                        <p class="scroll-reveal">
-                        Continuously evolving to deliver the best designs.
-                        Prioritizing user experience above all.
-                        Growing and supporting the tech community together. 
-                        </p>
-                </div>
                 </div>
             </div>
-            <div class = "title scroll-reveal" style = "margin-top: 30px; margin-bottom: 50px;">
-                Meet Our Team
-            </div>
-            <div>
-                <div style = "margin-bottom: 100px;">
-                    <ul class = "profile-frame">
-                        <li>
-                            <div>
-                                <div class = "image-container">
-                                    <img src="../images/about-us/nhan.jpg" alt="" class = "profile-image">
-                                    <div class="overlay">
-                                        <div class="profile-social-icons">
-                                            <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="scroll-reveal" style = "font-size: 22px;">Nguyễn Hửu Nhân</p>
-                                <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Designer, Programmer</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class = "image-container">
-                                    <img src="../images/about-us/transparent.png" alt="" class = "profile-image">
-                                    <div class="overlay">
-                                        <div class="profile-social-icons">
-                                            <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="scroll-reveal" style = "font-size: 22px;">Cao Quốc Trung</p>
-                                <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Programmer</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class = "image-container">
-                                    <img src="../images/about-us/transparent.png" alt="" class = "profile-image">
-                                    <div class="overlay">
-                                        <div class="profile-social-icons">
-                                            <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="scroll-reveal" style = "font-size: 22px;">Nguyễn Hoàng Sơn</p>
-                                <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Programmer</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class = "image-container">
-                                    <img src="../images/about-us/rotating-amogus.gif" alt="" class = "profile-image">
-                                    <div class="overlay">
-                                        <div class="profile-social-icons">
-                                            <a href="#"><img src="../icons/social/facebook.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/linkedin.svg" alt=""></a>
-                                            <a href="#"><img src="../icons/social/twitter-bird.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="scroll-reveal" style = "font-size: 22px;">Hoàng Trí Minh Tâm</p>
-                                <p class="scroll-reveal" style = "font-size: 14px; color: rgb(200, 200, 200);">Programmer</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </body>
         <!-- MAIN.CSS FOOTER -->
-        <div class = "footer">
-            <div class="footer-top">
-                <div class="feature">
-                    <img src="../icons/footer/user.svg" alt="">
-                    <div>
-                        <h3>Online Support</h3>
-                        <p>Dedicated Support Team</p>
+        <footer>
+            <div class="container-fluid p-0 info-container">
+                <div class="footer-top row m-0">
+                    <div class="col-md-3 col-sm-6 feature d-flex">
+                        <img src="../icons/footer/user.svg" alt="">
+                        <div>
+                            <h3>Online Support</h3>
+                            <p>Dedicated Support Team</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 feature d-flex">
+                        <img src="../icons/footer/truck.svg" alt="">
+                        <div>
+                            <h3>Free Shipping</h3>
+                            <p>Purchases Over $100</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 feature d-flex">
+                        <img src="../icons/footer/bag.svg" alt="">
+                        <div>
+                            <h3>Timeless Shopping</h3>
+                            <p>24/7 Purchasing</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 feature d-flex">
+                        <img src="../icons/footer/currency-exchange.svg" alt="">
+                        <div>
+                            <h3>Product Returns</h3>
+                            <p>No-Questions-Asked Returns</p>
+                        </div>
                     </div>
                 </div>
-                <div class="feature">
-                    <img src="../icons/footer/shipping-truck.svg" alt="">
-                    <div>
-                        <h3>Free Shipping</h3>
-                        <p>Purchases Over $100</p>
+            
+                <div class="footer-middle row m-0 py-4 pl-3 ms-5">
+                    <div class="col-lg-3 col-md-6 footer-column mb-4">
+                        <h3>Stay Connected</h3>
+                        <p><a href="">Address: HCM City, Vietnam</a></p>
+                        <p class="mb-4"><a href="">Phone: (+84) 910JQKA</a></p>
+                        <h3 class="mb-2">Follow us on social media</h3>
+                        <div class="social-icons d-flex flex-wrap">
+                            <a href="#"><img src="../icons/social/twitter-bird.svg" alt="Twitter"></a>
+                            <a href="#"><img src="../icons/social/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="../icons/social/linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#"><img src="../icons/social/instagram.svg" alt="Instagram"></a>
+                        </div>                    
                     </div>
-                </div>
-                <div class="feature">
-                    <img src="../icons/footer/shopping-bag.svg" alt="">
-                    <div>
-                        <h3>Timeless Shopping</h3>
-                        <p>24/7 Purchasing</p>
+                    <div class="col-lg-3 col-md-6 footer-column mb-4">
+                        <h3>NexJS</h3>
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Careers</a></p>
+                        <p><a href="#">Collaboration</a></p>
+                        <p><a href="#">Dashboard</a></p>
+                        <p><a href="#">Policies</a></p>
                     </div>
+                    <div class="col-lg-3 col-md-6 footer-column mb-4">
+                        <h3>Customer Services</h3>
+                        <p><a href="#">Rules and Regulations</a></p>
+                        <p><a href="#">Terms of Use</a></p>
+                        <p><a href="#">Return Procedures</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Forums</a></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-column mb-4">
+                        <h3>Quick Access</h3>
+                        <p><a href="../html/contact.html">Contact Us</a></p>
+                        <p><a href="#">Blog</a></p>
+                        <p><a href="#">Returns and Refunds</a></p>
+                        <p><a href="#">Track Order</a></p>
+                        <p><a href="#">FAQ</a></p>
+                    </div>                
                 </div>
-                <div class="feature">
-                    <img src="../icons/footer/currency-exchange.svg" alt="">
-                    <div>
-                        <h3>Product Returns</h3>
-                        <p>No-Questions-Asked Returns</p>
+            
+                <div class="footer-bottom row m-0 px-md-5 py-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h3>Payment Method</h3>
+                        <div class="d-flex flex-wrap">
+                            <img src="../icons/banking/paypal.svg" alt="" class="me-2 mb-2">
+                            <img src="../icons/banking/mastercard.svg" alt="" class="me-2 mb-2">
+                            <img src="../icons/banking/visa.svg" alt="" class="me-2 mb-2">
+                            <img src="../icons/banking/stripe.svg" alt="" class="me-2 mb-2">
+                            <img src="../icons/banking/klarna.svg" alt="" class="me-2 mb-2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>List of Online Payment Banks</h3>
+                        <img src="../icons/banking/vietnamese-banks.png" style="width: 100%;" alt="">
                     </div>
                 </div>
             </div>
-        
-            <div class="footer-middle">
-                <div class="footer-column">
-                    <h3>Stay Connected</h3>
-                    <p>Address: HCM City, Vietnam</p>
-                    <p>Phone: (+84) 910JQKA</p>
-                    <p>Follow us on social media</p>
-                    <div class="social-icons" style="margin-top: 10px">
-                        <img src="../icons/social/twitter-bird.svg" alt="">
-                        <img src="../icons/social/facebook.svg" alt="">
-                        <img src="../icons/social/linkedin.svg" alt="">
-                        <img src="../icons/social/instagram.svg" alt="">
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>PC Component.</h3>
-                    <p>About Us</p>
-                    <p>Careers</p>
-                    <p>Collaboration</p>
-                    <p>Dashboard</p>
-                    <p>Policies</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Customer Services</h3>
-                    <p>Rules and Regulations</p>
-                    <p>Terms of Use</p>
-                    <p>Return Procedures</p>
-                    <p>Privacy Policy</p>
-                    <p>Forums</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Access</h3>
-                    <p>Contact Us</p>
-                    <p>Blog</p>
-                    <p>Returns and Refunds</p>
-                    <p>Track Order</p>
-                    <p>FAQ</p>
-                </div>
+            
+            <div class="footer-copyright py-2 text-center">
+                © All Rights Reserved for PC Component - 2025
             </div>
-        
-            <div class="footer-bottom">
-                <div>
-                    <h3>Payment Method</h3>
-                    <img src="../icons/banking/paypal.svg" alt="">
-                    <img src="../icons/banking/mastercard.svg" alt="">
-                    <img src="../icons/banking/visa.svg" alt="">
-                    <img src="../icons/banking/stripe.svg" alt="">
-                </div>
-                <div>
-                    <h3>List of Online Payment Banks</h3>
-                    <img src="../icons/banking/vietnamese-banks.png" style = "width: 100%;" alt="">
-                </div>
-            </div>
-        </div>
-        <div class = "footer-copyright">
-            © All Rights Reserved for PC Component - 2025
-        </div>
+        </footer>
         <!-- END OF MAIN.CSS FOOTER -->
     </div>
-    <!-- SCRIPT FOR INFO REVELATION -->
-    <script src="../scripts/about-us.js"></script>
+    <script src="../lib/bootstrap.bundle.js"></script>
+    <script src = "about-us.js"></script>
 </body>
 </html>

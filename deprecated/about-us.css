@@ -1,11 +1,11 @@
-.body {
+.presentation-panel {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.body * {
+.presentation-panel * {
     color: white;
 }
 
@@ -23,7 +23,7 @@
 .title {
     display: inline-block;
     position: relative;
-    font-family: "poppins-medium";
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     text-align: center;
 }
@@ -67,7 +67,7 @@
 }
 
 .motto * {
-    font-family: 'poppins-medium', sans-serif; 
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
 }
 
@@ -81,6 +81,14 @@
 .side-motto div p {
     color: rgb(220, 220, 220);
     margin-top: 20px;
+}
+
+.sub-motto {
+    font-family: 'Montserrat';
+    font-style: italic; 
+    font-weight: 200;
+    font-size: 25px;
+    color: gray;
 }
 
 .profile-frame {
