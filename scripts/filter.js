@@ -1,5 +1,4 @@
-// -------------- NAVBAR TOGGLER --------------
-
+//#region Sidebar Toggler
 document.getElementById('sidebarToggle').addEventListener('click', function() {
     const sidebar = document.getElementById('filterSidebar');
     sidebar.classList.toggle('sidebar-collapsed');
@@ -29,6 +28,8 @@ function toggleSection(id) {
     }
 }
 
+//#endregion Sidebar Toggler
+
 document.addEventListener('DOMContentLoaded', function() {
     class ProductHandler {
         constructor() {
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.setupPriceSlider();
         }
 
-        //Page handler
+        //#region Page Handler
 
         showPage(pageNumber) {
             document.querySelectorAll('.product-grid').forEach(page => page.classList.remove('active'));
@@ -87,9 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             this.showPage(1);
         }
-
-        //End of page handler
-        //Sorting handler
+        //#endregion Page Handler
+        //#region Sorting Handler
 
         setupSorting() {
             this.sortAscButton?.addEventListener('click', () => {
@@ -117,9 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.sortbar .btn').forEach(button => button.classList.remove('active'));
             activeButton.classList.add('active');
         }
-
-        //End of sorting handler
-        //Price slider handler
+        //#endregion Sorting Handler
+        //#region Price Slider Handler
         setupPriceSlider() {
             this.minSlider.value = 0;
             this.maxSlider.value = 10000;
@@ -237,8 +236,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        //End of price slider handler
-        //Sorting button styling
+        //#endregion Price Slider Handler
+        //#region Sorting Button Styling
         addActiveButtonStyle() {
             const style = document.createElement('style');
             style.textContent = `
@@ -250,10 +249,12 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             document.head.appendChild(style);
         }
+        //end#region Sorting Button Styling
     }
     new ProductHandler();
 });
 
+//#region Dark Mode Handler
 function darkModeToggle() {
     let icon = document.getElementById("modeIcon");
     document.body.classList.toggle('dark-mode');
@@ -282,3 +283,4 @@ function toggleMoreOptions(optionsId, clickedElement) {
         clickedElement.textContent = 'See more';
     }
 }
+//#endregion Dark Mode Handler
