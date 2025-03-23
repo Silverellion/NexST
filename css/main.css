@@ -29,6 +29,7 @@ body, html {
     background: linear-gradient(to bottom, #BF0100, #590000);
     width: 100%;
     max-width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 /* END OF DEAFAULT TEMPLATE */
@@ -143,7 +144,7 @@ body, html {
 }
 
 .navbar {
-    background-color: rgb(25, 25, 25);
+    background-color: #2E2E2E;
     display: flex;
     justify-content: space-between;
 }   

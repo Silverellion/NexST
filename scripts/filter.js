@@ -120,23 +120,88 @@ document.addEventListener('DOMContentLoaded', function() {
 
         //End of sorting handler
         //Price slider handler
-
         setupPriceSlider() {
             this.minSlider.value = 0;
             this.maxSlider.value = 10000;
             this.updatePriceLabels();
             this.updateRangeHighlight();
             this.filterProductsByPrice();
+            
             this.minSlider.addEventListener('input', () => this.handleSliderInput('min'));
             this.maxSlider.addEventListener('input', () => this.handleSliderInput('max'));
+            
+            this.sliderContainer = this.minSlider.parentElement;
+            
+            let activeSlider = null;
+            let activeType = null;
+            
+            this.sliderContainer.addEventListener('mousedown', (event) => {
+                const rect = this.sliderContainer.getBoundingClientRect();
+                const clickPosition = (event.clientX - rect.left) / rect.width * this.maxValue;
+                
+                const minDistance = Math.abs(clickPosition - this.minSlider.value);
+                const maxDistance = Math.abs(clickPosition - this.maxSlider.value);
+                
+                activeSlider = minDistance <= maxDistance ? this.minSlider : this.maxSlider;
+                activeType = minDistance <= maxDistance ? 'min' : 'max';
+                
+                let newValue = clickPosition;
+                if (activeType === 'min') {
+                    newValue = Math.min(newValue, this.maxSlider.value - 200);
+                } else {
+                    newValue = Math.max(newValue, parseInt(this.minSlider.value) + 200);
+                }
+                
+                activeSlider.value = Math.round(newValue);
+                this.handleSliderInput(activeType);
+                
+                
+                document.addEventListener('mousemove', handleMouseMove);
+                document.addEventListener('mouseup', handleMouseUp);
+            });
+            
+            const handleMouseMove = (event) => {
+                if (!activeSlider) return;
+                
+                const rect = this.sliderContainer.getBoundingClientRect();
+                const position = (event.clientX - rect.left) / rect.width;
+                
+                const clampedPosition = Math.max(0, Math.min(1, position));
+                let newValue = Math.round(clampedPosition * this.maxValue);
+                
+                if (activeType === 'min') {
+                    newValue = Math.min(newValue, this.maxSlider.value - 200);
+                } else {
+                    newValue = Math.max(newValue, parseInt(this.minSlider.value) + 200);
+                }
+                
+                activeSlider.value = newValue;
+                this.handleSliderInput(activeType);
+                
+                event.preventDefault();
+            };
+            
+            const handleMouseUp = () => {
+                activeSlider = null;
+                document.removeEventListener('mousemove', handleMouseMove);
+                document.removeEventListener('mouseup', handleMouseUp);
+            };
         }
-
-        handleSliderInput(type) { //Min range of slider is 200, adjust this if you want the range to be different
+        handleSliderInput(type) {
+            //Min range of slider is 200, adjust this if you want the range to be different
             let minValue = parseInt(this.minSlider.value);
             let maxValue = parseInt(this.maxSlider.value);
+            
             if (maxValue - minValue < 200) {
-                type === 'min' ? this.minSlider.value = maxValue - 200 : this.maxSlider.value = minValue + 200;
+                if (type === 'min') {
+                    minValue = maxValue - 200;
+                    this.minSlider.value = minValue;
+                } else {
+                    maxValue = minValue + 200;
+                    this.maxSlider.value = maxValue;
+                }
             }
+            
             this.updatePriceLabels();
             this.updateRangeHighlight();
             this.filterProductsByPrice();
