@@ -24,7 +24,9 @@ body, html {
     width: 100%;
     max-width: 100%;
 }
-
+/* OVERRIDE .master-container-red FOR A DIFFERENT PAGE BACKGROUND */
+/* OVERRIDE .master-container-red FOR A DIFFERENT PAGE BACKGROUND */
+/* OVERRIDE .master-container-red FOR A DIFFERENT PAGE BACKGROUND */
 .master-container-red {
     background: linear-gradient(to bottom, #BF0100, #590000);
     width: 100%;
@@ -45,7 +47,7 @@ body, html {
     align-items: center;
     width: 100%;
 }
-
+/* START OF NAV SOCIAL (Facebook + Instagram + Twitter buttons) */
 .nav-social {
     display: flex;
     align-items: center;
@@ -81,7 +83,8 @@ body, html {
     width: 20px;
     height: 20px;
 }
-
+/* END OF NAV SOCIAL (Facebook + Instagram + Twitter buttons) */
+/* START OF SCROLLING TEXT */
 .scrolling-container {
     margin-bottom: 0.8%;
     overflow: hidden;
@@ -106,7 +109,8 @@ body, html {
     from { transform: translateX(200%); }
     to { transform: translateX(-200%); }
 }
-
+/* END OF SCROLLING TEXT */
+/* START OF ADDRESS + CONTACT ITEM(PHONE + EMAIL) */
 .address {
     background-color: #BF0100;
     display: flex;
@@ -142,7 +146,8 @@ body, html {
 .contact-item:hover a {
     color: rgb(190, 190, 190);
 }
-
+/* END OF ADDRESS + CONTACT ITEM(PHONE + EMAIL) */
+/* START OF NAVBAR */
 .navbar {
     background-color: #2E2E2E;
     display: flex;
@@ -159,7 +164,8 @@ body, html {
 .nav-subcontainer {
     margin-left: 5%;
 }
-
+/* END OF NAVBAR */
+/* START OF LOGO */
 .logo {
     color: white;
     padding-left: 60px;
@@ -171,7 +177,8 @@ body, html {
 .logo:hover {
     cursor: pointer;
 }
-
+/* END OF LOGO */
+/* START OF NAV LINKS (Hone, Products, Contact Us...) STYLING */
 .navbar-toggler-icon {
     background-image: none !important;
 }
@@ -217,6 +224,83 @@ body, html {
 .nav-link li a:active {
     color: grey;
 }
+/* END OF NAV LINKS (Hone, Products, Contact Us...) STYLING */
+/* START OF SEARCHBOX STYLING */
+
+.search-component {
+    flex-grow: 1;
+    position: relative;
+}
+
+.search-toggle {
+display: none;
+margin: 10px;
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 10px;
+background-color: white;
+color: black;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.search-toggle:hover {
+background-color: rgb(216, 216, 216);
+transform: scale(1.2);
+}
+
+.search-toggle img {
+width: 20px;
+height: 20px;
+}
+
+.search-container {
+flex-grow: 1;
+max-width: 600px;
+margin: 0 20px;
+}
+
+.search-box {
+display: flex;
+align-items: center;
+background: white;
+border-radius: 25px;
+padding: 5px 15px;
+position: relative;
+}
+
+.search-icon {
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
+
+.search-input {
+width: 100%;
+padding: 8px 0;
+border: none;
+outline: none;
+font-size: 14px;
+background: transparent;
+}
+
+.search-input::placeholder {
+color: transparent;
+}
+
+.placeholder-text {
+position: absolute;
+left: 45px;
+pointer-events: none;
+color: #6c757d;
+font-size: 14px;
+transition: opacity 0.2s;
+}
+
+/* END OF SEARCHBOX STYLING */
+/* START OF NAV BUTTONS (User, darkmode, language...) STYLING*/
 
 .nav-button {
     display: flex;
@@ -251,6 +335,7 @@ body, html {
     transform: scale(1.2);
 }
 
+/* END OF NAV BUTTONS (User, darkmode, language...) STYLING*/
 /* END OF HEADER */
 /* FOOTER */
 footer {
@@ -422,6 +507,38 @@ footer {
         padding-left: 0px;
         font-size: 20px;
     }
+    .search-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+    .search-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    max-width: 100%;
+    background: #212529;
+    padding: 10px 15px;
+    z-index: 1000;
+    
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+    
+    .search-container.active {
+    max-height: 60px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 10px 15px;
+    }
     .nav-button button {
         align-items: right;
         justify-content: right;
@@ -471,11 +588,7 @@ footer {
     .address div a {
         font-size: 7px;
     }
-    
-    .navbar-toggler {
-        margin-left: 3%;
-        transform: scale(0.5);
-    }
+
     .navbar-toggler:hover {
         transform: scale(0.7);
     }
