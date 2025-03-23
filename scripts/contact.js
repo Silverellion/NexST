@@ -1,4 +1,4 @@
-document.getElementById("darkModeToggle").addEventListener("click", function () {
+function darkModeToggle() {    
     let icon = document.getElementById("modeIcon");
     let panels = document.querySelectorAll(".white-panel");
     let sidepanel = document.querySelector(".sidepanel");
@@ -10,12 +10,12 @@ document.getElementById("darkModeToggle").addEventListener("click", function () 
         sidepanel.classList.add("dark-mode");
         optionalText.forEach(el => el.classList.add("dark-mode"));
     } else {
-        icon.src = "../icons/nav/dark-mode.svg";
+        icon.src = "../icons/nav/dark-mode.svg"; 
         panels.forEach(panel => panel.classList.remove("dark-mode"));
         sidepanel.classList.remove("dark-mode");
         optionalText.forEach(el => el.classList.remove("dark-mode"));
     }
-});
+};
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
