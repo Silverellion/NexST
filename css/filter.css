@@ -387,3 +387,28 @@ main {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 1300px) {
+    .btn-shopping span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .btn-shopping span {
+        display: none;
+    }
+    
+    .btn-shopping img {
+        position: static !important;
+        margin: 0 auto;
+    }
+
+    .btn-shopping {
+        background-color: rgb(225, 0, 0);
+    }
+
+    .btn-shopping:hover {
+        background-color: rgb(150, 0, 0);
+    }
+}
