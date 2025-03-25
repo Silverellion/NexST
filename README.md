@@ -1,1 +1,1 @@
-If you this, you are gay
+If you read this, you are gay
