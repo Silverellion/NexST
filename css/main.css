@@ -31,14 +31,18 @@ body, html {
     background: linear-gradient(to bottom, #BF0100, #590000);
     width: 100%;
     max-width: 100%;
-    min-height: 100vh;
     overflow-x: hidden;
 }
 /* END OF DEAFAULT TEMPLATE */
 /* HEADER */
-.pre-nav {
+.pre-nav-container {
     background-color: #BF0100;
+}
+
+.pre-nav {
     width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 .nav-row {
@@ -148,11 +152,16 @@ body, html {
 }
 /* END OF ADDRESS + CONTACT ITEM(PHONE + EMAIL) */
 /* START OF NAVBAR */
-.navbar {
+.navbar-container {
     background-color: #2E2E2E;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
-}   
+    margin: 0 auto;
+    max-width: 1600px;
+}
 
 .navbar-collapse {
     flex-grow: 0;
@@ -233,22 +242,22 @@ body, html {
 }
 
 .search-toggle {
-display: none;
-margin: 10px;
-margin-top: 15px;
-margin-bottom: 15px;
-padding: 10px;
-background-color: white;
-color: black;
-border: none;
-border-radius: 3px;
-cursor: pointer;
-transition: 0.3s ease;
+    display: none;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .search-toggle:hover {
-background-color: rgb(216, 216, 216);
-transform: scale(1.2);
+    background-color: rgb(216, 216, 216);
+    transform: scale(1.2);
 }
 
 .search-toggle img {
@@ -257,37 +266,37 @@ height: 20px;
 }
 
 .search-container {
-flex-grow: 1;
-max-width: 600px;
-margin: 0 20px;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
 }
 
 .search-box {
-display: flex;
-align-items: center;
-background: white;
-border-radius: 25px;
-padding: 5px 15px;
-position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+    position: relative;
 }
 
 .search-icon {
-width: 20px;
-height: 20px;
-margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .search-input {
-width: 100%;
-padding: 8px 0;
-border: none;
-outline: none;
-font-size: 14px;
-background: transparent;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
 }
 
 .search-input::placeholder {
-color: transparent;
+    color: transparent;
 }
 
 .placeholder-text {
@@ -339,13 +348,15 @@ transition: opacity 0.2s;
 /* END OF HEADER */
 /* FOOTER */
 footer {
+    background: rgb(216, 216, 216);
     border-top: 10px solid rgb(191, 0, 0);
 }
 .info-container {
-    background: rgb(216, 216, 216);
     padding-top: 1%;
     padding-right: 1%;
     padding-left: 1%;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 .footer-top {
@@ -511,33 +522,33 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      
-    .search-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    margin: 0;
-    max-width: 100%;
-    background: #212529;
-    padding: 10px 15px;
-    z-index: 1000;
+    }
     
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease, padding 0.3s ease;
-    padding-top: 0;
-    padding-bottom: 0;
+    .search-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        max-width: 100%;
+        background:#2E2E2E;
+        padding: 10px 15px;
+        z-index: 1000;
+        
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     
     .search-container.active {
-    max-height: 60px;
-    opacity: 1;
-    transform: translateY(0);
-    padding: 10px 15px;
+        max-height: 60px;
+        opacity: 1;
+        transform: translateY(0);
+        padding: 10px 15px;
     }
     .nav-button button {
         align-items: right;

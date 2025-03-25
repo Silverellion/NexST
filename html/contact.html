@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../css/contact.css">
     <title>PC Components</title>
 </head>
-<body>
-    <div class = "master-container-red">
-        <!-- MAIN.CSS HEADER -->
-        <header>
+<body class = "master-container-red">
+    <!-- MAIN.CSS HEADER -->
+    <header>
+        <div class = "pre-nav-container">
             <div class="pre-nav"> 
                 <div class="nav-row"> 
                     <div class="nav-social"> 
@@ -37,8 +37,10 @@
                     </div> 
                 </div> 
             </div>
-            
-            <nav class="navbar navbar-expand-lg bg-dark">
+        </div>
+        
+        <div class = "navbar-container">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center">
                         <button class="navbar-toggler me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links">
@@ -68,186 +70,186 @@
                     </div>
                 </div>
             </nav>
-        </header>
-        <!-- END OF MAIN.CSS HEADER -->
-        <main>
-            <div class="container my-4">
-                <div class="row white-panel">
-                    <div class="col-lg-8">
-                        <div class=" p-4">
-                            <h3 class="fw-bold mb-3">READY TO WORK WITH US</h3>
-                            <p class = "mb-3" style = "font-weight: 300;">Contact us to inquire your questions and voice your opinions</p>
-                            <form>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label class="form-label fw-semibold">First Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label fw-semibold">Last Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-semibold">Phone Number <span class="optional">(Optional)</span></label>
+        </div>
+    </header>
+    <!-- END OF MAIN.CSS HEADER -->
+    <main>
+        <div class="container my-4">
+            <div class="row white-panel">
+                <div class="col-lg-8">
+                    <div class=" p-4">
+                        <h3 class="fw-bold mb-3">READY TO WORK WITH US</h3>
+                        <p class = "mb-3" style = "font-weight: 300;">Contact us to inquire your questions and voice your opinions</p>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">First Name <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control">
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-semibold">Country / Region <span class="text-danger">*</span></label>
-                                    <select class="form-select">
-                                        <option>Viet Nam (VN)</option>
-                                        <option>United States (US)</option>
-                                        <option>China (CN)</option>
-                                        <option>United Kingdom (UK)</option>
-                                        <option>Germany (DE)</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-semibold">Subject <span class="text-danger">*</span></label>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Last Name <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control">
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-semibold">Message <span class="optional">(Optional)</label>
-                                    <textarea class="form-control" rows="5" placeholder="Note about your order, e.g. special note for delivery" style="resize: none;"></textarea>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input">
-                                    <label class="form-check-label fw-semibold">I want to receive news and updates once in a while. By submitting, I agree to the <a href="#" class="default-link">Terms & Conditions</a></label>
-                                </div>
-                                <button type="submit" class="btn default-red-button mt-3">SEND MESSAGE</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-5 pe-md-4">
-                        <div class="sidepanel p-4">
-                            <h5 class="fw-light mt-3">AN GIANG (HEAD QUARTER)</h5>
-                            <p class = "fw-semibold mt-3">12 Nguyễn Văn Bảo, Phường 1, Gò Vấp, Hồ Chí Minh (+84) 910JQKA</p>
-                            <p class = "fw-semibold mb-5"><a href="#" class="default-link">among@us.com</a></p>
-                            <h5 class="fw-light mt-3">GO VAP (BRANCH)</h5>
-                            <p class = "fw-semibold mb-3">12 Nguyễn Văn Bảo, Phường 1, Gò Vấp, Hồ Chí Minh (+84) 910JQKA</p>
-                            <p class = "fw-semibold mb-5"><a href="#" class="default-link">joe@biden.com.us</a></p>
-                            <div class="follow-us d-flex">
-                                <button class="btn"><img src="../icons/social/twitter-bird.svg" alt=""></button>
-                                <button class="btn"><img src="../icons/social/facebook.svg" alt=""></button>
-                                <button class="btn"><img src="../icons/social/instagram.svg" alt=""></button>
-                                <button class="btn"><img src="../icons/social/youtube.svg" alt=""></button>
-                                <button class="btn"><img src="../icons/social/pinterest.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="mt-3">
-                            <img src="../images/contact/monochrome-laptop.png" class="img-fluid rounded" alt="">
-                        </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Phone Number <span class="optional">(Optional)</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Country / Region <span class="text-danger">*</span></label>
+                                <select class="form-select">
+                                    <option>Viet Nam (VN)</option>
+                                    <option>United States (US)</option>
+                                    <option>China (CN)</option>
+                                    <option>United Kingdom (UK)</option>
+                                    <option>Germany (DE)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Subject <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Message <span class="optional">(Optional)</label>
+                                <textarea class="form-control" rows="5" placeholder="Note about your order, e.g. special note for delivery" style="resize: none;"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label fw-semibold">I want to receive news and updates once in a while. By submitting, I agree to the <a href="#" class="default-link">Terms & Conditions</a></label>
+                            </div>
+                            <button type="submit" class="btn default-red-button mt-3">SEND MESSAGE</button>
+                        </form>
                     </div>
                 </div>
-                <div class="row white-panel p-4 mt-4">
-                    <h4 class="fw-semibold mb-4">FIND US ON GOOGLE MAP</h4>
-                    <div class="google-map-frame">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15679.004698749924!2d106.6416!3d10.8184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752930c17a47cb%3A0x42a093f2f1fca94!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1710000000000" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!-- MAIN.CSS FOOTER -->
-        <footer>
-            <div class="container-fluid p-0 info-container">
-                <div class="footer-top row m-0">
-                    <div class="col-md-3 col-sm-6 feature d-flex">
-                        <img src="../icons/footer/user.svg" alt="">
-                        <div>
-                            <h3>Online Support</h3>
-                            <p>Dedicated Support Team</p>
+                <div class="col-lg-4 mt-5 pe-md-4">
+                    <div class="sidepanel p-4">
+                        <h5 class="fw-light mt-3">AN GIANG (HEAD QUARTER)</h5>
+                        <p class = "fw-semibold mt-3">12 Nguyễn Văn Bảo, Phường 1, Gò Vấp, Hồ Chí Minh (+84) 910JQKA</p>
+                        <p class = "fw-semibold mb-5"><a href="#" class="default-link">among@us.com</a></p>
+                        <h5 class="fw-light mt-3">GO VAP (BRANCH)</h5>
+                        <p class = "fw-semibold mb-3">12 Nguyễn Văn Bảo, Phường 1, Gò Vấp, Hồ Chí Minh (+84) 910JQKA</p>
+                        <p class = "fw-semibold mb-5"><a href="#" class="default-link">joe@biden.com.us</a></p>
+                        <div class="follow-us d-flex">
+                            <button class="btn"><img src="../icons/social/twitter-bird.svg" alt=""></button>
+                            <button class="btn"><img src="../icons/social/facebook.svg" alt=""></button>
+                            <button class="btn"><img src="../icons/social/instagram.svg" alt=""></button>
+                            <button class="btn"><img src="../icons/social/youtube.svg" alt=""></button>
+                            <button class="btn"><img src="../icons/social/pinterest.svg" alt=""></button>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 feature d-flex">
-                        <img src="../icons/footer/truck.svg" alt="">
-                        <div>
-                            <h3>Free Shipping</h3>
-                            <p>Purchases Over $100</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 feature d-flex">
-                        <img src="../icons/footer/bag.svg" alt="">
-                        <div>
-                            <h3>Timeless Shopping</h3>
-                            <p>24/7 Purchasing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 feature d-flex">
-                        <img src="../icons/footer/currency-exchange.svg" alt="">
-                        <div>
-                            <h3>Product Returns</h3>
-                            <p>No-Questions-Asked Returns</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="footer-middle row m-0 py-4 pl-3 ms-5">
-                    <div class="col-lg-3 col-md-6 footer-column mb-4">
-                        <h3>Stay Connected</h3>
-                        <p><a href="">Address: HCM City, Vietnam</a></p>
-                        <p class="mb-4"><a href="">Phone: (+84) 910JQKA</a></p>
-                        <h3 class="mb-2">Follow us on social media</h3>
-                        <div class="social-icons d-flex flex-wrap">
-                            <a href="#"><img src="../icons/social/twitter-bird.svg" alt="Twitter"></a>
-                            <a href="#"><img src="../icons/social/facebook.svg" alt="Facebook"></a>
-                            <a href="#"><img src="../icons/social/linkedin.svg" alt="LinkedIn"></a>
-                            <a href="#"><img src="../icons/social/instagram.svg" alt="Instagram"></a>
-                        </div>                    
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-column mb-4">
-                        <h3>Next System</h3>
-                        <p><a href="../deprecated/about-us.html">About Us</a></p>
-                        <p><a href="#">Careers</a></p>
-                        <p><a href="#">Collaboration</a></p>
-                        <p><a href="#">Dashboard</a></p>
-                        <p><a href="#">Policies</a></p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-column mb-4">
-                        <h3>Customer Services</h3>
-                        <p><a href="#">Rules and Regulations</a></p>
-                        <p><a href="#">Terms of Use</a></p>
-                        <p><a href="#">Return Procedures</a></p>
-                        <p><a href="#">Privacy Policy</a></p>
-                        <p><a href="#">Forums</a></p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 footer-column mb-4">
-                        <h3>Quick Access</h3>
-                        <p><a href="../html/contact.html">Contact Us</a></p>
-                        <p><a href="#">Blog</a></p>
-                        <p><a href="#">Returns and Refunds</a></p>
-                        <p><a href="#">Track Order</a></p>
-                        <p><a href="#">FAQ</a></p>
-                    </div>                
-                </div>
-            
-                <div class="footer-bottom row m-0 px-md-5 py-3">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <h3>Payment Method</h3>
-                        <div class="d-flex flex-wrap">
-                            <img src="../icons/banking/paypal.svg" alt="" class="me-2 mb-2">
-                            <img src="../icons/banking/mastercard.svg" alt="" class="me-2 mb-2">
-                            <img src="../icons/banking/visa.svg" alt="" class="me-2 mb-2">
-                            <img src="../icons/banking/stripe.svg" alt="" class="me-2 mb-2">
-                            <img src="../icons/banking/klarna.svg" alt="" class="me-2 mb-2">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>List of Online Payment Banks</h3>
-                        <img src="../icons/banking/vietnamese-banks.png" style="width: 100%;" alt="">
+                    <div class="mt-3">
+                        <img src="../images/contact/monochrome-laptop.png" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
-            
-            <div class="footer-copyright py-2 text-center">
-                © All Rights Reserved for PC Component - 2025
+            <div class="row white-panel p-4 mt-4">
+                <h4 class="fw-semibold mb-4">FIND US ON GOOGLE MAP</h4>
+                <div class="google-map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15679.004698749924!2d106.6416!3d10.8184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752930c17a47cb%3A0x42a093f2f1fca94!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1710000000000" allowfullscreen></iframe>
+                </div>
             </div>
-        </footer>
-        <!-- END OF MAIN.CSS FOOTER -->
-    </div>
+        </div>
+    </main>
+    <!-- MAIN.CSS FOOTER -->
+    <footer>
+        <div class="container-fluid p-0 info-container">
+            <div class="footer-top row m-0">
+                <div class="col-md-3 col-sm-6 feature d-flex">
+                    <img src="../icons/footer/user.svg" alt="">
+                    <div>
+                        <h3>Online Support</h3>
+                        <p>Dedicated Support Team</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 feature d-flex">
+                    <img src="../icons/footer/truck.svg" alt="">
+                    <div>
+                        <h3>Free Shipping</h3>
+                        <p>Purchases Over $100</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 feature d-flex">
+                    <img src="../icons/footer/bag.svg" alt="">
+                    <div>
+                        <h3>Timeless Shopping</h3>
+                        <p>24/7 Purchasing</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 feature d-flex">
+                    <img src="../icons/footer/currency-exchange.svg" alt="">
+                    <div>
+                        <h3>Product Returns</h3>
+                        <p>No-Questions-Asked Returns</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-middle row m-0 py-4 pl-3 ms-5">
+                <div class="col-lg-3 col-md-6 footer-column mb-4">
+                    <h3>Stay Connected</h3>
+                    <p><a href="">Address: HCM City, Vietnam</a></p>
+                    <p class="mb-4"><a href="">Phone: (+84) 910JQKA</a></p>
+                    <h3 class="mb-2">Follow us on social media</h3>
+                    <div class="social-icons d-flex flex-wrap">
+                        <a href="#"><img src="../icons/social/twitter-bird.svg" alt="Twitter"></a>
+                        <a href="#"><img src="../icons/social/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="../icons/social/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="../icons/social/instagram.svg" alt="Instagram"></a>
+                    </div>                    
+                </div>
+                <div class="col-lg-3 col-md-6 footer-column mb-4">
+                    <h3>Next System</h3>
+                    <p><a href="../deprecated/about-us.html">About Us</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Collaboration</a></p>
+                    <p><a href="#">Dashboard</a></p>
+                    <p><a href="#">Policies</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-column mb-4">
+                    <h3>Customer Services</h3>
+                    <p><a href="#">Rules and Regulations</a></p>
+                    <p><a href="#">Terms of Use</a></p>
+                    <p><a href="#">Return Procedures</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Forums</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-column mb-4">
+                    <h3>Quick Access</h3>
+                    <p><a href="../html/contact.html">Contact Us</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Returns and Refunds</a></p>
+                    <p><a href="#">Track Order</a></p>
+                    <p><a href="#">FAQ</a></p>
+                </div>                
+            </div>
+        
+            <div class="footer-bottom row m-0 px-md-5 py-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h3>Payment Method</h3>
+                    <div class="d-flex flex-wrap">
+                        <img src="../icons/banking/paypal.svg" alt="" class="me-2 mb-2">
+                        <img src="../icons/banking/mastercard.svg" alt="" class="me-2 mb-2">
+                        <img src="../icons/banking/visa.svg" alt="" class="me-2 mb-2">
+                        <img src="../icons/banking/stripe.svg" alt="" class="me-2 mb-2">
+                        <img src="../icons/banking/klarna.svg" alt="" class="me-2 mb-2">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>List of Online Payment Banks</h3>
+                    <img src="../icons/banking/vietnamese-banks.png" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright py-2 text-center">
+            © All Rights Reserved for PC Component - 2025
+        </div>
+    </footer>
+    <!-- END OF MAIN.CSS FOOTER -->
     <script src="../lib/bootstrap.bundle.js"></script>
     <script src="../scripts/contact.js"></script>
 </body>

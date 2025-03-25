@@ -29,7 +29,18 @@ function toggleSection(id) {
 }
 
 //#endregion Sidebar Toggler
-
+//#region See More Toggler
+function toggleMoreOptions(optionsId, clickedElement) {
+    const moreOptions = document.getElementById(optionsId);
+    moreOptions.classList.toggle('visible');
+    
+    if (moreOptions.classList.contains('visible')) {
+        clickedElement.textContent = 'See less';
+    } else {
+        clickedElement.textContent = 'See more';
+    }
+}
+//#endregion See More Toggler
 document.addEventListener('DOMContentLoaded', function() {
     class ProductHandler {
         constructor() {
@@ -255,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //#region Dark Mode Handler
-function darkModeToggle() {
+function toggleDarkMode() {
     let icon = document.getElementById("modeIcon");
     document.body.classList.toggle('dark-mode');
     if (icon.src.includes("dark-mode.svg")) {
@@ -271,16 +282,5 @@ function toggleSection(sectionId) {
     
     content.classList.toggle('filter-expanded');
     title.classList.toggle('active');
-}
-
-function toggleMoreOptions(optionsId, clickedElement) {
-    const moreOptions = document.getElementById(optionsId);
-    moreOptions.classList.toggle('visible');
-    
-    if (moreOptions.classList.contains('visible')) {
-        clickedElement.textContent = 'See less';
-    } else {
-        clickedElement.textContent = 'See more';
-    }
 }
 //#endregion Dark Mode Handler
