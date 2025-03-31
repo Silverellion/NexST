@@ -4,6 +4,7 @@
     <div class = "product-grid active" id = "page-1">
 ```
 the page aren't automatically assigned by default for ease of future customization.
+
 3. HTML Summarization:  
 
 3.1. TEMPLATEs:<br>
