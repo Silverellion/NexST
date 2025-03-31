@@ -79,29 +79,6 @@
         </button>
         
         <div class="sidebar" id="filterSidebar">
-            <div class="filter-title" onclick="toggleSection('brandFilter')">
-                <span>Brand</span>
-                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-            </div>
-            <div class="filter-content filter-expanded" id="brandFilter">
-                <div class="row g-2 mb-2">
-                    <div class="col-6 col-sm-4">
-                        <button class="brand-btn w-100">ASUS</button>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <button class="brand-btn w-100">BenQ</button>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <button class="brand-btn w-100">AOC</button>
-                    </div>
-                    <div class="col-6 col-sm-6">
-                        <button class="brand-btn w-100">Samsung</button>
-                    </div>
-                    <div class="col-6 col-sm-6">
-                        <button class="brand-btn w-100">ViewSonic</button>
-                    </div>
-                </div>
-            </div>
             <!-- Price Filter -->
             <div class="filter-title" onclick="toggleSection('priceFilter')">
                 <span>Price</span>
@@ -120,154 +97,106 @@
                     </div>
                 </div>
             </div>
+            <!-- General Brand Filter -->
+            <div class="filter-title" onclick="toggleSection('brandFilter')">
+                <span>Brand</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="brandFilter">
+                <div class="row g-2 mb-2">
+                    <div class="col-6 col-sm-4">
+                        <button class="brand-btn w-100">Acbel</button>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <button class="brand-btn w-100">Acer</button>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <button class="brand-btn w-100">Amd</button>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <button class="brand-btn w-100">Adata</button>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <button class="brand-btn w-100">Gigabyte</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CPU Brand Filter -->
+            <div class="filter-title" onclick="toggleSection('cpuFilter')">
+                <span>CPU Brand</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="cpuFilter">
+                <div class="row g-2 mb-2">
+                    <div class="col-6 col-sm-6">
+                        <button class="brand-btn w-100">AMD</button>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <button class="brand-btn w-100">Intel</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GPU Brand Filter -->
+            <div class="filter-title" onclick="toggleSection('gpuFilter')">
+                <span>GPU Brand</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="gpuFilter">
+                <div class="row g-2 mb-2">
+                    <div class="col-6 col-sm-6">
+                        <button class="brand-btn w-100">AMD</button>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <button class="brand-btn w-100">NVIDIA</button>
+                    </div>
+                </div>
+            </div>
             
-            <!-- Screen Size Filter -->
+            <!-- Mainboard Filter -->
             <div class="filter-section">
                 <div class="filter-title" onclick="toggleSection('screenSize')">
-                    <span>Screen Size</span>
+                    <span>Mainboard Series</span>
                     <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
                 </div>
                 <div class="filter-content filter-expanded" id="screenSize">
                     <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="size11">
-                        <label class="form-check-label" for="size11">11" - 13.9"</label>
+                        <input class="form-check-input modified-checbox" type="checkbox" id="aorus">
+                        <label class="form-check-label" for="aorus">Aorus</label>
                     </div>
                     <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="size14">
-                        <label class="form-check-label" for="size14">14" - 14.9"</label>
+                        <input class="form-check-input modified-checbox" type="checkbox" id="extreme">
+                        <label class="form-check-label" for="extreme">Extreme</label>
                     </div>
                     <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="size15">
-                        <label class="form-check-label" for="size15">15" - 15.9"</label>
+                        <input class="form-check-input modified-checbox" type="checkbox" id="prime">
+                        <label class="form-check-label" for="prime">Prime</label>
                     </div>
                     <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="size16">
-                        <label class="form-check-label" for="size16">16" - 16.9"</label>
+                        <input class="form-check-input modified-checbox" type="checkbox" id="rog">
+                        <label class="form-check-label" for="rog">Rog</label>
                     </div>
-                    <div class="hidden-options" id="moreSizes">
+                    <div class="hidden-options" id="moreMainboards">
                         <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="size17">
-                            <label class="form-check-label" for="size17">17" - 17.9"</label>
+                            <input class="form-check-input modified-checbox" type="checkbox" id="tuf">
+                            <label class="form-check-label" for="tuf">TUF</label>
                         </div>
                         <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="size18">
-                            <label class="form-check-label" for="size18">18" - 18.9"</label>
+                            <input class="form-check-input modified-checbox" type="checkbox" id="steelLegend">
+                            <label class="form-check-label" for="steelLegend">Steel Legend</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input class="form-check-input modified-checbox" type="checkbox" id="phantomLegend">
+                            <label class="form-check-label" for="phantomLegend">Phantom Legend</label>
                         </div>
                     </div>
-                    <span class="see-more ms-4" onclick="toggleMoreOptions('moreSizes', this)">See more</span>    
+                    <span class="see-more ms-4" onclick="toggleMoreOptions('moreMainboards', this)">See more</span>    
                 </div>
             </div>
             
-            <!-- Refresh Rate Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('refreshRate')">
-                    <span>Refresh Rate</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="refreshRate">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="60hz">
-                        <label class="form-check-label" for="60hz">60hz</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="144hz">
-                        <label class="form-check-label" for="144hz">144hz</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="240hz">
-                        <label class="form-check-label" for="240hz">240hz</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="360hz">
-                        <label class="form-check-label" for="360hz">360hz</label>
-                    </div>
-                    <div class="hidden-options" id="moreRefreshRates">
-                        <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="480hz">
-                            <label class="form-check-label" for="480hz">480hz</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="500hz">
-                            <label class="form-check-label" for="500hz">600hz</label>
-                        </div>
-                    </div>
-                    <span class="see-more ms-4" onclick="toggleMoreOptions('moreRefreshRates', this)">See more</span>            
-                </div>
-            </div>
             
-            <!-- Response Time Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('responseTime')">
-                    <span>Response Time</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="responseTime">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="5ms">
-                        <label class="form-check-label" for="5ms">5ms</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="1ms">
-                        <label class="form-check-label" for="1ms">1ms</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="0.1ms">
-                        <label class="form-check-label" for="0.1ms">0.1ms</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="0.03ms">
-                        <label class="form-check-label" for="0.03ms">0.03ms</label>
-                    </div>
-                    <div class="hidden-options" id="moreResponseTimes">
-                        <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="0.01ms">
-                            <label class="form-check-label" for="0.01ms">0.01ms</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="0.005ms">
-                            <label class="form-check-label" for="0.005ms">0.005ms</label>
-                        </div>
-                    </div>
-                    <span class="see-more ms-4" onclick="toggleMoreOptions('moreResponseTimes', this)">See more</span> 
-                </div>
-            </div>
-            
-            <!-- Resolution Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('resolution')">
-                    <span>Resolution</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="resolution">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="res1366">
-                        <label class="form-check-label" for="res1366">1366 x 768</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="res1920">
-                        <label class="form-check-label" for="res1920">1920 x 1080</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="res2560">
-                        <label class="form-check-label" for="res2560">2560 x 1440</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="res3840">
-                        <label class="form-check-label" for="res3840">3840 x 2160</label>
-                    </div>
-                    <div class="hidden-options" id="moreScreenSizes">
-                        <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="res7680">
-                            <label class="form-check-label" for="res7680">7680 x 4320</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input class="form-check-input modified-checbox" type="checkbox" id="res15360">
-                            <label class="form-check-label" for="res15360">15360 × 8640</label>
-                        </div>
-                    </div>
-                    <span class="see-more ms-4" onclick="toggleMoreOptions('moreScreenSizes', this)">See more</span> 
-                </div>
-            </div>
+
         </div>
         
         <div class="main-content" id="mainContent">
@@ -280,6 +209,61 @@
                         <li class="list-group-item border-0 p-0"><button id="sort-price-desc" class="btn btn-light fs-6 fs-sm-7 fs-md-6">Price descending</button></li>
                         <li class="list-group-item border-0 p-0"><button id="sort-new" class="btn btn-light fs-6 fs-sm-7 fs-md-6">New products</button></li>
                         <li class="list-group-item border-0 p-0"><button id="sort-bestselling" class="btn btn-light fs-6 fs-sm-7 fs-md-6">Best-selling products</button></li>
+                    </ul>
+                </div>
+                <div class = "mb-3 fw-bold" style = " color: white;">
+                    Select by product type
+                </div>
+                <div class="row mb-3">
+                    <ul class="list-group list-group-horizontal align-items-center sortbar-image flex-wrap">
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/cpu.png" alt="">
+                                <div>CPU</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/gpu.png" alt="">
+                                <div>GPU</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/motherboard.png" alt="">
+                                <div>Motherboard</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/ram.png" alt="">
+                                <div>RAM</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/harddrive.png" alt="">
+                                <div>Hard Drive</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/case.png" alt="">
+                                <div>Case</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/cooling.png" alt="">
+                                <div>Cooling</div>
+                            </button>
+                        </li>
+                        <li class="list-group-item border-0 p-0 me-4 mb-2">
+                            <button id="sort-promotions" class="btn btn-light fs-6 fs-sm-7 fs-md-6">
+                                <img src="../images/filter/type/power.png" alt="">
+                                <div>Power</div>
+                            </button>
+                        </li>
                     </ul>
                 </div>
                 <div class="row">
@@ -305,27 +289,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- second page-->
-                        <div class = "product-grid" id = "page-2">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0 h-100 d-flex flex-column">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rtx-5070.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">GIGABYTE GeForce RTX 5070 Ti AERO OC 16G 16GB GDDR7 Video Card (GV-N507TAERO OC-16GD)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$700</span>
-                                                <span class="text-muted text-decoration-line-through">$900</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
