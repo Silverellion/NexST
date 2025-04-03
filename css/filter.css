@@ -75,27 +75,27 @@ main {
 }
 
 .sortbar * {
-  background: transparent;
-  border: none;
-  color: white;
+  background: transparent !important;;
+  border: none !important;;
+  color: white !important;;
 }
 
 .sortbar li button:hover,
 .sortbar li button:active {
   backdrop-filter: blur(4px);
-  background-color: rgba(255, 174, 174, 0.3);
+  background-color: rgba(255, 174, 174, 0.3) !important;
   color: white;
 }
 
 .sortbar-image .list-group-item {
   border: none !important;
-  background: transparent;
+  background: transparent !important;
 }
 
 .sortbar-image .list-group-item button {
-  border: none; 
-  border-radius: 10px;
-  overflow: hidden;
+  border: none !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
 }
 
 .sortbar-image li button img {
