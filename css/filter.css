@@ -75,9 +75,9 @@ main {
 }
 
 .sortbar * {
-  background: transparent !important;;
-  border: none !important;;
-  color: white !important;;
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
 }
 
 .sortbar li button:hover,
