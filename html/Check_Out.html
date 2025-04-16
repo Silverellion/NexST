@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="../lib/bootstrap.bundle.js"></script>
+    <script src="../lib/jquery.js"></script>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/Check_Out.css">
+</head>
+
+<body>
+    <div id="header1-placeholder"></div>
+    <section>
+        <div class="main-checkout my-4 mx-auto">
+            <div class="container py-4">
+                <!-- Header Section -->
+                <div class="row mb-4 g-4">
+                    <div class="col-lg-7">
+                        <div class="header-box">
+                            <strong>Returning customer?</strong>
+                            <button style="border-style: none;">
+                                <a href="#" id="showLoginModal" class="text-danger">Click here to login</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header-box">
+                            <strong>Have a coupon?</strong>
+                            <a href="#" class="text-danger">Click here to enter your code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Section -->
+                <div class="row">
+                    <!-- Left: Form thanh toán -->
+                    <div class="col-md-7">
+                        <div class="form-section">
+                            <h5>Billing Detail</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>First Name *</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Last Name *</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <label>Company Name (Optional)</label>
+                            <input type="text" class="form-control">
+
+                            <label>Country / Region *</label>
+                            <select class="form-select">
+                                <option selected>Vietnam (VN)</option>
+                            </select>
+
+                            <label>Street Address *</label>
+                            <input type="text" class="form-control" placeholder="House number and street name">
+                            <input type="text" class="form-control"
+                                placeholder="Apartment, suite, unit, etc (Optional)">
+
+                            <label>Town / City *</label>
+                            <select class="form-select">
+                                <option selected>Ho Chi Minh City</option>
+                            </select>
+
+                            <label>Zip Code *</label>
+                            <input type="text" class="form-control">
+
+                            <label>Phone Number *</label>
+                            <input type="text" class="form-control">
+
+                            <label>Email Address *</label>
+                            <input type="email" class="form-control">
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="createAccount">
+                                <label class="form-check-label" for="createAccount">
+                                    Create an account?
+                                </label>
+                            </div>
+
+                            <label>Order Notes (Optional)</label>
+                            <textarea class="form-control" rows="3"
+                                placeholder="Note about your order, e.g. special note for delivery"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Right: Order Summary -->
+                    <div class="col-md-5 d-flex flex-column" style="min-height: 100%;">
+                        <div class="flex-grow-1"></div>
+                        <div class=" order-summary mt-auto">
+                            <h5>Your Order</h5>
+                            <div class="reverse-order-list">
+
+                            </div>
+
+                            <h5 class="text-end text-danger"></h5>
+
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="payment" checked>
+                                <label class="form-check-label">
+                                    Direct Bank Transfer
+                                </label>
+                                <div class="text-muted small ms-4">
+                                    Make your payment directly into our bank account...
+                                </div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment">
+                                <label class="form-check-label">
+                                    Cash on Delivery
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment">
+                                <label class="form-check-label">
+                                    Paypal <a href="#">What’s Paypal?</a>
+                                </label>
+                            </div>
+
+                            <button class="btn btn-danger w-100" id="place-order">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+    <script src="../scripts/Check_Out.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

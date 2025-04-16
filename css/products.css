@@ -1,0 +1,160 @@
+/* css cho cái sidebar và menu */
+
+main {
+    background-color: #BF0100;
+}
+
+.main-header {
+    height: 100%;
+}
+
+.sidebar-menu {
+    width: fit-content;
+    background-color: #2E2E2E;
+}
+
+.menu-item {
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgb(134, 133, 133, 0.5);
+}
+
+.submenu-container {
+    display: none;
+    width: 60%;
+    background-color: #2E2E2E;
+}
+
+.horizontal-menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #2E2E2E;
+    display: none;
+}
+
+/* Ẩn thanh cuộn trên Chrome, Edge, Safari */
+.horizontal-menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Các mục menu */
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.horizontal-menu a:hover {
+    background-color: #555;
+}
+
+/* ccs cho phần filter-menu */
+
+.filter-title {
+    color: #BF0100;
+    font-weight: bold;
+}
+
+.list-unstyled li:hover {
+    background-color: rgb(134, 133, 133, 0.5);
+    border-radius: 5px;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* CSS Của phần Main */
+/* css cho phần main header img */
+.main-header-img {
+    width: 70%;
+    height: 100%;
+}
+
+
+/* css cho phần hot-offers */
+.products-offers-cart {
+    background-color: #BF0100;
+}
+
+.tab-btn {
+    padding: 20px;
+    background-color: white;
+    border: none;
+}
+
+.tab-btn.active {
+    background: transparent;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    height: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.container-banner-panel {
+    background-image: url(../images/products/banneroffer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tab-btn-container::-webkit-scrollbar {
+    display: none;
+}
+
+.products-tab-content::-webkit-scrollbar {
+    display: none;
+}
+
+.products-tab-content-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.products-tab-content-card img:hover {
+    transform: scale(1.05);
+}
+
+.products-card-details {
+    background-color: #D7D7D7;
+    opacity: 70%;
+}
+
+/* css cho category-offer */
+
+
+/* Ẩn sidebar khi thu phóng 150% */
+@media (max-width: 1000px) {
+    .sidebar-menu {
+        display: none !important;
+    }
+
+    .submenu-container {
+        display: none !important;
+    }
+
+    .horizontal-menu {
+        display: flex !important;
+    }
+
+    .main-header-img {
+        width: 90%;
+        height: 100%;
+    }
+}

@@ -275,8 +275,7 @@ function toggleDarkMode() {
         icon.src = "../icons/nav/dark-mode.svg"; 
     }
 }
-//#endregion Dark Mode Handler
-//#region Extra Filter Options Handler
+
 function toggleSection(sectionId) {
     const content = document.getElementById(sectionId);
     const title = content.previousElementSibling;
@@ -284,4 +283,4 @@ function toggleSection(sectionId) {
     content.classList.toggle('filter-expanded');
     title.classList.toggle('active');
 }
-//#endregion Extra Filter Options Handler
+//#endregion Dark Mode Handler

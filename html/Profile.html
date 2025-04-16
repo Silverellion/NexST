@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="../lib/bootstrap.bundle.js"></script>
+    <script src="../lib/jquery.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/Profile.css">
+</head>
+
+<body>
+    <div id="header1-placeholder"></div>
+    <section>
+        <div class="container-center">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h3>My Account</h3>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="active">Dashboard</li>
+                    <li>Orders</li>
+                    <li>Addresses</li>
+                    <li>Account Details</li>
+                    <li>Change Password</li>
+                    <li>Wishlist</li>
+                    <li id="logout">Logout</li>
+                </ul>
+            </div>
+            <div class="dashboard-container">
+                <!-- Phần Giới Thiệu -->
+                <div class="mb-4">
+                    <h3>Hello, Nhan</h3>
+                    <p>
+                        From your account dashboard you can easily check & view your
+                        <a href="#" class="text-primary">Recent Order</a>. Manage your
+                        <a href="#" class="text-primary">Shipping and Billing Addresses</a> and
+                        edit your <a href="#" class="text-primary">Password and Account Details</a>
+                    </p>
+                </div>
+
+                <!-- Thông tin Section -->
+                <div class="row mb-4">
+                    <!-- Account Info Box -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="info-box">
+                            <div class="info-heading">ACCOUNT INFO</div>
+                            <div class="user-details">
+                                <div class="user-avatar">
+                                    <img src="../icons/nav/user.svg" alt="User">
+                                </div>
+                                <div>
+                                    <div>Nguyen Hoang Son</div>
+                                    <div class="text-muted">Govap - TP.HCM</div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <strong>Email:</strong> nguyensonn2k5@gmail.com
+                            </div>
+                            <div class="mb-2">
+                                <strong>Phone:</strong> +84 910JQKA
+                            </div>
+                            <div class="mb-3">
+                                <strong>Address:</strong> Govap, TP.HCM, VietNam
+                            </div>
+                            <button class="edit-btn" id="editaccount-btn">EDIT ACCOUNT</button>
+                        </div>
+                    </div>
+
+                    <!-- Billing Address -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="info-box">
+                            <div class="info-heading">BILLING ADDRESS</div>
+                            <div class="mb-2">Hoang Son</div>
+                            <div class="mb-2">12 Nguyen Van Bao Street, Ward 1, Go Vap</div>
+                            <div class="mb-2">District, Ho Chi Minh City</div>
+                            <div class="mb-2"><strong>Phone Number:</strong> +84 910JQKA</div>
+                            <div class="mb-3"><strong>Email:</strong> nguyensonn2k5@gmail.com</div>
+                            <button class="edit-btn" id="editaddress-btn">EDIT ADDRESS</button>
+                        </div>
+                    </div>
+
+                    <!-- Thống kê đơn hàng -->
+                    <div class="col-lg-4 col-md-12 mb-3">
+                        <div class="row h-100">
+                            <!-- Tổng đơn hàng -->
+                            <div class="col-lg-12 col-md-4 mb-3">
+                                <div class="info-box d-flex align-items-center">
+                                    <div class="stats-icon">
+                                        <img src="../images/svg/Handbag.svg" alt="Orders">
+                                    </div>
+                                    <div>
+                                        <div class="num-order h4 mb-0">0</div>
+                                        <div>Total Orders</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Đơn hàng đang xử lý -->
+                            <div class="col-lg-12 col-md-4 mb-3">
+                                <div class="info-box d-flex align-items-center">
+                                    <div class="stats-icon">
+                                        <img src="../images/svg/Receipt.svg" alt="Pending">
+                                    </div>
+                                    <div>
+                                        <div class="num-order h4 mb-0">0</div>
+                                        <div>Pending Orders</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Đơn hàng hoàn thành -->
+                            <div class="col-lg-12 col-md-4">
+                                <div class="info-box d-flex align-items-center">
+                                    <div class="stats-icon">
+                                        <img src="../images/svg/Package.svg" alt="Completed">
+                                    </div>
+                                    <div>
+                                        <div class="num-order h4 mb-0">0</div>
+                                        <div>Completed Orders</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Đơn hàng gần đây -->
+                <div class="mb-5">
+                    <div class="section-header">
+                        <h4>RECENT ORDERS</h4>
+                        <a href="#" class="view-link">
+                            View All
+                            <span class="arrow-icon">→</span>
+                        </a>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#23668881</td>
+                                    <td><span class="status-progress">In Progress</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$999 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#23668431</td>
+                                    <td><span class="status-canceled">Canceled</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$999 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#23668881</td>
+                                    <td><span class="status-completed">Completed</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$1,500 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#23668881</td>
+                                    <td><span class="status-canceled">Canceled</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$90 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#23668881</td>
+                                    <td><span class="status-completed">Completed</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$999 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#23668881</td>
+                                    <td><span class="status-completed">Completed</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$2,100 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#23668881</td>
+                                    <td><span class="status-progress">In Progress</span></td>
+                                    <td>DEC 30,2024 05:18</td>
+                                    <td>$999 (5 products)</td>
+                                    <td>
+                                        <a href="#" class="view-link">
+                                            View details
+                                            <span class="arrow-icon">→</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm bạn có thể thích -->
+                <div class="recomment-product">
+                    <div class="section-header">
+                        <h4>You may like</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="../images/products/Alienware Aurora R15.svg" alt="Belkin Type C Cable">
+                                </div>
+                                <div class="product-title">
+                                    Mô tả sản phẩm
+                                </div>
+                                <div>
+                                    <span class="price">999$</span>
+                                    <span class="old-price">1200$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="../images/products/Alienware Aurora R15.svg" alt="SanDisk Memory Card">
+                                </div>
+                                <div class="product-title">
+                                    Mô tả sản phẩm
+                                </div>
+                                <div>
+                                    <span class="price">999$</span>
+                                    <span class="old-price">1200$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="../images/products/Alienware Aurora R15.svg" alt="Stargo Battery">
+                                </div>
+                                <div class="product-title">
+                                    Mô tả
+                                </div>
+                                <div>
+                                    <span class="price">999$</span>
+                                    <span class="old-price">1200$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="../images/products/Alienware Aurora R15.svg" alt="Targus Dock">
+                                </div>
+                                <div class="product-title">
+                                    Mô tả
+                                </div>
+                                <div>
+                                    <span class="price">999$</span>
+                                    <span class="old-price">1200$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modalContainer"></div>
+    <div id="footer-placeholder"></div>
+    <script src="../scripts/Profile.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Thêm nút toggle vào sidebar-header
+            $('.sidebar-header').append('<button class="sidebar-toggle">☰</button>');
+
+            // Xử lý sự kiện click để hiện/ẩn sidebar-menu
+            $('.sidebar-toggle').on('click', function () {
+                $('.sidebar-menu').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="../lib/jquery.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    <title>Products Page</title>
+</head>
+
+<body class="master-container-neon-red">
+    <!-- header -->
+    <div id="header2-placeholder"></div>
+
+    <main>
+        <button class="btn btn-sm btn-outline-secondary sidebar-toggle" id="sidebarToggle">
+            <span id="toggleIcon">&#9664;</span>
+        </button>
+        <!-- filter -->
+        <div class="sidebar" id="filterSidebar">
+            <div id="filter-price">
+                <div class="filter-title" onclick="toggleSection('priceFilter')">
+                    <span>Price</span>
+                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+                </div>
+                <div class="filter-content filter-expanded" id="priceFilter">
+                    <div class="price-range">
+                        <div class="d-flex justify-content-between small text-muted mb-2">
+                            <span id="minPriceLabel">$0</span>
+                            <span id="maxPriceLabel">$10,000</span>
+                        </div>
+                        <div class="position-relative">
+                            <input type="range" class="form-range range-slider" min="0" max="10000" step="100"
+                                id="minPrice">
+                            <input type="range" class="form-range range-slider" min="0" max="10000" step="100"
+                                id="maxPrice">
+                            <div class="range-highlight"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="filter-content">
+                <!-- filter.html sẽ load vào đây -->
+            </div>
+        </div>
+
+        <!-- sort -->
+        <div class="main-content" id="mainContent">
+            <div class="container">
+                <div class="row mb-3">
+                    <ul class="list-group list-group-horizontal align-items-center sortbar flex-wrap">
+                        <li class="list-group-item border-0 fs-6 fs-md-5">Sort by:</li>
+                        <li class="list-group-item border-0 p-0"><button id="sort-promotions"
+                                class="btn fs-6 fs-sm-7 fs-md-6">Best promotions</button></li>
+                        <li class="list-group-item border-0 p-0"><button id="sort-price-asc"
+                                class="btn fs-6 fs-sm-7 fs-md-6">Price ascending</button></li>
+                        <li class="list-group-item border-0 p-0"><button id="sort-price-desc"
+                                class="btn fs-6 fs-sm-7 fs-md-6">Price descending</button></li>
+                        <li class="list-group-item border-0 p-0"><button id="sort-new"
+                                class="btn fs-6 fs-sm-7 fs-md-6">New products</button></li>
+                        <li class="list-group-item border-0 p-0"><button id="sort-bestselling"
+                                class="btn fs-6 fs-sm-7 fs-md-6">Best-selling products</button></li>
+                    </ul>
+                </div>
+
+                <div class="product-find"></div>
+
+            </div>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <!-- <script src="../scriptss/animated-searchbar.js"></script> -->
+    <script src="../scripts/filter.js"></script>
+    <script src="../scripts/productpage.js"></script>
+    <!-- <script src="../scripts/cart.js"></script> -->
+    <script src="../scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

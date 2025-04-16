@@ -82,20 +82,19 @@ main {
 
 .sortbar li button:hover,
 .sortbar li button:active {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px) !important;
   background-color: rgba(255, 174, 174, 0.3) !important;
-  color: white;
 }
 
 .sortbar-image .list-group-item {
   border: none !important;
-  background: transparent !important;
+  background: transparent;
 }
 
 .sortbar-image .list-group-item button {
-  border: none !important;
-  border-radius: 10px !important;
-  overflow: hidden !important;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .sortbar-image li button img {
@@ -288,24 +287,67 @@ main {
   display: inline-block;
   transition: transform 0.3s ease;
 }
+
 .circle-button:hover,
 .circle-button:active {
   transform: scale(1.5);
 }
-.gray { background: linear-gradient(to right, gray 50%, white 50%); }
-.pink { background: linear-gradient(to right, pink 50%, brown 50%); }
-.bluegray { background: linear-gradient(to right, slateblue 50%, gray 50%); }
-.red { background-color: red; }
-.yellow { background-color: yellow; }
-.blue { background-color: blue; }
-.lightpink { background-color: lightpink; }
-.rainbow { background: conic-gradient(red, yellow, green, cyan, blue, magenta, red); }
-.green { background-color: green; }
-.orange { background-color: orange; }
-.purple { background-color: purple; }
-.cyan { background-color: cyan; }
-.gold { background-color: gold; }
-.teal { background-color: teal; }
+
+.gray {
+  background: linear-gradient(to right, gray 50%, white 50%);
+}
+
+.pink {
+  background: linear-gradient(to right, pink 50%, brown 50%);
+}
+
+.bluegray {
+  background: linear-gradient(to right, slateblue 50%, gray 50%);
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.lightpink {
+  background-color: lightpink;
+}
+
+.rainbow {
+  background: conic-gradient(red, yellow, green, cyan, blue, magenta, red);
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.teal {
+  background-color: teal;
+}
 
 .dropdown-icon {
   transition: transform 0.3s ease;
@@ -342,16 +384,24 @@ main {
   flex-grow: 1;
 }
 
+.card-body:hover>img {
+  scale: 1.1;
+}
+
 .card-text {
   flex-grow: 1;
+}
+
+.card-body:hover .card-text.description {
+  color: blue;
 }
 
 .btn-shopping {
   color: rgb(225, 0, 0);
   font-weight: 600;
-  border: 2px solid rgb(225, 0, 0);
-  border-radius: 15px;
-  transition: transform 0.3s ease;
+  border: 2px solid rgb(225, 0, 0) !important;
+  border-radius: 15px !important;
+  transition: transform 0.3s ease !important;
 }
 
 .btn-shopping:hover {
@@ -409,6 +459,7 @@ main {
 .product-grid {
   display: none;
 }
+
 .product-grid.active {
   display: block;
 }
@@ -417,13 +468,16 @@ main {
   background-color: rgb(30, 30, 30);
   color: rgb(255, 255, 255);
 }
+
 .dark-mode .card {
   background-color: rgb(30, 30, 30);
   color: rgb(255, 255, 255);
 }
+
 .dark-mode .text-muted {
   color: rgb(187, 187, 187) !important;
 }
+
 .dark-mode .main-panel {
   background-color: rgb(30, 30, 30);
 }
@@ -441,6 +495,7 @@ main {
   text-align: center;
   width: 100%;
 }
+
 .brand-btn:hover {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.5);

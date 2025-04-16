@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    <script src="../lib/jquery.js"></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column">
+        <div id="header-placeholder">
+
+        </div>
+
+        <main class="flex-grow-1">
+            <div class="horizontal-menu w-100">
+                <ul class="list-unstyled d-flex flex-nowrap">
+                    <li class="me-3"><a href="#" data-category="laptop">Laptop</a></li>
+                    <li class="me-3"><a href="#pc" data-category="pc">PC - Desktop Computers</a></li>
+                    <li class="me-3"><a href="#" data-category="monitor">Computer Monitors</a></li>
+                    <li class="me-3"><a href="#" data-category="component">Computer Components</a></li>
+                    <li class="me-3"><a href="#" data-category="gear">Gaming Gear</a></li>
+                    <li class="me-3"><a href="#" data-category="accessories">Accessories</a></li>
+                    <li class="me-3"><a href="#" data-category="audio">Audio Devices</a></li>
+                    <li class="me-3"><a href="#">Office Equipment</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="main-header d-flex mt-5 mb-5 pb-2">
+                    <div class="sidebar-menu p-3 rounded-5">
+                        <ul class="list-unstyled d-flex flex-column gap-1">
+                            <li id="laptop-menu" class="menu-item d-flex gap-5 p-2 rounded-3" data-content="laptop">
+                                <a href="#Laptop"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/badge.svg" alt="laptop-icon">
+                                    <span class="ms-2">Laptop</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="pc">
+                                <a href="#PC"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/pc.svg" alt="pc-icon">
+                                    <span class="ms-2">PC - Desktop Computers</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="monitor">
+                                <a href="#ComputerMonitor"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/monitor.svg" alt="monitor-icon">
+                                    <span class="ms-2">Computer Monitors</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="component">
+                                <a href="#ComputerComponent"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/component.svg" alt="component-icon">
+                                    <span class="ms-2">Computer Components</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="gear">
+                                <a href="#Gear"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/gear.svg" alt="gear-icon">
+                                    <span class="ms-2">Gaming Gear</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="accessories">
+                                <a href="#Accessories"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/accessories.svg" alt="accessories-icon">
+                                    <span class="ms-2">Accessories</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="audio">
+                                <a href="#AudioDevices"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/Audio.svg" alt="audio-icon">
+                                    <span class="ms-2">Audio Devices</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="office">
+                                <a href="#Office"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/office.svg" alt="office-icon">
+                                    <span class="ms-2">Office Equipment</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex gap-5 p-2 rounded-3" data-content="business">
+                                <a href="#Business"
+                                    class="d-flex text-white text-decoration-none flex-nowrap align-items-center">
+                                    <img src="../icons/sidebar-menu/business.svg" alt="business-icon">
+                                    <span class="ms-2">Business Solutions</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="submenu-container p-3 rounded-5">
+                        <div id="submenu-content">
+                        </div>
+                    </div>
+
+                    <div class="main-header-img my-auto mx-auto">
+                        <img src="../images/products/section.svg" class="img-fluid rounded-5" alt="adsmain">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hot-offers bg-white py-4" style="width: 100%;">
+                <div class="container">
+                    <div class="top-offers">
+                        <span class="fw-bold fs-4">Popular Searches</span>
+                        <hr>
+                    </div>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+                        <div class="col">
+                            <div class="products-offers shadow p-2 h-100 d-flex flex-column justify-content-between">
+                                <img src="../images/products/image 1.svg" class="img-fluid" alt="">
+                                <div class="products-offers-name">
+                                    <p>NVIDIA GeForce RTX 4090</p>
+                                </div>
+                                <div class="products-offers-price d-flex justify-content-between align-items-center">
+                                    <span class="fw-semibold">998$ <del
+                                            class="text-secondary fw-normal">1200$</del></span>
+                                    <button class="products-offers-cart btn btn-sm btn-dark border-0"><img
+                                            src="../icons/hot offers/badge.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="products-offers shadow p-2 h-100 d-flex flex-column justify-content-between">
+                                <img src="../images/products/image 3.svg" class="img-fluid" alt="">
+                                <div class="products-offers-name">
+                                    <p>PC ASUS Blackwell</p>
+                                </div>
+                                <div class="products-offers-price d-flex justify-content-between align-items-center">
+                                    <span class="fw-semibold">998$ <del
+                                            class="text-secondary fw-normal">1200$</del></span>
+                                    <button class="products-offers-cart btn btn-sm btn-dark border-0"><img
+                                            src="../icons/hot offers/badge.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="products-offers shadow p-2 h-100 d-flex flex-column justify-content-between">
+                                <img src="../images/products/image 2.svg" class="img-fluid" alt="">
+                                <div class="products-offers-name">
+                                    <p>Steelseries Aerox 3 Wireless Snow Edition</p>
+                                </div>
+                                <div class="products-offers-price d-flex justify-content-between align-items-center">
+                                    <span class="fw-semibold">998$ <del
+                                            class="text-secondary fw-normal">1200$</del></span>
+                                    <button class="products-offers-cart btn btn-sm btn-dark border-0"><img
+                                            src="../icons/hot offers/badge.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="products-offers shadow p-2 h-100 d-flex flex-column justify-content-between">
+                                <img src="../images/products/image 1.svg" class="img-fluid" alt="">
+                                <div class="products-offers-name">
+                                    <p>NVIDIA GeForce RTX 4090</p>
+                                </div>
+                                <div class="products-offers-price d-flex justify-content-between align-items-center">
+                                    <span class="fw-semibold">998$ <del
+                                            class="text-secondary fw-normal">1200$</del></span>
+                                    <button class="products-offers-cart btn btn-sm btn-dark border-0"><img
+                                            src="../icons/hot offers/badge.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="products-offers shadow p-2 h-100 d-flex flex-column justify-content-between">
+                                <img src="../images/products/image 1.svg" class="img-fluid" alt="">
+                                <div class="products-offers-name">
+                                    <p>NVIDIA GeForce RTX 4090</p>
+                                </div>
+                                <div class="products-offers-price d-flex justify-content-between align-items-center">
+                                    <span class="fw-semibold">998$ <del
+                                            class="text-secondary fw-normal">1200$</del></span>
+                                    <button class="products-offers-cart btn btn-sm btn-dark border-0"><img
+                                            src="../icons/hot offers/badge.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-banners">
+                <img src="../images/products/banner ads.svg" class="img-fluid w-100" alt="Banner">
+            </div>
+
+            <div class="bg-white py-4">
+                <div class="container container-banner-panel p-0 rounded-3">
+                    <div class="tab-btn-container d-flex w-100 flex-nowrap overflow-auto">
+                        <div class="flex-grow-1"><button class="tab-btn w-100 active fw-bold"
+                                onclick="openTab(event, 'GAMING')">LAPTOP GAMING</button></div>
+                        <div class="flex-grow-1"><button class="tab-btn w-100 fw-bold"
+                                onclick="openTab(event, 'AI')">LAPTOP AI</button></div>
+                        <div class="flex-grow-1"><button class="tab-btn w-100 fw-bold"
+                                onclick="openTab(event, 'OFFICE')">LAPTOP OFFICE</button></div>
+                        <div class="flex-grow-1"><button class="tab-btn w-100 fw-bold"
+                                onclick="openTab(event, 'STUDENT')">LAPTOP STUDENT</button></div>
+                        <div class="flex-grow-1"><button class="tab-btn w-100 fw-bold"
+                                onclick="openTab(event, 'GRAPHICS')">LAPTOP GRAPHICS</button></div>
+                    </div>
+
+                    <div id="GAMING" class="tab-content active">
+                        <div class="products-tab-content d-flex w-100 flex-nowrap overflow-auto gap-3">
+
+                        </div>
+                    </div>
+
+                    <div id="AI" class="tab-content">
+                        <div class="products-tab-content d-flex w-100 flex-nowrap overflow-auto gap-3">
+
+                        </div>
+                    </div>
+
+                    <div id="OFFICE" class="tab-content">
+                        <div class="products-tab-content d-flex w-100 flex-nowrap overflow-auto gap-3">
+
+                        </div>
+                    </div>
+
+                    <div id="STUDENT" class="tab-content">
+                        <div class="products-tab-content d-flex w-100 flex-nowrap overflow-auto gap-3">
+
+                        </div>
+                    </div>
+
+                    <div id="GRAPHICS" class="tab-content">
+                        <div class="products-tab-content d-flex w-100 flex-nowrap overflow-auto gap-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-banners">
+                <img src="../images/products/banner ads.svg" class="img-fluid w-100" alt="Banner">
+            </div>
+
+            <div class="category-offer-container bg-white pt-3">
+                <div class="container p-0 rounded-3" style="background: linear-gradient(#BF0100, #5f1010);">
+                    <div class="top-category-offer ">
+                        <h4 class="text-white fw-bold border-bottom py-3 ps-4">PC - Desktop Computer</h4>
+                    </div>
+                    <div id="bot-category-offer"
+                        class="bot-category-offer d-flex w-100 flex-nowrap overflow-auto gap-3 py-3 px-3">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-offer-container bg-white p-3 px-5">
+                <div class="container p-0 rounded-3" style="background: linear-gradient(#BF0100, #5f1010);">
+                    <div class="top-category-offer ">
+                        <h4 class="text-white fw-bold border-bottom py-3 ps-4">Computer Monitors</h4>
+                    </div>
+                    <div id="bot-category-offer-monitors"
+                        class="bot-category-offer d-flex w-100 flex-nowrap overflow-hidden py-2 px-2 gap-2">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-banners bg-white row">
+                <div class="col-6">
+                    <img src="../images/products/leftbanner.png" class="img-fluid w-100" alt="Banner">
+                </div>
+                <div class="col-6">
+                    <img src="../images/products/rightbanner.png" class="img-fluid w-100" alt="Banner">
+                </div>
+            </div>
+
+            <div class="category-offer-container bg-white p-3 px-5">
+                <div class="container p-0 rounded-3">
+                    <div class="top-category-offer ">
+                        <h4 class="fw-bold py-3 ps-4">Features Product</h4>
+                    </div>
+                    <div id="feature-products"
+                        class="bot-category-offer d-flex w-100 flex-nowrap overflow-hidden py-2 px-2 gap-2">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-placeholder">
+
+        </div>
+    </div>
+    <script src="../scripts/products.js"></script>
+    <script src="../lib/bootstrap.bundle.js"></script>
+</body>
+
+</html>

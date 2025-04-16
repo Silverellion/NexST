@@ -27,17 +27,17 @@
 }
 
 .default-red-button {
-    padding: 15px;
-    background: rgb(191,0,0);
-    color: white;
+    padding: 15px !important;
+    background: rgb(191,0,0) !important;
+    color: white !important;
     border: none;
     border-radius: 10px;
 }
 
 .default-red-button:hover {
-    background: rgb(136, 0, 0);
-    color: white;
-    cursor: pointer;
+    background: rgb(136, 0, 0) !important;
+    color: white !important;
+    cursor: pointer !important;
 }
 
 .sidepanel {

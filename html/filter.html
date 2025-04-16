@@ -1,695 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
     <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="../lib/jquery.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/filter.css">
-    <title>PC Components</title>
+
 </head>
-<body class = "master-container-neon-red">
-    <!-- MAIN.CSS HEADER -->
-    <header>
-        <div class = "pre-nav-container">
-            <div class="pre-nav"> 
-                <div class="nav-row"> 
-                    <div class="nav-social"> 
-                        <span>Follow us: </span> 
-                        <a><img src="../icons/social/facebook.svg" alt=""></a> 
-                        <a><img src="../icons/social/instagram.svg" alt=""></a> 
-                        <a><img src="../icons/social/twitter-bird.svg" alt=""></a> 
-                    </div> 
-                    <div class="scrolling-container"> 
-                        <div class="scrolling-text"> 
-                            <span>Summer is coming! 50% off all components</span> 
-                        </div> 
-                    </div> 
-                    <div class="address"> 
-                        <div class="contact-item"> 
-                            <img src="../icons/social/phone.svg" alt=""> 
-                            <a href="#">(+84) 910JQKA</a> 
-                        </div> 
-                        <div class="contact-item"> 
-                            <img src="../icons/social/email.svg" alt=""> 
-                            <a href="#">nexst@gmail.com</a> 
-                        </div> 
-                    </div> 
-                </div> 
-            </div>
-        </div>
-        
-        <div class = "navbar-container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center">
-                        <button class="navbar-toggler me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="logo">NexST</div>
-                    </div>
-                    
-                    <div class="collapse navbar-collapse" id="nav-links">
-                        <ul class="navbar-nav nav-link mx-auto">
-                            <li class=""><a href="#">Home</a></li>
-                            <li class=""><a href="#">Products</a></li>
-                            <li class=""><a href="#">Pages</a></li>
-                            <li class=""><a href="#">About us</a></li>
-                            <li class=""><a href="./contact.html">Contact us</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="nav-button">
-                        <button class="btn btn-light d-flex">
-                            <img src="../icons/nav/user.svg" alt="" class="me-1">
-                            <span class="d-none d-sm-inline">Login</span>
-                        </button>
-                        <button class="btn btn-light"><img src="../icons/nav/shopping-cart.svg" alt=""></button>
-                        <button class="btn btn-light" onclick="toggleDarkMode()"><img id="modeIcon" src="../icons/nav/dark-mode.svg" alt=""></button>
-                        <button class="btn btn-light"><img src="../icons/nav/language-globe.svg" alt=""></button>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- END OF MAIN.CSS HEADER -->
-    <main>
-        <button class="btn btn-sm btn-outline-secondary sidebar-toggle" id="sidebarToggle">
-            <span id="toggleIcon">&#9664;</span>
-        </button>
-        
-        <div class="sidebar" id="filterSidebar">
-            <!-- Price Filter -->
-            <div class="filter-title" onclick="toggleSection('priceFilter')">
-                <span>Price</span>
+
+<body>
+
+
+    <div id="filter-pc">
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('pcSegmentFilter')">
+                <span>PC segment</span>
                 <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
             </div>
-            <div class="filter-content filter-expanded" id="priceFilter">
-                <div class="price-range">
-                    <div class="d-flex justify-content-between small text-muted mb-2">
-                        <span id="minPriceLabel">$0</span>
-                        <span id="maxPriceLabel">$10,000</span>
-                    </div>
-                    <div class="position-relative">
-                        <input type="range" class="form-range range-slider" min="0" max="10000" step="100" id="minPrice">
-                        <input type="range" class="form-range range-slider" min="0" max="10000" step="100" id="maxPrice">
-                        <div class="range-highlight"></div>
-                    </div>
+            <div class="filter-content filter-expanded" id="pcSegmentFilter">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="pcAI">
+                    <label class="form-check-label" for="pcAI">PC AI</label>
                 </div>
-            </div>
-            
-            <!-- PC Segment Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('pcSegmentFilter')">
-                    <span>PC segment</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="pcGaming">
+                    <label class="form-check-label" for="pcGaming">PC Gaming</label>
                 </div>
-                <div class="filter-content filter-expanded" id="pcSegmentFilter">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="pcAI">
-                        <label class="form-check-label" for="pcAI">PC AI</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="pcGaming">
-                        <label class="form-check-label" for="pcGaming">PC Gaming</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="miniPC">
-                        <label class="form-check-label" for="miniPC">Mini PC</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="officePC">
-                        <label class="form-check-label" for="officePC">Office PC</label>
-                    </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="miniPC">
+                    <label class="form-check-label" for="miniPC">PC Mini</label>
                 </div>
-            </div>
-            
-            <!-- CPU Series Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('cpuSeriesFilter')">
-                    <span>CPU Series</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="cpuSeriesFilter">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="intelI7">
-                        <label class="form-check-label" for="intelI7">Intel Core i7</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="intelI5">
-                        <label class="form-check-label" for="intelI5">Intel Core i5</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="amdRyzen5">
-                        <label class="form-check-label" for="amdRyzen5">AMD Ryzen 5</label>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Graphics Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('graphicsFilter')">
-                    <span>Discrete Graphics</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="graphicsFilter">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="rtx3060">
-                        <label class="form-check-label" for="rtx3060">GeForce RTX™ 3060</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="rtx4060">
-                        <label class="form-check-label" for="rtx4060">GeForce RTX™ 4060</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="rtx5060">
-                        <label class="form-check-label" for="rtx5060">GeForce RTX™ 5060</label>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- RAM Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('ramFilter')">
-                    <span>Ram Capacity</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="ramFilter">
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="ram128">
-                        <label class="form-check-label" for="ram128">128GB</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="ram64">
-                        <label class="form-check-label" for="ram64">64GB</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="ram32">
-                        <label class="form-check-label" for="ram32">32GB</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input class="form-check-input modified-checbox" type="checkbox" id="ram16">
-                        <label class="form-check-label" for="ram16">16GB</label>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SSD Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('ssdFilter')">
-                    <span>SSD Capacity</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="ssdFilter">
-                    <!-- SSD options would go here -->
-                </div>
-            </div>
-            
-            <!-- HDD Filter -->
-            <div class="filter-section">
-                <div class="filter-title" onclick="toggleSection('hddFilter')">
-                    <span>HDD Capacity</span>
-                    <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
-                </div>
-                <div class="filter-content filter-expanded" id="hddFilter">
-                    <!-- HDD options would go here -->
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="officePC">
+                    <label class="form-check-label" for="officePC">PC Office</label>
                 </div>
             </div>
         </div>
-        
-        <div class="main-content" id="mainContent">
-            <div class="container">
-                <div class="row mb-3">
-                    <ul class="list-group list-group-horizontal align-items-center sortbar flex-wrap">
-                        <li class="list-group-item border-0 fs-6 fs-md-5">Sort by:</li>
-                        <li class="list-group-item border-0 p-0"><button id="sort-promotions" class="btn fs-6 fs-sm-7 fs-md-6">Best promotions</button></li>
-                        <li class="list-group-item border-0 p-0"><button id="sort-price-asc" class="btn fs-6 fs-sm-7 fs-md-6">Price ascending</button></li>
-                        <li class="list-group-item border-0 p-0"><button id="sort-price-desc" class="btn fs-6 fs-sm-7 fs-md-6">Price descending</button></li>
-                        <li class="list-group-item border-0 p-0"><button id="sort-new" class="btn fs-6 fs-sm-7 fs-md-6">New products</button></li>
-                        <li class="list-group-item border-0 p-0"><button id="sort-bestselling" class="btn fs-6 fs-sm-7 fs-md-6">Best-selling products</button></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 main-panel">
-                        <!-- First page -->
-                        <div class = "product-grid active" id = "page-1">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0 h-100 d-flex flex-column">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/auros-case.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">PC GVN x AORUS XTREME ICE (Intel i9-14900K/ VGA RTX 4080 Super)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2000</span>
-                                                <span class="text-muted text-decoration-line-through">$2500</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0 h-100 d-flex flex-column">
-                                            <img src="../images/filter/products/auros-case.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">PC GVN x AORUS XTREME ICE (Intel i9-14900K/ VGA RTX 4080 Super)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2000</span>
-                                                <span class="text-muted text-decoration-line-through">$2500</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0 h-100 d-flex flex-column">
-                                            <img src="../images/filter/products/auros-case.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">PC GVN x AORUS XTREME ICE (Intel i9-14900K/ VGA RTX 4080 Super)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2000</span>
-                                                <span class="text-muted text-decoration-line-through">$2500</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0 h-100 d-flex flex-column">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rog-strix.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$1599</span>
-                                                <span class="text-muted text-decoration-line-through">1899$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/lenovo-legion.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Gaming laptop Lenovo Legion Pro 7 16IRX9H - 83DE001MVN</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2399</span>
-                                                <span class="text-muted text-decoration-line-through">2799$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/lenovo-legion.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Gaming laptop Lenovo Legion Pro 7 16IRX9H - 83DE001MVN</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2399</span>
-                                                <span class="text-muted text-decoration-line-through">2799$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/lenovo-legion.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Gaming laptop Lenovo Legion Pro 7 16IRX9H - 83DE001MVN</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2399</span>
-                                                <span class="text-muted text-decoration-line-through">2799$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/lenovo-legion.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">Gaming laptop Lenovo Legion Pro 7 16IRX9H - 83DE001MVN</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$2399</span>
-                                                <span class="text-muted text-decoration-line-through">2799$</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        
 
-                        </div>
-                        <!-- second page-->
-                        <div class = "product-grid" id = "page-2">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0 h-100 d-flex flex-column">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rtx-5070.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">GIGABYTE GeForce RTX 5070 Ti AERO OC 16G 16GB GDDR7 Video Card (GV-N507TAERO OC-16GD)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$700</span>
-                                                <span class="text-muted text-decoration-line-through">$900</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0 h-100 d-flex flex-column">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rtx-5070.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">GIGABYTE GeForce RTX 5070 Ti AERO OC 16G 16GB GDDR7 Video Card (GV-N507TAERO OC-16GD)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$700</span>
-                                                <span class="text-muted text-decoration-line-through">$900</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0 h-100 d-flex flex-column">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rtx-5070.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">GIGABYTE GeForce RTX 5070 Ti AERO OC 16G 16GB GDDR7 Video Card (GV-N507TAERO OC-16GD)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$700</span>
-                                                <span class="text-muted text-decoration-line-through">$900</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-0">
-                                    <div class="card p-0 h-100 d-flex flex-column">
-                                        <div class="card-body m-0">
-                                            <img src="../images/filter/products/rtx-5070.png" alt="" class="w-100 mb-3">
-                                            <p class="card-text">GIGABYTE GeForce RTX 5070 Ti AERO OC 16G 16GB GDDR7 Video Card (GV-N507TAERO OC-16GD)</p>
-                                            <p class="card-text">
-                                                <span class="product-price fw-bold pe-2">$700</span>
-                                                <span class="text-muted text-decoration-line-through">$900</span>
-                                            </p>
-                                            <button class="btn btn-shopping d-flex align-items-center w-100 position-relative">
-                                                <span class="mx-auto">Add To Basket</span>
-                                                <img src="../icons/transactional/shopping-cart.svg" alt="" class="position-absolute end-0">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- CPU Series Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('cpuSeriesFilter')">
+                <span>CPU</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="cpuSeriesFilter">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="intelI7">
+                    <label class="form-check-label" for="intelI7">Intel Core i7</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="intelI5">
+                    <label class="form-check-label" for="intelI5">Intel Core i5</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="amdRyzen5">
+                    <label class="form-check-label" for="amdRyzen5">AMD Ryzen 5</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graphics Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('graphicsFilter')">
+                <span>GPU</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="graphicsFilter">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="rtx3060">
+                    <label class="form-check-label" for="rtx3060">GeForce RTX™ 3060</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="rtx4060">
+                    <label class="form-check-label" for="rtx4060">GeForce RTX™ 4060</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="rtx5060">
+                    <label class="form-check-label" for="rtx5060">GeForce RTX™ 5060</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- RAM Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('ramFilter')">
+                <span>RAM</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="ramFilter">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="ram128">
+                    <label class="form-check-label" for="ram128">128GB</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="ram64">
+                    <label class="form-check-label" for="ram64">64GB</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="ram32">
+                    <label class="form-check-label" for="ram32">32GB</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="ram16">
+                    <label class="form-check-label" for="ram16">16GB</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- SSD Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('ssdFilter')">
+                <span>SSD</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="ssdFilter">
+                <!-- SSD options would go here -->
+            </div>
+        </div>
+
+        <!-- HDD Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('hddFilter')">
+                <span>HDD</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="hddFilter">
+                <!-- HDD options would go here -->
+            </div>
+        </div>
+    </div>
+    <!-- PC Segment Filter -->
+    <div id="filter-laptop">
+        <!-- CPU Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('cpuSeriesFilter')">
+                <span>CPU</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+
+            <div class="filter-content filter-expanded" id="cpuSeriesFilter">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-cpu" type="checkbox" id="intelI9" value="i9">
+                    <label class="form-check-label" for="intelI9">Intel Core i9</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-cpu" type="checkbox" id="intelI7" value="i7">
+                    <label class="form-check-label" for="intelI7">Intel Core i7</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-cpu" type="checkbox" id="intelI5" value="i5">
+                    <label class="form-check-label" for="intelI5">Intel Core i5</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-cpu" type="checkbox" id="amdRyzen5"
+                        value="ryzen 5">
+                    <label class="form-check-label" for="amdRyzen5">AMD Ryzen 5</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- GPU Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('graphicsFilter')">
+                <span>GPU</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+
+            <div class="filter-content filter-expanded" id="graphicsFilter">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-gpu" type="checkbox" id="gpu3060"
+                        value="3060">
+                    <label class="form-check-label" for="gpu3060">GeForce RTX™ 3060</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-gpu" type="checkbox" id="gpu4060"
+                        value="4060">
+                    <label class="form-check-label" for="gpu4060">GeForce RTX™ 4060</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-gpu" type="checkbox" id="gpu4090"
+                        value="4090">
+                    <label class="form-check-label" for="gpu4090">GeForce RTX™ 4090</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen Size Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('screenSize')">
+                <span>Screen Size</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+
+            <div class="filter-content filter-expanded" id="screenSize">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-screen" type="checkbox" id="size11"
+                        data-min="11" data-max="13.9">
+                    <label class="form-check-label" for="size11">11" - 13.9"</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-screen" type="checkbox" id="size14"
+                        data-min="14" data-max="14.9">
+                    <label class="form-check-label" for="size14">14" - 14.9"</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-screen" type="checkbox" id="size15"
+                        data-min="15" data-max="15.9">
+                    <label class="form-check-label" for="size15">15" - 15.9"</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-screen" type="checkbox" id="size16"
+                        data-min="16" data-max="16.9">
+                    <label class="form-check-label" for="size16">16" - 16.9"</label>
+                </div>
+
+                <div class="hidden-options" id="moreSizes">
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-screen" type="checkbox" id="size17"
+                            data-min="17" data-max="17.9">
+                        <label class="form-check-label" for="size17">17" - 17.9"</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-screen" type="checkbox" id="size18"
+                            data-min="18" data-max="18.9">
+                        <label class="form-check-label" for="size18">18" - 18.9"</label>
                     </div>
                 </div>
 
-                <div class="pagination-container">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous" id="prev-page">
-                                    <span aria-hidden="true">&lang;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#" data-page="1">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next" id="next-page">
-                                    <span aria-hidden="true">&rang;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreSizes', this)">See more</span>
             </div>
         </div>
-    </main>
-    <!-- MAIN.CSS FOOTER -->
-    <footer>
-        <div class="container-fluid p-0 info-container">
-            <div class="footer-top row m-0">
-                <div class="col-md-3 col-sm-6 feature d-flex">
-                    <img src="../icons/footer/user.svg" alt="">
-                    <div>
-                        <h3>Online Support</h3>
-                        <p>Dedicated Support Team</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 feature d-flex">
-                    <img src="../icons/footer/truck.svg" alt="">
-                    <div>
-                        <h3>Free Shipping</h3>
-                        <p>Purchases Over $100</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 feature d-flex">
-                    <img src="../icons/footer/bag.svg" alt="">
-                    <div>
-                        <h3>Timeless Shopping</h3>
-                        <p>24/7 Purchasing</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 feature d-flex">
-                    <img src="../icons/footer/currency-exchange.svg" alt="">
-                    <div>
-                        <h3>Product Returns</h3>
-                        <p>No-Questions-Asked Returns</p>
-                    </div>
-                </div>
+
+
+        <!-- Refresh Rate Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('refreshRate')">
+                <span>RefreshRate</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
             </div>
-        
-            <div class="footer-middle row m-0 py-4 pl-3 ms-5">
-                <div class="col-lg-3 col-md-6 footer-column mb-4">
-                    <h3>Stay Connected</h3>
-                    <p><a href="">Address: HCM City, Vietnam</a></p>
-                    <p class="mb-4"><a href="">Phone: (+84) 910JQKA</a></p>
-                    <h3 class="mb-2">Follow us on social media</h3>
-                    <div class="social-icons d-flex flex-wrap">
-                        <a href="#"><img src="../icons/social/twitter-bird.svg" alt="Twitter"></a>
-                        <a href="#"><img src="../icons/social/facebook.svg" alt="Facebook"></a>
-                        <a href="#"><img src="../icons/social/linkedin.svg" alt="LinkedIn"></a>
-                        <a href="#"><img src="../icons/social/instagram.svg" alt="Instagram"></a>
-                    </div>                    
+
+            <div class="filter-content filter-expanded" id="refreshRate">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-refresh" type="checkbox" id="60hz"
+                        value="60">
+                    <label class="form-check-label" for="60hz">60hz</label>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-column mb-4">
-                    <h3>Next System</h3>
-                    <p><a href="#">About Us</a></p>
-                    <p><a href="#">Careers</a></p>
-                    <p><a href="#">Collaboration</a></p>
-                    <p><a href="#">Dashboard</a></p>
-                    <p><a href="#">Policies</a></p>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-refresh" type="checkbox" id="144hz"
+                        value="144">
+                    <label class="form-check-label" for="144hz">144hz</label>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-column mb-4">
-                    <h3>Customer Services</h3>
-                    <p><a href="#">Rules and Regulations</a></p>
-                    <p><a href="#">Terms of Use</a></p>
-                    <p><a href="#">Return Procedures</a></p>
-                    <p><a href="#">Privacy Policy</a></p>
-                    <p><a href="#">Forums</a></p>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-refresh" type="checkbox" id="240hz"
+                        value="240">
+                    <label class="form-check-label" for="240hz">240hz</label>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-column mb-4">
-                    <h3>Quick Access</h3>
-                    <p><a href="../html/contact.html">Contact Us</a></p>
-                    <p><a href="#">Blog</a></p>
-                    <p><a href="#">Returns and Refunds</a></p>
-                    <p><a href="#">Track Order</a></p>
-                    <p><a href="#">FAQ</a></p>
-                </div>                
-            </div>
-        
-            <div class="footer-bottom row m-0 px-md-5 py-3">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h3>Payment Method</h3>
-                    <div class="d-flex flex-wrap">
-                        <img src="../icons/banking/paypal.svg" alt="" class="me-2 mb-2">
-                        <img src="../icons/banking/mastercard.svg" alt="" class="me-2 mb-2">
-                        <img src="../icons/banking/visa.svg" alt="" class="me-2 mb-2">
-                        <img src="../icons/banking/stripe.svg" alt="" class="me-2 mb-2">
-                        <img src="../icons/banking/klarna.svg" alt="" class="me-2 mb-2">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-refresh" type="checkbox" id="360hz"
+                        value="360">
+                    <label class="form-check-label" for="360hz">360hz</label>
+                </div>
+
+                <div class="hidden-options" id="moreRefreshRates">
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-refresh" type="checkbox" id="480hz"
+                            value="480">
+                        <label class="form-check-label" for="480hz">480hz</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-refresh" type="checkbox" id="600hz"
+                            value="600">
+                        <label class="form-check-label" for="600hz">600hz</label>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h3>List of Online Payment Banks</h3>
-                    <img src="../icons/banking/vietnamese-banks.png" style="width: 100%;" alt="">
+
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreRefreshRates', this)">See more</span>
+            </div>
+        </div>
+
+        <!-- Response Time Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('responseTime')">
+                <span>Response Time</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+
+            <div class="filter-content filter-expanded" id="responseTime">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-response" type="checkbox" id="5ms" value="5">
+                    <label class="form-check-label" for="5ms">5ms</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-response" type="checkbox" id="1ms" value="1">
+                    <label class="form-check-label" for="1ms">1ms</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-response" type="checkbox" id="0.1ms"
+                        value="0.1">
+                    <label class="form-check-label" for="0.1ms">0.1ms</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-response" type="checkbox" id="0.03ms"
+                        value="0.03">
+                    <label class="form-check-label" for="0.03ms">0.03ms</label>
+                </div>
+
+                <div class="hidden-options" id="moreResponseTimes">
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-response" type="checkbox" id="0.01ms"
+                            value="0.01">
+                        <label class="form-check-label" for="0.01ms">0.01ms</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-response" type="checkbox" id="0.005ms"
+                            value="0.005">
+                        <label class="form-check-label" for="0.005ms">0.005ms</label>
+                    </div>
+                </div>
+
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreResponseTimes', this)">See more</span>
+            </div>
+        </div>
+
+        <!-- Resolution Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('resolution')">
+                <span>Resolution</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+
+            <div class="filter-content filter-expanded" id="resolution">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-resolution" type="checkbox" id="res1366"
+                        value="1366 x 768">
+                    <label class="form-check-label" for="res1366">1366 x 768</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-resolution" type="checkbox" id="res1920"
+                        value="1920 x 1080">
+                    <label class="form-check-label" for="res1920">1920 x 1080</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-resolution" type="checkbox" id="res2560"
+                        value="2560 x 1440">
+                    <label class="form-check-label" for="res2560">2560 x 1440</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox filter-resolution" type="checkbox" id="res3840"
+                        value="3840 x 2160">
+                    <label class="form-check-label" for="res3840">3840 x 2160</label>
+                </div>
+
+                <div class="hidden-options" id="moreScreenSizes">
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-resolution" type="checkbox" id="res7680"
+                            value="7680 x 4320">
+                        <label class="form-check-label" for="res7680">7680 x 4320</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox filter-resolution" type="checkbox" id="res15360"
+                            value="15360 x 8640">
+                        <label class="form-check-label" for="res15360">15360 x 8640</label>
+                    </div>
+                </div>
+
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreScreenSizes', this)">See more</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Screen Size Filter -->
+    <div id="filter-component">
+        <!-- General Brand Filter -->
+        <div class="filter-title" onclick="toggleSection('brandFilter')">
+            <span>Brand</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+        </div>
+        <div class="filter-content filter-expanded" id="brandFilter">
+            <div class="row g-2 mb-2">
+                <div class="col-6 col-sm-4">
+                    <button class="brand-btn w-100">Acbel</button>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <button class="brand-btn w-100">Acer</button>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <button class="brand-btn w-100">Amd</button>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">Adata</button>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">Gigabyte</button>
                 </div>
             </div>
         </div>
-        
-        <div class="footer-copyright py-2 text-center">
-            © All Rights Reserved for PC Component - 2025
+
+        <!-- CPU Brand Filter -->
+        <div class="filter-title" onclick="toggleSection('cpuFilter')">
+            <span>CPU Brand</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
         </div>
-    </footer>
-    <!-- END OF MAIN.CSS FOOTER -->
-    <script src="../lib/bootstrap.bundle.js"></script>
-    <script src="../scripts/animated-searchbar.js"></script>
+        <div class="filter-content filter-expanded" id="cpuFilter">
+            <div class="row g-2 mb-2">
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">AMD</button>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">Intel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- GPU Brand Filter -->
+        <div class="filter-title" onclick="toggleSection('gpuFilter')">
+            <span>GPU Brand</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+        </div>
+        <div class="filter-content filter-expanded" id="gpuFilter">
+            <div class="row g-2 mb-2">
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">AMD</button>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">NVIDIA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mainboard Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('screenSize')">
+                <span>Mainboard</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="screenSize">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="aorus">
+                    <label class="form-check-label" for="aorus">Aorus</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="extreme">
+                    <label class="form-check-label" for="extreme">Extreme</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="prime">
+                    <label class="form-check-label" for="prime">Prime</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="rog">
+                    <label class="form-check-label" for="rog">Rog</label>
+                </div>
+                <div class="hidden-options" id="moreMainboards">
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox" type="checkbox" id="tuf">
+                        <label class="form-check-label" for="tuf">TUF</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox" type="checkbox" id="steelLegend">
+                        <label class="form-check-label" for="steelLegend">Steel Legend</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox" type="checkbox" id="phantomLegend">
+                        <label class="form-check-label" for="phantomLegend">Phantom Legend</label>
+                    </div>
+                </div>
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreMainboards', this)">See more</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="filter-gear">
+        <!-- General Brand Filter -->
+        <div class="filter-title" onclick="toggleSection('brandFilter')">
+            <span>Brand</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+        </div>
+        <div class="filter-content filter-expanded" id="brandFilter">
+            <div class="row g-2 mb-2">
+                <div class="col-6 col-sm-4">
+                    <button class="brand-btn w-100">Acbel</button>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <button class="brand-btn w-100">Acer</button>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <button class="brand-btn w-100">Amd</button>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">Adata</button>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <button class="brand-btn w-100">Gigabyte</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Series Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('series')">
+                <span>Series</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="series">
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="akko">
+                    <label class="form-check-label" for="akko">Akko 3087 Series</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="apex">
+                    <label class="form-check-label" for="apex">Apex</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="Blackwindow">
+                    <label class="form-check-label" for="Blackwindow">blackwindow</label>
+                </div>
+                <div class="checkbox-item">
+                    <input class="form-check-input modified-checbox" type="checkbox" id="rog">
+                    <label class="form-check-label" for="rog">Rog</label>
+                </div>
+                <div class="hidden-options" id="moreSeries">
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox" type="checkbox" id="Aula">
+                        <label class="form-check-label" for="Aula">Aula</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input class="form-check-input modified-checbox" type="checkbox" id="keychron">
+                        <label class="form-check-label" for="keychron">Keychron</label>
+                    </div>
+                </div>
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreSeries', this)">See more</span>
+            </div>
+        </div>
+
+        <!-- Color Filter -->
+        <div class="filter-section">
+            <div class="filter-title" onclick="toggleSection('color')">
+                <span>Color</span>
+                <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+            </div>
+            <div class="filter-content filter-expanded" id="color">
+                <button class="circle-button gray"></button>
+                <button class="circle-button pink"></button>
+                <button class="circle-button bluegray"></button>
+                <button class="circle-button red"></button>
+
+                <button class="circle-button yellow"></button>
+                <button class="circle-button blue"></button>
+                <button class="circle-button lightpink"></button>
+                <button class="circle-button rainbow"></button>
+
+                <div class="hidden-options" id="moreColors">
+                    <button class="circle-button green"></button>
+                    <button class="circle-button orange"></button>
+                    <button class="circle-button purple"></button>
+                    <button class="circle-button cyan"></button>
+                    <button class="circle-button gold"></button>
+                    <button class="circle-button teal"></button>
+                </div>
+                <span class="see-more ms-4" onclick="toggleMoreOptions('moreColors', this)">See more</span>
+            </div>
+        </div>
+
+        <!-- Connectivity Filter -->
+        <div class="filter-title" onclick="toggleSection('connectivityFilter')">
+            <span>Connectivity</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+        </div>
+        <div class="filter-content filter-expanded" id="connectivityFilter">
+            <ul class="list-group list-group-horizontal sortbar flex-wrap">
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Bluetooth
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Bluetooth (Compatible with USB Receiver)
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Bluetooth + USB Log Receiver
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Bluetooth + USB Unifying Receiver
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Stringed
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Keyboard layout size Filter -->
+        <div class="filter-title" onclick="toggleSection('keyboardLayoutSize')">
+            <span>Keyboard layout size</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+        </div>
+        <div class="filter-content filter-expanded" id="keyboardLayoutSize">
+            <ul class="list-group list-group-horizontal sortbar flex-wrap">
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Full size with numeric keypad
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Compact with numeric keypad
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        Miniature layout
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Keyboard Switch Filter -->
+        <div class="filter-title" onclick="toggleSection('keyboardSwitch')">
+            <span>Keyboard layout size</span>
+            <img class="dropdown-icon" src="../icons/filter/down.svg" alt="">
+        </div>
+        <div class="filter-content filter-expanded" id="keyboardSwitch">
+            <ul class="list-group list-group-horizontal sortbar flex-wrap">
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        MX Cherry Brown
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        MX Cherry Red
+                    </button>
+                </li>
+                <li class="list-group-item border-0 p-0 me-2 mb-2">
+                    <button class="btn rounded-3 px-3 py-2 text-start">
+                        MX Cherry Green
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="../scripts/filter.js"></script>
+    <script src="../scripts/homepage.js"></script>
+    <script src="../lib/bootstrap.bundle.js"></script>
 </body>
+
 </html>

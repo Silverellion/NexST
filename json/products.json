@@ -1,0 +1,2140 @@
+[
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28327"
+		},
+		"id": "G004",
+		"img": "../images/products/acer.svg",
+		"title": "Acer",
+		"description": "Laptop gaming Acer Predator Helios 300",
+		"price": "1999$",
+		"oldPrice": "2200$",
+		"cpu": "i7-13700HX",
+		"gpu": "Geforce RTX 4070",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "15.6\" QHD+ / 165hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28328"
+		},
+		"id": "G003",
+		"img": "../images/products/alienware.svg",
+		"title": "Alienware",
+		"description": "Laptop gaming Alienware x16",
+		"price": "3299$",
+		"oldPrice": "3500$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" QHD+ / 240hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28329"
+		},
+		"id": "G005",
+		"img": "../images/products/razer.svg",
+		"title": "Razer",
+		"description": "Laptop gaming Razer Blade 16",
+		"price": "3499$",
+		"oldPrice": "3700$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" 4K / 240hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2832a"
+		},
+		"id": "G006",
+		"img": "../images/products/gigabyte.svg",
+		"title": "Gigabyte",
+		"description": "Laptop gaming Gigabyte Aorus 17",
+		"price": "2599$",
+		"oldPrice": "2800$",
+		"cpu": "i7-13700HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "17.3\" QHD+ / 165hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2832b"
+		},
+		"id": "G002",
+		"img": "../images/products/asus1.svg",
+		"title": "ASUS",
+		"description": "Laptop gaming ASUS ROG Strix Scar 18",
+		"price": "2799$",
+		"oldPrice": "3000$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "18\" QHD+ / 240hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2832c"
+		},
+		"id": "G007",
+		"img": "../images/products/hp.svg",
+		"title": "HP",
+		"description": "Laptop gaming HP Omen 16",
+		"price": "1799$",
+		"oldPrice": "2000$",
+		"cpu": "i7-13700HX",
+		"gpu": "Geforce RTX 4060",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "16\" QHD+ / 165hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2832d"
+		},
+		"id": "G009",
+		"img": "../images/products/dell.svg",
+		"title": "Dell",
+		"description": "Laptop gaming Dell G15",
+		"price": "1499$",
+		"oldPrice": "1700$",
+		"cpu": "i5-12500H",
+		"gpu": "Geforce RTX 4060",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 144hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2832e"
+		},
+		"id": "G008",
+		"img": "../images/products/Lenovo Legion 7i.svg",
+		"title": "Lenovo",
+		"description": "Laptop gaming Lenovo Legion 7i",
+		"price": "2699$",
+		"oldPrice": "2900$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" QHD+ / 240hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2832f"
+		},
+		"id": "G001",
+		"img": "../images/products/msi2.svg",
+		"title": "MSI",
+		"description": "Laptop gaming MSI Raider GE78",
+		"price": "2999$",
+		"oldPrice": "3200$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "17.3\" QHD+ / 240hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28330"
+		},
+		"id": "A003",
+		"img": "../images/products/Laptop AI Alienware X17 R2.svg",
+		"title": "Alienware",
+		"description": "Laptop AI Alienware X17 R2",
+		"price": "3599$",
+		"oldPrice": "3800$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "128GB",
+		"ssd": "4TB",
+		"screen": "17.3\" UHD / 144hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28331"
+		},
+		"id": "A002",
+		"img": "../images/products/Laptop AI ASUS ProArt Studiobook 16.svg",
+		"title": "ASUS",
+		"description": "Laptop AI ASUS ProArt Studiobook 16",
+		"price": "2899$",
+		"oldPrice": "3100$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" 4K OLED / 120hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28332"
+		},
+		"id": "A004",
+		"img": "../images/products/Laptop AI Acer ConceptD 7.svg",
+		"title": "Acer",
+		"description": "Laptop AI Acer ConceptD 7",
+		"price": "2499$",
+		"oldPrice": "2700$",
+		"cpu": "i7-13700HX",
+		"gpu": "Geforce RTX 4070",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "15.6\" 4K / 120hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28333"
+		},
+		"id": "A005",
+		"img": "../images/products/Laptop AI Razer Blade 18.svg",
+		"title": "Razer",
+		"description": "Laptop AI Razer Blade 18",
+		"price": "3799$",
+		"oldPrice": "4000$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "128GB",
+		"ssd": "4TB",
+		"screen": "18\" QHD+ / 240hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28334"
+		},
+		"id": "A001",
+		"img": "../images/products/Laptop AI MSI Creator Z16P.svg",
+		"title": "MSI",
+		"description": "Laptop AI MSI Creator Z16P",
+		"price": "3199$",
+		"oldPrice": "3400$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" QHD+ / 165hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28335"
+		},
+		"id": "A006",
+		"img": "../images/products/Laptop AI Gigabyte Aero 16.svg",
+		"title": "Gigabyte",
+		"description": "Laptop AI Gigabyte Aero 16",
+		"price": "2699$",
+		"oldPrice": "2900$",
+		"cpu": "i7-13700HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" 4K OLED / 120hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28336"
+		},
+		"id": "A007",
+		"img": "../images/products/Laptop AI HP ZBook Fury 16 G9.svg",
+		"title": "HP",
+		"description": "Laptop AI HP ZBook Fury 16 G9",
+		"price": "2999$",
+		"oldPrice": "3200$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" QHD+ / 165hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28337"
+		},
+		"id": "A008",
+		"img": "../images/products/Laptop AI Lenovo ThinkPad P16s.svg",
+		"title": "Lenovo",
+		"description": "Laptop AI Lenovo ThinkPad P16s",
+		"price": "2799$",
+		"oldPrice": "3000$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4080",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" 4K OLED / 120hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28338"
+		},
+		"id": "A009",
+		"img": "../images/products/Laptop AI Dell Precision 7780.svg",
+		"title": "Dell",
+		"description": "Laptop AI Dell Precision 7780",
+		"price": "3499$",
+		"oldPrice": "3700$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "128GB",
+		"ssd": "4TB",
+		"screen": "17.3\" UHD / 120hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28339"
+		},
+		"id": "G010",
+		"img": "../images/products/medion.svg",
+		"title": "Medion",
+		"description": "Laptop gaming Medion Erazer Beast X40",
+		"price": "2899$",
+		"oldPrice": "3100$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "17.3\" QHD+ / 240hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2833a"
+		},
+		"id": "O001",
+		"img": "../images/products/Laptop Dell Latitude 7440.svg",
+		"title": "Dell",
+		"description": "Laptop Dell Latitude 7440",
+		"price": "1299$",
+		"oldPrice": "1400$",
+		"cpu": "i7-1365U",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2833b"
+		},
+		"id": "O002",
+		"img": "../images/products/Laptop HP EliteBook 840 G10.svg",
+		"title": "HP",
+		"description": "Laptop HP EliteBook 840 G10",
+		"price": "1199$",
+		"oldPrice": "1300$",
+		"cpu": "i7-1355U",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2833c"
+		},
+		"id": "O003",
+		"img": "../images/products/Laptop Lenovo ThinkPad X1 Carbon Gen 11.svg",
+		"title": "Lenovo",
+		"description": "Laptop Lenovo ThinkPad X1 Carbon Gen 11",
+		"price": "1499$",
+		"oldPrice": "1600$",
+		"cpu": "i7-1365U",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "1TB",
+		"screen": "14\" 2K / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2833d"
+		},
+		"id": "O005",
+		"img": "../images/products/Laptop Acer Swift 5.svg",
+		"title": "Acer",
+		"description": "Laptop Acer Swift 5",
+		"price": "1099$",
+		"oldPrice": "1200$",
+		"cpu": "i5-1340P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2833e"
+		},
+		"id": "O004",
+		"img": "../images/products/Laptop ASUS ExpertBook B9.svg",
+		"title": "ASUS",
+		"description": "Laptop ASUS ExpertBook B9",
+		"price": "1299$",
+		"oldPrice": "1400$",
+		"cpu": "i7-1355U",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "1TB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2833f"
+		},
+		"id": "O006",
+		"img": "../images/products/Laptop MSI Prestige 14.svg",
+		"title": "MSI",
+		"description": "Laptop MSI Prestige 14",
+		"price": "1399$",
+		"oldPrice": "1500$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "1TB",
+		"screen": "14\" 2K / 60hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28340"
+		},
+		"id": "A010",
+		"img": "../images/products/Laptop AI Medion Erazer Creator X40.svg",
+		"title": "Medion",
+		"description": "Laptop AI Medion Erazer Creator X40",
+		"price": "2899$",
+		"oldPrice": "3100$",
+		"cpu": "i9-13980HX",
+		"gpu": "Geforce RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "17.3\" QHD+ / 165hz",
+		"category": "laptop",
+		"categoryDetail": "ai",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28341"
+		},
+		"id": "O007",
+		"img": "../images/products/Laptop Huawei MateBook X Pro.svg",
+		"title": "Huawei",
+		"description": "Laptop Huawei MateBook X Pro",
+		"price": "1599$",
+		"oldPrice": "1700$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "1TB",
+		"screen": "14.2\" 3K / 90hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28342"
+		},
+		"id": "O008",
+		"img": "../images/products/Laptop Microsoft Surface Laptop 5.svg",
+		"title": "Microsoft",
+		"description": "Laptop Microsoft Surface Laptop 5",
+		"price": "1499$",
+		"oldPrice": "1600$",
+		"cpu": "i7-1265U",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "13.5\" PixelSense / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28343"
+		},
+		"id": "S001",
+		"img": "../images/products/Laptop Dell Inspiron 15 3530.svg",
+		"title": "Dell",
+		"description": "Laptop Dell Inspiron 15 3530",
+		"price": "699$",
+		"oldPrice": "750$",
+		"cpu": "i5-1335U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28344"
+		},
+		"id": "S002",
+		"img": "../images/products/Laptop HP Pavilion 14.svg",
+		"title": "HP",
+		"description": "Laptop HP Pavilion 14",
+		"price": "649$",
+		"oldPrice": "700$",
+		"cpu": "i5-1335U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28345"
+		},
+		"id": "S003",
+		"img": "../images/products/Laptop Lenovo IdeaPad 3.svg",
+		"title": "Lenovo",
+		"description": "Laptop Lenovo IdeaPad 3",
+		"price": "599$",
+		"oldPrice": "650$",
+		"cpu": "i5-1235U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28346"
+		},
+		"id": "S004",
+		"img": "../images/products/Laptop ASUS VivoBook 14.svg",
+		"title": "ASUS",
+		"description": "Laptop ASUS VivoBook 14",
+		"price": "679$",
+		"oldPrice": "720$",
+		"cpu": "i5-1335U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28347"
+		},
+		"id": "S005",
+		"img": "../images/products/Laptop Acer Aspire 5.svg",
+		"title": "Acer",
+		"description": "Laptop Acer Aspire 5",
+		"price": "629$",
+		"oldPrice": "680$",
+		"cpu": "i5-1235U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28348"
+		},
+		"id": "O010",
+		"img": "../images/products/Laptop Samsung Galaxy Book 3 Pro.svg",
+		"title": "Samsung",
+		"description": "Laptop Samsung Galaxy Book 3 Pro",
+		"price": "1399$",
+		"oldPrice": "1500$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "1TB",
+		"screen": "16\" 3K AMOLED / 120hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28349"
+		},
+		"id": "S006",
+		"img": "../images/products/Laptop MSI Modern 14.svg",
+		"title": "MSI",
+		"description": "Laptop MSI Modern 14",
+		"price": "749$",
+		"oldPrice": "800$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2834a"
+		},
+		"id": "S007",
+		"img": "../images/products/Laptop Huawei MateBook D14.svg",
+		"title": "Huawei",
+		"description": "Laptop Huawei MateBook D14",
+		"price": "699$",
+		"oldPrice": "750$",
+		"cpu": "i5-1240P",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2834b"
+		},
+		"id": "S009",
+		"img": "../images/products/Laptop LG Gram 14.svg",
+		"title": "LG",
+		"description": "Laptop LG Gram 14",
+		"price": "849$",
+		"oldPrice": "900$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "14\" 2.5K / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2834c"
+		},
+		"id": "S010",
+		"img": "../images/products/Laptop Samsung Galaxy Book 2.svg",
+		"title": "Samsung",
+		"description": "Laptop Samsung Galaxy Book 2",
+		"price": "779$",
+		"oldPrice": "820$",
+		"cpu": "i5-1240P",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2834d"
+		},
+		"id": "S008",
+		"img": "../images/products/Laptop Microsoft Surface Laptop Go 2.svg",
+		"title": "Microsoft",
+		"description": "Laptop Microsoft Surface Laptop Go 2",
+		"price": "799$",
+		"oldPrice": "850$",
+		"cpu": "i5-1135G7",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "256GB",
+		"screen": "12.4\" PixelSense / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2834e"
+		},
+		"id": "O009",
+		"img": "../images/products/Laptop LG Gram 16.svg",
+		"title": "LG",
+		"description": "Laptop LG Gram 16",
+		"price": "1699$",
+		"oldPrice": "1800$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "1TB",
+		"screen": "16\" 2.5K / 60hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2834f"
+		},
+		"id": "GFX003",
+		"img": "../images/products/ASUS ProArt Studiobook 16.svg",
+		"title": "ASUS",
+		"description": "ASUS ProArt Studiobook 16",
+		"price": "2799$",
+		"oldPrice": "3000$",
+		"cpu": "i9-13980HX",
+		"gpu": "NVIDIA RTX 4060",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" OLED 4K HDR",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28350"
+		},
+		"id": "GFX004",
+		"img": "../images/products/Laptop AI Acer ConceptD 7.svg",
+		"title": "Acer",
+		"description": "Acer ConceptD 7 Ezel",
+		"price": "3299$",
+		"oldPrice": "3500$",
+		"cpu": "i7-12700H",
+		"gpu": "NVIDIA RTX 3080",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "15.6\" 4K UHD Touch",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28351"
+		},
+		"id": "GFX001",
+		"img": "../images/products/MacBook Pro 16 M3 Max.svg",
+		"title": "Apple",
+		"description": "MacBook Pro 16 M3 Max",
+		"price": "3499$",
+		"oldPrice": "3700$",
+		"cpu": "Apple M3 Max",
+		"gpu": "38-core GPU",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16.2\" Liquid Retina XDR",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28352"
+		},
+		"id": "GFX006",
+		"img": "../images/products/HP ZBook Studio G9.svg",
+		"title": "HP",
+		"description": "HP ZBook Studio G9",
+		"price": "3199$",
+		"oldPrice": "3400$",
+		"cpu": "i9-13980HX",
+		"gpu": "NVIDIA RTX A4500",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" 4K DreamColor",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28353"
+		},
+		"id": "GFX005",
+		"img": "../images/products/Laptop AI MSI Creator Z16P.svg",
+		"title": "MSI",
+		"description": "MSI Creator Z16P",
+		"price": "2999$",
+		"oldPrice": "3200$",
+		"cpu": "i9-12900H",
+		"gpu": "NVIDIA RTX 3070 Ti",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" QHD+ Mini LED / 165hz",
+		"category": "laptop",
+		"categoryDetail": "gaming",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28354"
+		},
+		"id": "GFX007",
+		"img": "../images/products/Lenovo Legion 7i.svg",
+		"title": "Lenovo",
+		"description": "Lenovo Legion 7i Pro",
+		"price": "2799$",
+		"oldPrice": "3000$",
+		"cpu": "i9-13900HX",
+		"gpu": "NVIDIA RTX 4080",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" WQXGA / 240hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28355"
+		},
+		"id": "GFX009",
+		"img": "../images/products/LG Gram 17.svg",
+		"title": "LG",
+		"description": "LG Gram 17",
+		"price": "2499$",
+		"oldPrice": "2700$",
+		"cpu": "i7-1360P",
+		"gpu": "Intel Iris Xe",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "17\" WQXGA IPS",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28356"
+		},
+		"id": "GFX002",
+		"img": "../images/products/Laptop Dell XPS 17 9730.svg",
+		"title": "Dell",
+		"description": "Laptop Dell XPS 17 9730",
+		"price": "2999$",
+		"oldPrice": "3200$",
+		"cpu": "i9-13980HX",
+		"gpu": "NVIDIA RTX 4070",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "17\" UHD+ Touch / 120hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28357"
+		},
+		"id": "GFX008",
+		"img": "../images/products/Laptop AI Razer Blade 18.svg",
+		"title": "Razer",
+		"description": "Razer Blade 16",
+		"price": "3499$",
+		"oldPrice": "3700$",
+		"cpu": "i9-13980HX",
+		"gpu": "NVIDIA RTX 4090",
+		"ram": "64GB",
+		"ssd": "2TB",
+		"screen": "16\" Dual Mode Mini-LED",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28358"
+		},
+		"id": "GFX010",
+		"img": "../images/products/Microsoft Surface Laptop Studio 2.svg",
+		"title": "Microsoft",
+		"description": "Microsoft Surface Laptop Studio 2",
+		"price": "3299$",
+		"oldPrice": "3500$",
+		"cpu": "i7-13800H",
+		"gpu": "NVIDIA RTX 4060",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "14.4\" PixelSense Flow / 120hz",
+		"category": "laptop",
+		"categoryDetail": "student",
+		"quantity": 1
+	},
+	{
+		"id": "O009",
+		"img": "../images/products/Laptop Dell Inspiron 15 3530.svg",
+		"title": "Dell",
+		"description": "Laptop Dell Inspiron 15",
+		"price": "650$",
+		"oldPrice": "750$",
+		"cpu": "i5-1235U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "256GB",
+		"screen": "14\" FHD / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "office",
+		"quantity": 1
+	},
+	{
+		"id": "O010",
+		"img": "../images/products/Laptop HP Pavilion 14.svg",
+		"title": "HP",
+		"description": "Laptop HP Pavilion 14",
+		"price": "699$",
+		"oldPrice": "780$",
+		"cpu": "i5-1240P",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "office",
+		"quantity": 1
+	},
+	{
+		"id": "O011",
+		"img": "../images/products/Laptop Lenovo ThinkPad X1 Carbon Gen 11.svg",
+		"title": "Lenovo",
+		"description": "Laptop Lenovo ThinkPad E14",
+		"price": "730$",
+		"oldPrice": "820$",
+		"cpu": "i5-1235U",
+		"gpu": "Intel Iris Xe",
+		"ram": "16GB",
+		"ssd": "512GB",
+		"screen": "14\" FHD / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "office",
+		"quantity": 1
+	},
+	{
+		"id": "O012",
+		"img": "../images/products/Laptop ASUS VivoBook 14.svg",
+		"title": "Asus",
+		"description": "Laptop Asus Vivobook 14",
+		"price": "620$",
+		"oldPrice": "700$",
+		"cpu": "i5-1235U",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "office",
+		"quantity": 1
+	},
+	{
+		"id": "O013",
+		"img": "../images/products/Laptop Acer Aspire 5.svg",
+		"title": "Acer",
+		"description": "Laptop Acer Aspire 5",
+		"price": "599$",
+		"oldPrice": "670$",
+		"cpu": "i5-1155G7",
+		"gpu": "Intel Iris Xe",
+		"ram": "8GB",
+		"ssd": "512GB",
+		"screen": "15.6\" FHD / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "office",
+		"quantity": 1
+	},
+	{
+		"id": "G001",
+		"img": "../images/products/Laptop Dell XPS 17 9730.svg",
+		"title": "Dell",
+		"description": "Laptop Dell XPS 17 9730",
+		"price": "1950$",
+		"oldPrice": "2100$",
+		"cpu": "i7-12700H",
+		"gpu": "NVIDIA RTX 3050 Ti",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "15.6\" OLED 3.5K / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "graphics",
+		"quantity": 1
+	},
+	{
+		"id": "G002",
+		"img": "../images/products/MacBook Pro 16 M3 Max.svg",
+		"title": "Apple",
+		"description": "Laptop Apple MacBook Pro 16 M3 Max",
+		"price": "2499$",
+		"oldPrice": "2700$",
+		"cpu": "Apple M2 Pro",
+		"gpu": "Apple 19-core GPU",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16.2\" Liquid Retina XDR / 120Hz",
+		"category": "laptop",
+		"categoryDetail": "graphics",
+		"quantity": 1
+	},
+	{
+		"id": "G005",
+		"img": "../images/products/Laptop AI Gigabyte Aero 16.svg",
+		"title": "Gigabyte",
+		"description": "Laptop Gigabyte Aero 16",
+		"price": "2150$",
+		"oldPrice": "2350$",
+		"cpu": "i7-12700H",
+		"gpu": "NVIDIA RTX 3070 Ti",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" UHD+ OLED / 60Hz",
+		"category": "laptop",
+		"categoryDetail": "graphics",
+		"quantity": 1
+	},
+	{
+		"id": "G006",
+		"img": "../images/products/Lenovo Legion 7i.svg",
+		"title": "Lenovo",
+		"description": "Laptop Lenovo Legion 7i",
+		"price": "1700$",
+		"oldPrice": "1850$",
+		"cpu": "Ryzen 7 6800H",
+		"gpu": "NVIDIA RTX 3070",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" WQXGA / 165Hz",
+		"category": "laptop",
+		"categoryDetail": "graphics",
+		"quantity": 1
+	},
+	{
+		"id": "G008",
+		"img": "../images/products/Laptop AI Razer Blade 18.svg",
+		"title": "Razer",
+		"description": "Laptop Razer Blade 15",
+		"price": "2399$",
+		"oldPrice": "2600$",
+		"cpu": "i7-12800H",
+		"gpu": "NVIDIA RTX 3070 Ti",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "15.6\" QHD / 240Hz",
+		"category": "laptop",
+		"categoryDetail": "graphics",
+		"quantity": 1
+	},
+	{
+		"id": "G010",
+		"img": "../images/products/ASUS ProArt Studiobook 16.svg",
+		"title": "Asus",
+		"description": "Laptop Asus ProArt StudioBook 16",
+		"price": "2400$",
+		"oldPrice": "2600$",
+		"cpu": "Ryzen 9 5900HX",
+		"gpu": "NVIDIA RTX 3070",
+		"ram": "32GB",
+		"ssd": "1TB",
+		"screen": "16\" WQXGA / 120Hz",
+		"category": "laptop",
+		"categoryDetail": "graphics",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28359"
+		},
+		"id": "PC004",
+		"img": "../images/products/HP OMEN 45L.svg",
+		"title": "HP",
+		"description": "HP OMEN 45L",
+		"price": "2899$",
+		"oldPrice": "3099$",
+		"cpu": "AMD Ryzen 9 7950X",
+		"gpu": "NVIDIA RTX 4080",
+		"ram": "64GB DDR5",
+		"ssd": "2TB NVMe",
+		"psu": "850W Platinum",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2835a"
+		},
+		"id": "PC001",
+		"img": "../images/products/MSI Aegis RS 13NUE-450US.svg",
+		"title": "MSI",
+		"description": "MSI Aegis RS 13NUE-450US",
+		"price": "2499$",
+		"oldPrice": "2699$",
+		"cpu": "Intel Core i9-13900KF",
+		"gpu": "NVIDIA RTX 4090",
+		"ram": "64GB DDR5",
+		"ssd": "2TB NVMe",
+		"psu": "850W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2835b"
+		},
+		"id": "PC005",
+		"img": "../images/products/Lenovo Legion Tower 7i.svg",
+		"title": "Lenovo",
+		"description": "Lenovo Legion Tower 7i",
+		"price": "2499$",
+		"oldPrice": "2699$",
+		"cpu": "Intel Core i9-13900KF",
+		"gpu": "NVIDIA RTX 4080",
+		"ram": "64GB DDR5",
+		"ssd": "1TB NVMe",
+		"psu": "850W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2835c"
+		},
+		"id": "PC006",
+		"img": "../images/products/Corsair Vengeance i7400.svg",
+		"title": "Corsair",
+		"description": "Corsair Vengeance i7400",
+		"price": "2799$",
+		"oldPrice": "2999$",
+		"cpu": "Intel Core i9-13900K",
+		"gpu": "NVIDIA RTX 4080",
+		"ram": "64GB DDR5",
+		"ssd": "2TB NVMe",
+		"psu": "1000W Platinum",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2835d"
+		},
+		"id": "PC003",
+		"img": "../images/products/ASUS ROG Strix G16CH.svg",
+		"title": "ASUS",
+		"description": "ASUS ROG Strix G16CH",
+		"price": "1999$",
+		"oldPrice": "2199$",
+		"cpu": "Intel Core i7-13700KF",
+		"gpu": "NVIDIA RTX 4070 Ti",
+		"ram": "32GB DDR5",
+		"ssd": "1TB NVMe",
+		"psu": "750W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2835e"
+		},
+		"id": "PC002",
+		"img": "../images/products/Alienware Aurora R15.svg",
+		"title": "Dell",
+		"description": "Alienware Aurora R15",
+		"price": "3199$",
+		"oldPrice": "3399$",
+		"cpu": "Intel Core i9-14900K",
+		"gpu": "NVIDIA RTX 4090",
+		"ram": "64GB DDR5",
+		"ssd": "2TB NVMe + 2TB HDD",
+		"psu": "1000W Platinum",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2835f"
+		},
+		"id": "PC007",
+		"img": "../images/products/iBUYPOWER SlateMR 287i.svg",
+		"title": "iBUYPOWER",
+		"description": "iBUYPOWER SlateMR 287i",
+		"price": "1599$",
+		"oldPrice": "1799$",
+		"cpu": "Intel Core i7-13700KF",
+		"gpu": "NVIDIA RTX 4070",
+		"ram": "32GB DDR5",
+		"ssd": "1TB NVMe",
+		"psu": "750W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28360"
+		},
+		"id": "PC009",
+		"img": "../images/products/Skytech Chronos.svg",
+		"title": "Skytech",
+		"description": "Skytech Chronos",
+		"price": "1399$",
+		"oldPrice": "1599$",
+		"cpu": "Intel Core i5-13600KF",
+		"gpu": "NVIDIA RTX 4060 Ti",
+		"ram": "16GB DDR5",
+		"ssd": "1TB NVMe",
+		"psu": "750W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28361"
+		},
+		"id": "PC010",
+		"img": "../images/products/NZXT PlayerThree.svg",
+		"title": "NZXT",
+		"description": "NZXT Player: Three",
+		"price": "1699$",
+		"oldPrice": "1899$",
+		"cpu": "AMD Ryzen 7 7700X",
+		"gpu": "NVIDIA RTX 4060 Ti",
+		"ram": "32GB DDR5",
+		"ssd": "1TB NVMe",
+		"psu": "750W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28362"
+		},
+		"id": "MON002",
+		"img": "../images/products/Dell UltraSharp U3223QE.svg",
+		"title": "Dell",
+		"description": "Dell UltraSharp U3223QE",
+		"price": "699$",
+		"oldPrice": "799$",
+		"size": "32 inch",
+		"resolution": "3840x2160 (4K UHD)",
+		"refreshRate": "60Hz",
+		"panel": "IPS",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28363"
+		},
+		"id": "MON003",
+		"img": "../images/products/ASUS ROG Swift PG42UQ.svg",
+		"title": "ASUS",
+		"description": "ASUS ROG Swift PG42UQ",
+		"price": "1299$",
+		"oldPrice": "1399$",
+		"size": "42 inch",
+		"resolution": "3840x2160 (4K UHD)",
+		"refreshRate": "138Hz",
+		"panel": "OLED",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28364"
+		},
+		"id": "MON004",
+		"img": "../images/products/MSI MPG Artymis 343CQR.svg",
+		"title": "MSI",
+		"description": "MSI MPG Artymis 343CQR",
+		"price": "899$",
+		"oldPrice": "999$",
+		"size": "34 inch",
+		"resolution": "3440x1440 (UWQHD)",
+		"refreshRate": "165Hz",
+		"panel": "VA",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28365"
+		},
+		"id": "MON005",
+		"img": "../images/products/Gigabyte AORUS FV43U.svg",
+		"title": "Gigabyte",
+		"description": "Gigabyte AORUS FV43U",
+		"price": "1099$",
+		"oldPrice": "1199$",
+		"size": "43 inch",
+		"resolution": "3840x2160 (4K UHD)",
+		"refreshRate": "144Hz",
+		"panel": "VA",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28366"
+		},
+		"id": "MON006",
+		"img": "../images/products/Samsung Odyssey G9.svg",
+		"title": "Samsung",
+		"description": "Samsung Odyssey G9",
+		"price": "1299$",
+		"oldPrice": "1399$",
+		"size": "49 inch",
+		"resolution": "5120x1440 (DQHD)",
+		"refreshRate": "240Hz",
+		"panel": "VA",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28367"
+		},
+		"id": "MON007",
+		"img": "../images/products/AOC Agon Pro AG274QXM.svg",
+		"title": "AOC",
+		"description": "AOC Agon Pro AG274QXM",
+		"price": "849$",
+		"oldPrice": "949$",
+		"size": "27 inch",
+		"resolution": "2560x1440 (QHD)",
+		"refreshRate": "170Hz",
+		"panel": "Mini-LED",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28368"
+		},
+		"id": "MON001",
+		"img": "../images/products/LG UltraGear 27GR95QE-B.svg",
+		"title": "LG",
+		"description": "LG UltraGear 27GR95QE-B",
+		"price": "799$",
+		"oldPrice": "899$",
+		"size": "27 inch",
+		"resolution": "2560x1440 (QHD)",
+		"refreshRate": "240Hz",
+		"panel": "OLED",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28369"
+		},
+		"id": "PC008",
+		"img": "../images/products/CyberPowerPC Gamer Supreme.svg",
+		"title": "CyberPowerPC",
+		"description": "CyberPowerPC Gamer Supreme",
+		"price": "1899$",
+		"oldPrice": "2099$",
+		"cpu": "AMD Ryzen 7 7800X3D",
+		"gpu": "NVIDIA RTX 4070 Ti",
+		"ram": "32GB DDR5",
+		"ssd": "1TB NVMe",
+		"psu": "850W Gold",
+		"category": "pc",
+		"categoryDetail": "pc",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2836a"
+		},
+		"id": "MON008",
+		"img": "../images/products/Eizo ColorEdge CG319X.svg",
+		"title": "Eizo",
+		"description": "Eizo ColorEdge CG319X",
+		"price": "2499$",
+		"oldPrice": "2599$",
+		"size": "31.1 inch",
+		"resolution": "4096x2160 (4K+ DCI)",
+		"refreshRate": "60Hz",
+		"panel": "IPS",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2836b"
+		},
+		"id": "MON009",
+		"img": "../images/products/BenQ EX3501R.svg",
+		"title": "BenQ",
+		"description": "BenQ EX3501R",
+		"price": "699$",
+		"oldPrice": "799$",
+		"size": "35 inch",
+		"resolution": "3440x1440 (UWQHD)",
+		"refreshRate": "100Hz",
+		"panel": "VA",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2836c"
+		},
+		"id": "CPU002",
+		"img": "../images/products/AMD Ryzen 9 7950X3D.svg",
+		"title": "AMD",
+		"description": "AMD Ryzen 9 7950X3D",
+		"price": "599$",
+		"oldPrice": "649$",
+		"cores": "16",
+		"threads": "32",
+		"baseClock": "4.2 GHz",
+		"boostClock": "5.7 GHz",
+		"socket": "AM5",
+		"category": "component",
+		"categoryDetail": "cpu",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2836d"
+		},
+		"id": "GPU001",
+		"img": "../images/products/NVIDIA RTX 4090.svg",
+		"title": "NVIDIA",
+		"description": "NVIDIA RTX 4090",
+		"price": "1599$",
+		"oldPrice": "1799$",
+		"vram": "24GB GDDR6X",
+		"boostClock": "2.52 GHz",
+		"power": "450W",
+		"category": "component",
+		"categoryDetail": "gpu",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2836e"
+		},
+		"id": "CPU001",
+		"img": "../images/products/Intel Core i9-14900K.svg",
+		"title": "Intel",
+		"description": "Intel Core i9-14900K",
+		"price": "599$",
+		"oldPrice": "649$",
+		"cores": "24",
+		"threads": "32",
+		"baseClock": "3.2 GHz",
+		"boostClock": "6.0 GHz",
+		"socket": "LGA1700",
+		"category": "component",
+		"categoryDetail": "cpu",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2836f"
+		},
+		"id": "MB001",
+		"img": "../images/products/ASUS ROG Strix Z790-E Gaming.svg",
+		"title": "ASUS",
+		"description": "ASUS ROG Strix Z790-E Gaming",
+		"price": "399$",
+		"oldPrice": "429$",
+		"socket": "LGA1700",
+		"chipset": "Z790",
+		"ramSlots": "4",
+		"maxRam": "192GB DDR5",
+		"category": "component",
+		"categoryDetail": "mainboard",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28370"
+		},
+		"id": "GPU002",
+		"img": "../images/products/AMD Radeon RX 7900 XTX.svg",
+		"title": "AMD",
+		"description": "AMD Radeon RX 7900 XTX",
+		"price": "999$",
+		"oldPrice": "1099$",
+		"vram": "24GB GDDR6",
+		"boostClock": "2.5 GHz",
+		"power": "355W",
+		"category": "component",
+		"categoryDetail": "gpu",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28371"
+		},
+		"id": "MB002",
+		"img": "../images/products/MSI MAG B650 Tomahawk.svg",
+		"title": "MSI",
+		"description": "MSI MAG B650 Tomahawk",
+		"price": "229$",
+		"oldPrice": "249$",
+		"socket": "AM5",
+		"chipset": "B650",
+		"ramSlots": "4",
+		"maxRam": "128GB DDR5",
+		"category": "component",
+		"categoryDetail": "mainboard",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28372"
+		},
+		"id": "MON010",
+		"img": "../images/products/ViewSonic Elite XG320U.svg",
+		"title": "ViewSonic",
+		"description": "ViewSonic Elite XG320U",
+		"price": "999$",
+		"oldPrice": "1099$",
+		"size": "32 inch",
+		"resolution": "3840x2160 (4K UHD)",
+		"refreshRate": "144Hz",
+		"panel": "IPS",
+		"category": "monitor",
+		"categoryDetail": "monitor",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28373"
+		},
+		"id": "RAM001",
+		"img": "../images/products/Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz.svg",
+		"title": "Corsair",
+		"description": "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz",
+		"price": "149$",
+		"oldPrice": "169$",
+		"type": "DDR5",
+		"speed": "6000MHz",
+		"capacity": "32GB",
+		"category": "component",
+		"categoryDetail": "ram",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28374"
+		},
+		"id": "RAM002",
+		"img": "../images/products/GSkill Trident.svg",
+		"title": "G.Skill",
+		"description": "G.Skill Trident Z5 RGB DDR5 64GB (2x32GB) 6400MHz",
+		"price": "299$",
+		"oldPrice": "329$",
+		"type": "DDR5",
+		"speed": "6400MHz",
+		"capacity": "64GB",
+		"category": "component",
+		"categoryDetail": "ram",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28375"
+		},
+		"id": "HDD001",
+		"img": "../images/products/Samsung 990 Pro 2TB NVMe SSD.svg",
+		"title": "Samsung",
+		"description": "Samsung 990 Pro 2TB NVMe SSD",
+		"price": "229$",
+		"oldPrice": "249$",
+		"type": "NVMe SSD",
+		"capacity": "2TB",
+		"speed": "7450 MB/s",
+		"category": "component",
+		"categoryDetail": "hard_drive",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28376"
+		},
+		"id": "HDD002",
+		"img": "../images/products/WD Black 4TB HDD.svg",
+		"title": "Western Digital",
+		"description": "WD Black 4TB HDD",
+		"price": "119$",
+		"oldPrice": "139$",
+		"type": "HDD",
+		"capacity": "4TB",
+		"speed": "7200 RPM",
+		"category": "component",
+		"categoryDetail": "hard_drive",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28377"
+		},
+		"id": "CASE001",
+		"img": "../images/products/NZXT H7 Flow.svg",
+		"title": "NZXT",
+		"description": "NZXT H7 Flow",
+		"price": "129$",
+		"oldPrice": "149$",
+		"type": "Mid Tower",
+		"rgb": "Yes",
+		"fanSupport": "Up to 7",
+		"category": "component",
+		"categoryDetail": "case",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28378"
+		},
+		"id": "COOL001",
+		"img": "../images/products/NZXT Kraken Elite 360.svg",
+		"title": "NZXT",
+		"description": "NZXT Kraken Elite 360",
+		"price": "229$",
+		"oldPrice": "249$",
+		"type": "AIO Liquid Cooler",
+		"radiator": "360mm",
+		"rgb": "Yes",
+		"category": "component",
+		"categoryDetail": "cooling",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28379"
+		},
+		"id": "PSU001",
+		"img": "../images/products/Corsair RM1000x 1000W 80+ Gold.svg",
+		"title": "Corsair",
+		"description": "Corsair RM1000x 1000W 80+ Gold",
+		"price": "199$",
+		"oldPrice": "219$",
+		"wattage": "1000W",
+		"efficiency": "80+ Gold",
+		"modular": "Fully Modular",
+		"category": "component",
+		"categoryDetail": "power",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2837a"
+		},
+		"id": "COOL002",
+		"img": "../images/products/Noctua NH-D15 Chromax.svg",
+		"title": "Noctua",
+		"description": "Noctua NH-D15 Chromax",
+		"price": "109$",
+		"oldPrice": "129$",
+		"type": "Air Cooler",
+		"fans": "2",
+		"rgb": "No",
+		"category": "component",
+		"categoryDetail": "cooling",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2837b"
+		},
+		"id": "PSU002",
+		"img": "../images/products/EVGA SuperNOVA 850 G7 850W 80+ Gold.svg",
+		"title": "EVGA",
+		"description": "EVGA SuperNOVA 850 G7 850W 80+ Gold",
+		"price": "159$",
+		"oldPrice": "179$",
+		"wattage": "850W",
+		"efficiency": "80+ Gold",
+		"modular": "Fully Modular",
+		"category": "component",
+		"categoryDetail": "power",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2837c"
+		},
+		"id": "KB002",
+		"img": "../images/products/Razer Huntsman Mini.svg",
+		"title": "Razer Huntsman Mini",
+		"description": "60% optical gaming keyboard",
+		"price": "129$",
+		"oldPrice": "150$",
+		"switch": "Optical Red",
+		"connection": "Wired",
+		"rgb": true,
+		"category": "gear",
+		"categoryDetail": "keyboard",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2837d"
+		},
+		"id": "KB001",
+		"img": "../images/products/Wireless mechanical gaming keyboard.svg",
+		"title": "Logitech G915 TKL",
+		"description": "Wireless mechanical gaming keyboard",
+		"price": "199$",
+		"oldPrice": "220$",
+		"switch": "GL Tactile",
+		"connection": "Wireless",
+		"rgb": true,
+		"category": "gear",
+		"categoryDetail": "keyboard",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2837e"
+		},
+		"id": "CASE002",
+		"img": "../images/products/Lian Li O11 Dynamic EVO.svg",
+		"title": "Lian Li",
+		"description": "Lian Li O11 Dynamic EVO",
+		"price": "169$",
+		"oldPrice": "189$",
+		"type": "Mid Tower",
+		"rgb": "No",
+		"fanSupport": "Up to 9",
+		"category": "component",
+		"categoryDetail": "case",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2837f"
+		},
+		"id": "KB003",
+		"img": "../images/products/Corsair K95 RGB Platinum.svg",
+		"title": "Corsair K95 RGB Platinum",
+		"description": "Full-size mechanical keyboard with macro keys",
+		"price": "179$",
+		"oldPrice": "200$",
+		"switch": "Cherry MX Speed",
+		"connection": "Wired",
+		"rgb": true,
+		"category": "gear",
+		"categoryDetail": "keyboard",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28380"
+		},
+		"id": "M003",
+		"img": "../images/products/Glorious Model O.svg",
+		"title": "Glorious Model O",
+		"description": "Ultra-lightweight wired gaming mouse",
+		"price": "79$",
+		"oldPrice": "90$",
+		"sensor": "Pixart 3360",
+		"dpi": "12,000",
+		"connection": "Wired",
+		"rgb": true,
+		"category": "gear",
+		"categoryDetail": "mouse",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28381"
+		},
+		"id": "MP001",
+		"img": "../images/products/SteelSeries QcK Prism.svg",
+		"title": "SteelSeries QcK Prism",
+		"description": "RGB gaming mousepad",
+		"price": "59$",
+		"oldPrice": "70$",
+		"size": "XL",
+		"rgb": true,
+		"material": "Cloth",
+		"category": "gear",
+		"categoryDetail": "mouse",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28382"
+		},
+		"id": "M002",
+		"img": "../images/products/Razer Viper Ultimate.svg",
+		"title": "Razer Viper Ultimate",
+		"description": "Wireless esports gaming mouse",
+		"price": "129$",
+		"oldPrice": "150$",
+		"sensor": "Focus+ Optical",
+		"dpi": "20,000",
+		"connection": "Wireless",
+		"rgb": true,
+		"category": "gear",
+		"categoryDetail": "mouse",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28383"
+		},
+		"id": "MP002",
+		"img": "../images/products/Corsair MM700.svg",
+		"title": "Corsair MM700",
+		"description": "Extended RGB gaming mousepad",
+		"price": "69$",
+		"oldPrice": "80$",
+		"size": "XL",
+		"rgb": true,
+		"material": "Cloth",
+		"category": "gear",
+		"categoryDetail": "mouse",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28384"
+		},
+		"id": "MP003",
+		"img": "../images/products/Razer Gigantus V2.svg",
+		"title": "Razer Gigantus V2",
+		"description": "Large gaming mousepad",
+		"price": "39$",
+		"oldPrice": "50$",
+		"size": "L",
+		"rgb": false,
+		"material": "Cloth",
+		"category": "gear",
+		"categoryDetail": "mouse",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28385"
+		},
+		"id": "USB002",
+		"img": "../images/products/Samsung BAR Plus 256GB.svg",
+		"title": "Samsung BAR Plus 256GB",
+		"description": "Metal design, fast USB 3.1",
+		"price": "39$",
+		"oldPrice": "45$",
+		"capacity": "256GB",
+		"interface": "USB 3.1",
+		"category": "accessories",
+		"categoryDetail": "usb",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28386"
+		},
+		"id": "USB001",
+		"img": "../images/products/SanDisk Ultra 128GB.svg",
+		"title": "SanDisk Ultra 128GB",
+		"description": "High-speed USB 3.0 flash drive",
+		"price": "19$",
+		"oldPrice": "25$",
+		"capacity": "128GB",
+		"interface": "USB 3.0",
+		"category": "accessories",
+		"categoryDetail": "usb",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28387"
+		},
+		"id": "HP001",
+		"img": "../images/products/Sony WH-1000XM5.svg",
+		"title": "Sony WH-1000XM5",
+		"description": "Wireless noise-canceling headphones",
+		"price": "399$",
+		"oldPrice": "450$",
+		"type": "Over-ear",
+		"wireless": true,
+		"category": "accessories",
+		"categoryDetail": "headphone",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28388"
+		},
+		"id": "M001",
+		"img": "../images/products/Logitech G Pro X Superlight.svg",
+		"title": "Logitech G Pro X Superlight",
+		"description": "Ultra-lightweight wireless gaming mouse",
+		"price": "159$",
+		"oldPrice": "180$",
+		"sensor": "HERO 25K",
+		"dpi": "25,600",
+		"connection": "Wireless",
+		"rgb": false,
+		"category": "gear",
+		"categoryDetail": "mouse",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28389"
+		},
+		"id": "HP002",
+		"img": "../images/products/Razer BlackShark V2.svg",
+		"title": "Razer BlackShark V2",
+		"description": "Esports gaming headset",
+		"price": "99$",
+		"oldPrice": "120$",
+		"type": "Over-ear",
+		"wireless": false,
+		"category": "accessories",
+		"categoryDetail": "headphone",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2838a"
+		},
+		"id": "WC002",
+		"img": "../images/products/Razer Kiyo.svg",
+		"title": "Razer Kiyo",
+		"description": "1080p webcam with ring light",
+		"price": "89$",
+		"oldPrice": "100$",
+		"resolution": "1080p",
+		"frameRate": "60fps",
+		"category": "accessories",
+		"categoryDetail": "webcam",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2838b"
+		},
+		"id": "WC001",
+		"img": "../images/products/Logitech C920.svg",
+		"title": "Logitech C920",
+		"description": "HD 1080p webcam",
+		"price": "69$",
+		"oldPrice": "80$",
+		"resolution": "1080p",
+		"frameRate": "30fps",
+		"category": "accessories",
+		"categoryDetail": "webcam",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2838c"
+		},
+		"id": "AU001",
+		"img": "../images/products/Sony WH-1000XM5.svg",
+		"title": "Sony WH-1000XM5",
+		"description": "Wireless noise-canceling headphones",
+		"price": "399$",
+		"oldPrice": "450$",
+		"type": "Over-ear",
+		"wireless": true,
+		"category": "audio",
+		"categoryDetail": "audio",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2838d"
+		},
+		"id": "AU002",
+		"img": "../images/products/Apple AirPods Pro (2nd Gen).svg",
+		"title": "Apple AirPods Pro (2nd Gen)",
+		"description": "Active noise-canceling wireless earphones",
+		"price": "249$",
+		"oldPrice": "279$",
+		"type": "In-ear",
+		"wireless": true,
+		"category": "audio",
+		"categoryDetail": "audio",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2838e"
+		},
+		"id": "HD002",
+		"img": "../images/products/Seagate Backup Plus 5TB.svg",
+		"title": "Seagate Backup Plus 5TB",
+		"description": "High-capacity external HDD",
+		"price": "129$",
+		"oldPrice": "150$",
+		"capacity": "5TB",
+		"interface": "USB 3.0",
+		"category": "accessories",
+		"categoryDetail": "external_hard_drive",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e2838f"
+		},
+		"id": "AU003",
+		"img": "../images/products/JBL Charge 5.svg",
+		"title": "JBL Charge 5",
+		"description": "Portable Bluetooth speaker with powerful bass",
+		"price": "179$",
+		"oldPrice": "199$",
+		"type": "Portable",
+		"wireless": true,
+		"category": "audio",
+		"categoryDetail": "audio",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28390"
+		},
+		"id": "AU004",
+		"img": "../images/products/Samsung HW-Q990C.svg",
+		"title": "Samsung HW-Q990C",
+		"description": "Dolby Atmos Soundbar with subwoofer",
+		"price": "999$",
+		"oldPrice": "1099$",
+		"type": "Soundbar",
+		"wireless": true,
+		"category": "audio",
+		"categoryDetail": "audio",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28391"
+		},
+		"id": "AU005",
+		"img": "../images/products/FiiO K7 DACAMP.svg",
+		"title": "FiiO K7 DAC/AMP",
+		"description": "High-resolution USB DAC and headphone amplifier",
+		"price": "199$",
+		"oldPrice": "229$",
+		"type": "DAC/AMP",
+		"wireless": false,
+		"category": "audio",
+		"categoryDetail": "audio",
+		"quantity": 1
+	},
+	{
+		"_id": {
+			"$oid": "67f4fe51118662bcb5e28392"
+		},
+		"id": "HD001",
+		"img": "../images/products/WD Black 4TB HDD.svg",
+		"title": "WD My Passport 2TB",
+		"description": "Portable external hard drive",
+		"price": "79$",
+		"oldPrice": "100$",
+		"capacity": "2TB",
+		"interface": "USB 3.0",
+		"category": "accessories",
+		"categoryDetail": "external_hard_drive",
+		"quantity": 1
+	}
+]

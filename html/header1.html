@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexST</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="pre-nav-container">
+            <div class="pre-nav">
+                <div class="nav-row">
+                    <div class="nav-social">
+                        <span>Follow us: </span>
+                        <a><img src="../icons/social/facebook.svg" alt=""></a>
+                        <a><img src="../icons/social/instagram.svg" alt=""></a>
+                        <a><img src="../icons/social/twitter-bird.svg" alt=""></a>
+                    </div>
+                    <div class="scrolling-container">
+                        <div class="scrolling-text">
+                            <span>Summer is coming! 50% off all components</span>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="contact-item">
+                            <img src="../icons/social/phone.svg" alt="">
+                            <a href="#">(+84) 910JQKA</a>
+                        </div>
+                        <div class="contact-item">
+                            <img src="../icons/social/email.svg" alt="">
+                            <a href="#">nexst@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center ms-5" style="width: auto;">
+                        <button class="navbar-toggler me-2 d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#nav-links">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="logo">
+                            <a href="homepage.html" style="text-decoration: none; color: white;">
+                                <img src="../icons/header/NEXST LOGO.png" alt="logo nexst" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>                    
+
+                    <div class="collapse navbar-collapse" id="nav-links">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="homepage.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                    <li><a class="dropdown-item" href="../html/sitemap.html">Sitemap</a></li>
+                                    <li><a class="dropdown-item" href="../html/Check_Out.html">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="../html/cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="../html/Profile.html">Profile</a></li>
+                                </ul>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-button">
+                        <button class="btn btn-light d-flex" id="loginButton">
+                            <img src="../icons/nav/user.svg" alt="" class="me-1">
+                            <span class="d-none d-sm-inline">Login</span>
+                        </button>
+                        <button class="btn btn-light"><a href="cart.html"><img src="../icons/nav/shopping-cart.svg" alt=""></a></button>
+                        <button class="btn btn-light" id="darkModeToggle"><img id="modeIcon"
+                                src="../icons/nav/dark-mode.svg" alt=""></button>
+                        <button class="btn btn-light"><img src="../icons/nav/language-globe.svg" alt=""></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="modalContainer"></div>
+    </header>
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/bootstrap.bundle.js"></script>
+    <script src="../scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Áp dụng animation khi modal hiển thị */
+.modal.show .modal-dialog {
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Đảm bảo modal bắt đầu từ ngoài màn hình khi chưa hiển thị */
+.modal.fade .modal-dialog {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Khi modal đóng, thêm hiệu ứng ngược lại (tùy chọn) */
+.modal.fade:not(.show) .modal-dialog {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.blobs-container {
+    position: relative;
+    width: 591px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.blobs-vector-1,
+.blobs-vector-2,
+.blobs-vector-3,
+.main-img-blobs {
+    position: absolute;
+}
+
+.blobs-vector-1 {
+    width: 500px;
+    height: 525px;
+    left: 129px;
+    background: url("../images/svg/blobs-vector-1.svg");
+    z-index: 2;
+}
+
+.blobs-vector-2 {
+    width: 496px;
+    height: 406px;
+    top: 354px;
+    left: 35px;
+    background: url("../images/svg/blobs-vector-2.svg");
+    z-index: 3;
+}
+
+.blobs-vector-3 {
+    background: url("../images/svg/blobs-vector-3.svg");
+    width: 474px;
+    height: 573px;
+    top: 55px;
+    left: 58px;
+    z-index: 1;
+}
+
+.main-img-blobs {
+    background: url("../images/svg/MainImage.svg");
+    width: 371px;
+    height: 513px;
+    top: 114px;
+    left: 85px;
+    z-index: 4;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom,
+            #B30100,
+            #9A0100,
+            #8D0100,
+            #870100,
+            #840100,
+            #820100,
+            #800100,
+            #670100,
+            #5A0000,
+            #540000,
+            #510000,
+            #4F0000,
+            #4D0000);
+}
+
+.auth-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 60px;
+}
+
+.form-container {
+    position: absolute;
+    width: 58.33%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    transition: transform 0.6s ease-in-out;
+    z-index: 2;
+}
+
+.login-form {
+    right: 0;
+    transform: translateX(0);
+}
+
+.register-form {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.auth-container.active .login-form {
+    transform: translateX(-160%);
+}
+
+.auth-container.active .register-form {
+    transform: translateX(-72%);
+}
+
+.image-container {
+    position: absolute;
+    width: 41.66%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.left-image {
+    left: 0;
+}
+
+.right-image {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.auth-container.active .left-image {
+    transform: translateX(-100%);
+}
+
+.auth-container.active .right-image {
+    transform: translateX(0);
+}
+
+.toggle-form {
+    cursor: pointer;
+    color: #B30100;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+form {
+    width: 75%;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-auth {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #B30100;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-auth:hover {
+    background-color: #870100;
+}
+
+.social-login {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-btn {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.social-btn img {
+    height: 20px;
+    margin-right: 8px;
+}

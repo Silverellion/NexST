@@ -38,8 +38,7 @@
                 </div> 
             </div>
         </div>
-        
-        <div class = "navbar-container">
+        <div class="navbar-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center">
@@ -48,9 +47,8 @@
                         </button>
                         <div class="logo">NexST</div>
                     </div>
-                    
                     <div class="collapse navbar-collapse" id="nav-links">
-                        <ul class="navbar-nav nav-link mx-auto">
+                        <ul class="navbar-nav nav-link mx-auto d-lg-none">
                             <li class=""><a href="#">Home</a></li>
                             <li class=""><a href="#">Products</a></li>
                             <li class=""><a href="#">Pages</a></li>
@@ -58,14 +56,24 @@
                             <li class=""><a href="./contact.html">Contact us</a></li>
                         </ul>
                     </div>
+                    <div class="search-container">
+                        <div class="search-box">
+                            <img src="../icons/nav/search.svg" alt="search" class="search-icon">
+                            <input type="text" class="search-input" placeholder="">
+                            <span class="placeholder-text"></span>
+                        </div>
+                    </div>
                     
                     <div class="nav-button">
                         <button class="btn btn-light d-flex">
                             <img src="../icons/nav/user.svg" alt="" class="me-1">
                             <span class="d-none d-sm-inline">Login</span>
                         </button>
+                        <button class="btn btn-light search-toggle d-lg-none">
+                            <img src="../icons/nav/search.svg" alt="search">
+                        </button>
                         <button class="btn btn-light"><img src="../icons/nav/shopping-cart.svg" alt=""></button>
-                        <button class="btn btn-light" onclick="toggleDarkMode()"><img id="modeIcon" src="../icons/nav/dark-mode.svg" alt=""></button>
+                        <button class="btn btn-light"><img id="modeIcon" src="../icons/nav/dark-mode.svg" alt=""></button>
                         <button class="btn btn-light"><img src="../icons/nav/language-globe.svg" alt=""></button>
                     </div>
                 </div>

@@ -12,37 +12,44 @@
     font-weight: 100 900;
     font-style: italic;
 }
+
 /* END OF FONTS */
 /* DEFAULT TEMPLATE  */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
-body, html {
+
+body,
+html {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
 }
+
 /* OVERRIDE .master-container-red FOR A DIFFERENT PAGE BACKGROUND */
 /* OVERRIDE .master-container-red FOR A DIFFERENT PAGE BACKGROUND */
 /* OVERRIDE .master-container-red FOR A DIFFERENT PAGE BACKGROUND */
+.nav-link.active {
+    color: #BF0100 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #BF0100;
+}
+
 .master-container-red {
     background: linear-gradient(to bottom, #BF0100, #590000);
     width: 100%;
     max-width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
 }
+
 /* END OF DEAFAULT TEMPLATE */
 /* HEADER */
-.pre-nav-container {
-    background-color: #BF0100;
-}
-
 .pre-nav {
+    background-color: #BF0100;
     width: 100%;
-    margin: 0 auto;
-    max-width: 1600px;
 }
 
 .nav-row {
@@ -51,6 +58,7 @@ body, html {
     align-items: center;
     width: 100%;
 }
+
 /* START OF NAV SOCIAL (Facebook + Instagram + Twitter buttons) */
 .nav-social {
     display: flex;
@@ -87,6 +95,7 @@ body, html {
     width: 20px;
     height: 20px;
 }
+
 /* END OF NAV SOCIAL (Facebook + Instagram + Twitter buttons) */
 /* START OF SCROLLING TEXT */
 .scrolling-container {
@@ -110,9 +119,15 @@ body, html {
 }
 
 @keyframes scrollText {
-    from { transform: translateX(200%); }
-    to { transform: translateX(-200%); }
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
 }
+
 /* END OF SCROLLING TEXT */
 /* START OF ADDRESS + CONTACT ITEM(PHONE + EMAIL) */
 .address {
@@ -150,17 +165,13 @@ body, html {
 .contact-item:hover a {
     color: rgb(190, 190, 190);
 }
+
 /* END OF ADDRESS + CONTACT ITEM(PHONE + EMAIL) */
 /* START OF NAVBAR */
-.navbar-container {
-    background-color: #2E2E2E;
-}
-
 .navbar {
+    background-color: #2E2E2E;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1600px;
 }
 
 .navbar-collapse {
@@ -173,19 +184,16 @@ body, html {
 .nav-subcontainer {
     margin-left: 5%;
 }
+
 /* END OF NAVBAR */
 /* START OF LOGO */
-.logo {
-    color: white;
-    padding-left: 60px;
-    margin-right: 10px;
-    font-size: 2.2rem;
-    font-weight: 600;
+
+.logo img {
+    max-height: 80px; 
+    height: auto; 
+    width: auto;
 }
 
-.logo:hover {
-    cursor: pointer;
-}
 /* END OF LOGO */
 /* START OF NAV LINKS (Hone, Products, Contact Us...) STYLING */
 .navbar-toggler-icon {
@@ -204,7 +212,7 @@ body, html {
     transform: scale(1.2);
 }
 
-.nav-link {
+.navbar-nav {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -212,7 +220,7 @@ body, html {
     padding: 0;
 }
 
-.nav-link li {
+.navbar-nav li {
     padding: 0;
 }
 
@@ -220,19 +228,20 @@ body, html {
     flex-wrap: nowrap;
 }
 
-.nav-link li a {
+.navbar-nav li a {
     color: rgb(200, 200, 200);
     font-weight: 600;
     text-decoration: none;
 }
 
-.nav-link li a:hover {
+.navbar-nav li a:hover {
     color: #BF0100;
 }
 
-.nav-link li a:active {
+.navbar-nav li a:active {
     color: grey;
 }
+
 /* END OF NAV LINKS (Hone, Products, Contact Us...) STYLING */
 /* START OF SEARCHBOX STYLING */
 
@@ -261,8 +270,8 @@ body, html {
 }
 
 .search-toggle img {
-width: 20px;
-height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .search-container {
@@ -300,12 +309,12 @@ height: 20px;
 }
 
 .placeholder-text {
-position: absolute;
-left: 45px;
-pointer-events: none;
-color: #6c757d;
-font-size: 14px;
-transition: opacity 0.2s;
+    position: absolute;
+    left: 45px;
+    pointer-events: none;
+    color: #6c757d;
+    font-size: 14px;
+    transition: opacity 0.2s;
 }
 
 /* END OF SEARCHBOX STYLING */
@@ -348,15 +357,14 @@ transition: opacity 0.2s;
 /* END OF HEADER */
 /* FOOTER */
 footer {
-    background: rgb(216, 216, 216);
     border-top: 10px solid rgb(191, 0, 0);
 }
+
 .info-container {
+    background: rgb(216, 216, 216);
     padding-top: 1%;
     padding-right: 1%;
     padding-left: 1%;
-    margin: 0 auto;
-    max-width: 1600px;
 }
 
 .footer-top {
@@ -378,7 +386,7 @@ footer {
     height: 40px;
 }
 
-.feature div h3{
+.feature div h3 {
     padding-bottom: 0.5%;
 }
 
@@ -392,7 +400,7 @@ footer {
     margin-bottom: 6%;
 }
 
-.footer-column p{
+.footer-column p {
     margin-bottom: 2%;
 }
 
@@ -440,9 +448,10 @@ footer {
 }
 
 .footer-copyright {
-    background-color: rgb(191,0,0);
+    background-color: rgb(191, 0, 0);
     color: white;
 }
+
 /* END OF FOOTER */
 /* MOBILE COMPATIBILITY */
 @media (max-width: 1000px) {
@@ -452,27 +461,31 @@ footer {
         margin-top: 10px;
     }
 
+    .logo img {
+        max-height: 60px;
+    }
+
     .pre-nav {
         flex-direction: column;
     }
-        
+
     .scrolling-container {
         width: 100%;
     }
-    
+
     .scrolling-text {
         font-size: 14px;
     }
-    
+
     .address {
         justify-content: right;
         width: 100%;
     }
-    
+
     .contact-item {
         font-size: 12px;
     }
-    
+
     .contact-item img {
         width: 15px;
         height: 15px;
@@ -487,12 +500,12 @@ footer {
         z-index: 1000;
         padding: 10px;
     }
-    
+
     .navbar-collapse ul {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .nav-button button {
         margin: 5px;
         padding: 8px;
@@ -501,29 +514,30 @@ footer {
     .navbar-nav:first-child {
         margin-top: 5%;
     }
+
     .navbar-nav:last-child {
         margin-bottom: 5%;
     }
+
     .nav-subcontainer {
         margin: 0%;
     }
+
     .navbar-toggler {
         margin-left: 3%;
         transform: scale(0.6);
     }
+
     .navbar-toggler:hover {
         transform: scale(0.8);
     }
-    .logo {
-        padding-left: 0px;
-        font-size: 20px;
-    }
+
     .search-toggle {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .search-container {
         position: absolute;
         top: 100%;
@@ -531,10 +545,10 @@ footer {
         right: 0;
         margin: 0;
         max-width: 100%;
-        background:#2E2E2E;
+        background: #212529;
         padding: 10px 15px;
         z-index: 1000;
-        
+
         max-height: 0;
         overflow: hidden;
         opacity: 0;
@@ -543,25 +557,28 @@ footer {
         padding-top: 0;
         padding-bottom: 0;
     }
-    
+
     .search-container.active {
         max-height: 60px;
         opacity: 1;
         transform: translateY(0);
         padding: 10px 15px;
     }
+
     .nav-button button {
         align-items: right;
         justify-content: right;
-    
+
         margin: 5px;
         padding: 5px;
     }
+
     .nav-button button:first-child {
         gap: 3px;
         padding: 3px;
         padding-right: 5px;
     }
+
     .feature {
         margin-bottom: 5%;
         justify-content: center;
@@ -572,6 +589,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .logo img {
+        max-height: 40px;
+    }
+
     .nav-social span {
         display: none;
     }
@@ -589,7 +610,7 @@ footer {
     .contact-item a {
         font-size: 12px;
     }
-    
+
     .address {
         display: flex;
         margin-left: 10%;
@@ -603,13 +624,15 @@ footer {
     .navbar-toggler:hover {
         transform: scale(0.7);
     }
+
     .nav-button button {
         align-items: right;
         justify-content: right;
-    
+
         margin: 2px;
         padding: 3px;
     }
+
     .nav-button button:first-child {
         padding: 3px;
         padding-right: 0px;
@@ -617,11 +640,10 @@ footer {
 }
 
 @media (max-width: 300px) {
-    .logo {
-        color: white;
-        font-size: 12px;
-        font-weight: 600;
+    .logo img {
+        max-height: 20px;
     }
+
     .nav-social a {
         margin: 2px 2px;
         padding-right: 5px;
@@ -639,16 +661,19 @@ footer {
         margin-left: 0%;
         transform: scale(0.4);
     }
+
     .navbar-toggler:hover {
         transform: scale(0.6);
     }
+
     .nav-button button {
         align-items: right;
         justify-content: right;
-    
+
         margin: 1px;
         padding: 1px;
     }
+
     .nav-button button:first-child {
         padding: 1px;
     }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column">
+        <div id="header-placeholder"></div>
+
+        <main class="flex-grow-1 pt-3">
+            <div class="container">
+                <div class="bg-white rounded-3 row">
+                    <div class="col-8 p-5 d-flex flex-column gap-3 cart-container" id="cart-container">
+
+                    </div>
+                    <div class="col-4 d-flex flex-column justify-content-end">
+                        <div class="container py-5">
+                            <div class="order-summary">
+                                <h4 class="mb-4 fw-bold">Order Summary</h4>
+
+                                <div class="summary-items">
+                                    <div class="summary-item">
+                                        <span>Sub Total:</span>
+                                        <span id="subtotal">$20,577.00</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>Shipping Estimate:</span>
+                                        <span id="shipping">$600.00</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>Tax Estimate:</span>
+                                        <span id="tax">$137.00</span>
+                                    </div>
+                                    <div class="summary-item total">
+                                        <span>ORDER TOTAL:</span>
+                                        <span id="total">$21,314.00</span>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-checkout text-white"><a href="../html/Check_Out.html"
+                                        class="text-decoration-none text-white">CHECKOUT</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+</body>
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.bundle.js"></script>
+<script src="../scripts/cart.js"></script>
+<script src="../scripts/main.js"></script>
+
+</html>

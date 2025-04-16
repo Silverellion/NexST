@@ -1,0 +1,72 @@
+/* css cua main */
+main {
+    background-color: #BF0100;
+    min-height: 100vh;
+}
+
+
+/* css của cái thẻ product ngang */
+.products-cart {
+    background-color: #E2E4EB;
+}
+
+.img-product-cart {
+    object-fit: cover;
+    /* Giữ tỷ lệ hình ảnh, cắt nếu cần */
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.product-image-wrapper {
+    height: 100%;
+    /* đảm bảo chiếm full chiều cao của cột */
+}
+
+.btn-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-circle-light {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+}
+
+.btn-circle-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* css cho cai order sum ke ben a wtf nic ga */
+.order-summary {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #BF0100;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.summary-item.total {
+    font-weight: bold;
+    font-size: 1rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+}
+
+.btn-checkout {
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: #BF0100 !important;
+}

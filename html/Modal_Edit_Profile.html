@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="../lib/bootstrap.bundle.js"></script>
+    <script src="../lib/jquery.js"></script>
+    <link rel="stylesheet" href="../css/Modal_Edit_Profile.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal">
+        Open Profile Modal
+    </button>
+    <div class="modal fade" id="profileModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="profile-card" style="justify-content: center; position: relative;">
+                        <div class="avatar-container">
+                            <img src="../images/svg/avatar.svg" class="profile-img" alt="Profile" style="width: 100%;">
+                            <button id="changeAvtBtn" class="btn btn-dark btn-sm">
+                                Change
+                            </button>
+                        </div>
+                        <h5 class="mt-2" id="profileName"></h5>
+                        <p id="profileEmail"></p>
+                    </div>
+                    <div class="info-section">
+                        <h5 class="mb-3">Account Info</h5>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" value=""
+                                        placeholder="Add Your First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" value=""
+                                        placeholder="Add your Last Name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" value=""
+                                    placeholder="Add your email here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone Number (Optional)</label>
+                                <input type="text" class="form-control" id="phoneaccount" value=""
+                                    placeholder="Add your phone number here">
+                            </div>
+                            <button type="button" class="btn btn-save" id="saveBtn">
+                                Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Choose_Avt" tabindex="-1">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column" style="min-height: 300px;">
+                    <!-- Phần North - Tiêu đề -->
+                    <div class="text-center py-3 border-bottom">
+                        <h5 class="mb-0">Choose Avatar</h5>
+                    </div>
+
+                    <!-- Phần Center - 2 ảnh -->
+                    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                        <div class="text-center mx-3">
+                            <img src="../images/svg/avatar.svg" class="avt-option mb-2"
+                                style="width: 100px; cursor: pointer;">
+                        </div>
+                        <div class="text-center mx-3">
+                            <img src="../images/svg/avatar-fm.jpeg" class="avt-option mb-2"
+                                style="width: 100px; cursor: pointer; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/Modal_Edit_Profile.js"></script>
+</body>
+
+</html>
